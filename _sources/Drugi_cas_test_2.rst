@@ -1,0 +1,213 @@
+Tест
+====
+
+Питање 1.
+~~~~~~~~~
+
+Написана је наредба `if` :
+
+
+.. code-block:: python
+    
+  from karel import *
+  if mozeNapred():
+      napred()
+  else
+      levo()
+
+.. mchoice:: grananje2
+    :multiple_answers:
+    :answer_a: Да 
+    :feedback_a: Тачно
+    :answer_b: Не
+    :feedback_b: Нетачно    
+    :correct: ['b']
+    
+    Да ли је ова наредба написана у складу са правилима програмског језика Пајтон? Изабери тачан одговор:
+
+Питање 2.
+~~~~~~~~~
+
+Извршавањем којих од наредних програма ће робот ако може да пређе на наредно поље покупити лоптицу са тог поља (подразумева се да је на сваком пољу лоптица)?
+
+(1)
+  .. code-block:: python
+    
+    from karel import *
+    if mozeNapred():
+        napred()
+        uzmi()
+
+(2)        
+  .. code-block:: python
+    
+    from karel import *
+    if mozeNapred():
+        napred()
+      uzmi()
+
+(3)
+  .. code-block:: python
+    
+    from karel import *
+    if mozeNapred()
+        napred()
+        uzmi()
+
+(4)
+  .. code-block:: python
+    
+    from karel import *
+    if mozeNapred():
+    napred()
+        uzmi()
+
+.. mchoice:: grananje1
+    :multiple_answers:
+    :answer_a: 1 
+    :feedback_a: Тачно
+    :answer_b: 2 
+    :feedback_b: Нетачно    
+    :answer_c: 3        
+    :feedback_c: Тачно
+    :answer_d: 4
+    :feedback_d: Нетачно    
+    :correct: ['a']
+    
+    Изабери тачан одговор:
+
+Питање 3.
+~~~~~~~~~
+
+Дата је наредба `if` :
+
+
+.. code-block:: python
+    
+  from karel import *
+  if ima_loptica_na_polju():
+      uzmi()    
+  else:
+      ostavi()
+
+.. mchoice:: grananje3
+    :multiple_answers:
+    :answer_a: Ако постоје лоптице на пољу, робот ће узети све, у супротном ће оставити једну.    
+    :feedback_a: Нетачно
+    :answer_b: Ако постоје лоптице на пољу, робот ће узети једну, у супротном ће оставити једну.    
+    :feedback_b: Тачно
+    :answer_c: Ако постоје лоптице на пољу, робот ће узети једну.    
+    :feedback_c: Нетачно
+    :answer_d: Ако нема лоптица на пољу, робот ће узети једну.    
+    :feedback_d: Нетачно
+    :correct: ['b']
+    
+    Шта је резултат извршавања следеће наредбе? Изабери тачан одговор.
+
+
+Питање 4.
+~~~~~~~~~
+
+      Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?
+      
+      (1)
+        .. code-block:: python
+
+          ima_loptica_kod_sebe()
+          ostavi()
+      
+      (2)
+        .. code-block:: python
+
+          if (ima_loptica_kod_sebe()):
+          ostavi()    
+          
+      (3)
+        .. code-block:: python
+
+          if (ima_loptica_kod_sebe()):
+            ostavi()  
+      
+      (4)
+        .. code-block:: python
+
+          while (ima_loptica_kod_sebe()):
+            ostavi()  
+      
+      (5)
+        .. code-block:: python
+
+          if (broj_loptica_kod_sebe()):
+            ostavi()   
+      
+    opcije:
+      - oznaka: "а"
+        tekst: |
+          1 
+      - oznaka: "б"
+        tekst: |
+          2 
+      - oznaka: "в"
+        tekst: |
+          3        
+      - oznaka: "г"
+        tekst: |
+          4
+      - oznaka: "д"
+        tekst: |
+          5
+    odgovor: "в"
+
+
+Питање 5.
+~~~~~~~~~
+
+      Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?
+      
+      (1)
+        .. code-block:: python
+
+          ima_loptica_kod_sebe()
+          ostavi()
+      
+      (2)
+        .. code-block:: python
+
+          if (ima_loptica_kod_sebe()):
+          ostavi()    
+          
+      (3)
+        .. code-block:: python
+
+          if (ima_loptica_kod_sebe()):
+            ostavi()  
+      
+      (4)
+        .. code-block:: python
+
+          while (ima_loptica_kod_sebe()):
+            ostavi()  
+      
+      (5)
+        .. code-block:: python
+
+          if (broj_loptica_kod_sebe()):
+            ostavi()   
+      
+    opcije:
+      - oznaka: "а"
+        tekst: |
+          1 
+      - oznaka: "б"
+        tekst: |
+          2 
+      - oznaka: "в"
+        tekst: |
+          3        
+      - oznaka: "г"
+        tekst: |
+          4
+      - oznaka: "д"
+        tekst: |
+          5
+    odgovor: "в"
