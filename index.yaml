@@ -1,18 +1,18 @@
 ime: Šesti razred
-DBalias:  sesti-milena #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
+dBalias: sesti-milena #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
 logo: 6ologo.png
 nauciti:
   - Кроз ове лекције упознаћеш се са текстуалним програмирањем учећи програмски језик Python.
- potrebno:
+potrebno:
   - инсталиран Python
-linkovi: opciono
+linkovi: #opciono
 sadrzaj:
   - Робот Карел - линијски програми
   - Робот Карел - бројачка петља
   - Робот Карел - условна петља
   - Робот Карел - гранање
   - Корњача графика
-  - "Израчунавање: основне аритметичке операције и променљиве"
+  - "Израчунавање: основне аритметичке операције и променљиве" #neophodni su navodnici ako postoji :
   - "Функције: готове функције и дефинисање функција"
   - Контроле тока
   - Структуре података
@@ -30,7 +30,7 @@ lekcije:
     content: VI_razred_uvod_1.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis: #prazan
     alias: lekcija1 #edinstven-alias-u-okviru-kursa1
- - tip: html
+  - tip: html
     ime: Робот Карел - линијски програми
     order: 
     content: VI_razred_lekcija_1.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
@@ -42,7 +42,43 @@ lekcije:
     content: VI_razred_test_1.html
     opis: 0, 1, 121112, 1, 1 #koristimo ovo polje da se izlistaju svi odgovori 
     alias: test1
-    
+  - tip: html
+    ime: "Други час: условне петље, гранање"
+    order: 
+    content: Drugi_cas_1.html  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: lekcija3 #edinstven-alias-u-okviru-kursa1
+  - tip: video
+    ime: Петља while
+    order: 
+    content: https://www.youtube.com/embed/Zk-4gG4iZmc  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: video1 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Teст
+    order: 
+    content: Drugi_cas_test_1.html
+    opis: 0, 0, 02, 1213222, 34 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test2
+  - tip: video
+    ime: Наредба if
+    order: 
+    content: https://www.youtube.com/embed/Nyun0pML3-M  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: video2 #edinstven-alias-u-okviru-kursa1
+  - tip: video
+    ime: Проширени облик наредбе if
+    order: 
+    content: https://www.youtube.com/embed/KQVm3KpZtrY  #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
+    opis: #prazan
+    alias: video3 #edinstven-alias-u-okviru-kursa1
+  - tip: quiz
+    ime: Teст
+    order: 
+    content: Drugi_cas_test_2.html
+    opis: 1, 0, 1, 2, 2 #koristimo ovo polje da se izlistaju svi odgovori 
+    alias: test3
+
   
 
 
