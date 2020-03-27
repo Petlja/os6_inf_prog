@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Tест &#8212; Шести разред</title>
+    <title>Бројачка петља for &#8212; Шести разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
@@ -146,7 +146,8 @@
     <script src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="Drugi_cas_4.html" />
+    <link rel="next" title="Други час: условне петље, гранање" href="Drugi_cas_1.html" />
+    <link rel="prev" title="Тест" href="VI_razred_test_1.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -209,264 +210,189 @@
 
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
-  <div class="section" id="t">
-<h1>Tест<a class="headerlink" href="#t" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="for">
+<h1>Бројачка петља <code class="docutils literal notranslate"><span class="pre">for</span></code><a class="headerlink" href="#for" title="Permalink to this headline">¶</a></h1>
+<p>Често робот исту наредбу треба да понови више пута. Такви програми се
+једноставније могу писати коришћењем <strong>петљи</strong>.</p>
 <div class="section" id="id1">
-<h2>Питање 1.<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Написана је наредба <cite>if</cite> :</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">mozeNapred</span><span class="p">():</span>
-    <span class="n">napred</span><span class="p">()</span>
-<span class="k">else</span>
-    <span class="n">levo</span><span class="p">()</span>
-</pre></div>
-</div>
+<h2>Иди 8 поља напред<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="grananje2">
-            <p>Q-5: Да ли је ова наредба написана у складу са правилима програмског језика Пајтон? Изабери тачан одговор:</p>
+    <div class="course-box course-box-special">
+        <div class="course-content">
+            <h4 class="carbox-title">
+                <img class="corner-image float-right" src="_static/img/question-mark.png" />
+            </h4>
+            <p>
+<p>У наредном лавиринту постоји 8 поља испред робота. Коришћењем
+петље учини да робот дође до лоптице и да је затим покупи.</p>
 
-            <li data-component="answer"  id="grananje2_opt_a">Да</li><li data-component="feedback" id="grananje2_opt_a">Тачно</li>
-            
-            <li data-component="answer" data-correct id="grananje2_opt_b">Не</li><li data-component="feedback" id="grananje2_opt_b">Нетачно</li>
-            
+    </p></div></div>
+<p>Један начин да решимо задатак је да роботу 8 пута задамо наредбу да
+иде напред и затим наредбу да покупи лоптицу.</p>
 
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id2">
-<h2>Питање 2.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Извршавањем којих од наредних програма ће робот ако може да пређе на наредно поље покупити лоптицу са тог поља (подразумева се да је на сваком пољу лоптица)?</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">mozeNapred</span><span class="p">():</span>
-    <span class="n">napred</span><span class="p">()</span>
-    <span class="n">uzmi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">mozeNapred</span><span class="p">():</span>
-    <span class="n">napred</span><span class="p">()</span>
-  <span class="n">uzmi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">mozeNapred</span><span class="p">()</span>
-    <span class="n">napred</span><span class="p">()</span>
-    <span class="n">uzmi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">mozeNapred</span><span class="p">():</span>
-<span class="n">napred</span><span class="p">()</span>
-    <span class="n">uzmi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-</ol>
+<div data-childcomponent="Карел_8_поља_напред" class="karel_section course-box course-box-problem">
+    <div class="course-content">
+        <p>
 
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="grananje1">
-            <p>Q-6: Изабери тачан одговор:</p>
+    <div data-component="karel" id="Карел_8_поља_напред" class="karel_section">
+        <div class="karel_actions col-md-12 mb-2"><button class="btn btn-success run-button">Покрени програм</button>
+        <button class="btn btn-default reset-button">Врати на почетак</button>
+        <button class="btn btn-default blockly-button" style="display: inline-block;">Blockly</button></div>
+        <div style="overflow: hidden;" class="karel_actions col-md-12" >
+            <section class="col-md-12">
+                <article>
+                    <textarea class="codeArea" id="Карел_8_поља_напред" name="code" rows="10" style="width: 100%;height:300px"></textarea>
+                    <textarea class="configArea" style="display:none"><!--x {
+   setup: function() {
+        var world = new World(9, 1);
+        world.setRobotStartAvenue(1);
+        world.setRobotStartStreet(1);
+        world.setRobotStartDirection("E");
+        world.putBall(9, 1);
+        var robot = new Robot();
+        var code = ["from karel import *",
+            "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "uzmi()"]
+        return {world: world, robot: robot, code: code};
+   },
 
-            <li data-component="answer" data-correct id="grananje1_opt_a">1</li><li data-component="feedback" id="grananje1_opt_a">Тачно</li>
-            
-            <li data-component="answer"  id="grananje1_opt_b">2</li><li data-component="feedback" id="grananje1_opt_b">Нетачно</li>
-            
-            <li data-component="answer"  id="grananje1_opt_c">3</li><li data-component="feedback" id="grananje1_opt_c">Тачно</li>
-            
-            <li data-component="answer"  id="grananje1_opt_d">4</li><li data-component="feedback" id="grananje1_opt_d">Нетачно</li>
-            
+   isSuccess: function(robot, world) {
+        return robot.getStreet() === 1 &&
+        robot.getAvenue() === 6 &&
+        world.getBalls(6, 1) == 0;
+   }
+} x--></textarea>
+                </article>
+            </section>
+            <section class="col-md-12">
+                <article>
+                    <canvas class="world" style="border-style: solid; border-width: 2px; border-color: inherit; background: white;" width="300" height="300">
+                        <p>Please try loading this page in HTML5 enabled web browsers. All the latest versions of famous browsers such as Internet explorer, Chrome, Firefox, Opera support HTML5.</p>
+                    </canvas>
+                </article>
+            </section>
+        </div>
+    </div>
+    <p class="karel_caption karel_caption_text"> (Карел_8_поља_напред)</p>
+</p></div></div>
 
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id3">
-<h2>Питање 3.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Дата је наредба <cite>if</cite> :</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="k">if</span> <span class="n">ima_loptica_na_polju</span><span class="p">():</span>
-    <span class="n">uzmi</span><span class="p">()</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
+<p>Замислимо колико би досадно било куцати десет или сто пута наредбу да
+робот иде напред, када би лавиринт био већи. Пошто се у програмима
+често јавља потреба да се неке наредбе понављају, сви програмски
+језици обезбеђују начин да се то постигне. У програмском језику
+Python, који наш робот Карел разуме, понављање се постиже коришћење
+наредбе <code class="docutils literal notranslate"><span class="pre">for</span></code>. Понављања у програмима се називају <strong>циклуси</strong> или
+<strong>петље</strong> (по чему је наша фондација „Петља” добила име). Погледајмо
+како се претходни програм може скратити употребом петље <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
 
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="true"  id="grananje3">
-            <p>Q-7: Шта је резултат извршавања следеће наредбе? Изабери тачан одговор.</p>
+<div data-childcomponent="Карел_8_поља_напред_for" class="karel_section course-box course-box-problem">
+    <div class="course-content">
+        <p>
 
-            <li data-component="answer"  id="grananje3_opt_a">Ако постоје лоптице на пољу, робот ће узети све, у супротном ће оставити једну.</li><li data-component="feedback" id="grananje3_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="grananje3_opt_b">Ако постоје лоптице на пољу, робот ће узети једну, у супротном ће оставити једну.</li><li data-component="feedback" id="grananje3_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="grananje3_opt_c">Ако постоје лоптице на пољу, робот ће узети једну.</li><li data-component="feedback" id="grananje3_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="grananje3_opt_d">Ако нема лоптица на пољу, робот ће узети једну.</li><li data-component="feedback" id="grananje3_opt_d">Нетачно</li>
-            
+    <div data-component="karel" id="Карел_8_поља_напред_for" class="karel_section">
+        <div class="karel_actions col-md-12 mb-2"><button class="btn btn-success run-button">Покрени програм</button>
+        <button class="btn btn-default reset-button">Врати на почетак</button>
+        <button class="btn btn-default blockly-button" style="display: inline-block;">Blockly</button></div>
+        <div style="overflow: hidden;" class="karel_actions col-md-12" >
+            <section class="col-md-12">
+                <article>
+                    <textarea class="codeArea" id="Карел_8_поља_напред_for" name="code" rows="10" style="width: 100%;height:300px"></textarea>
+                    <textarea class="configArea" style="display:none"><!--x {
+   setup: function() {
+        var world = new World(9, 1);
+        world.setRobotStartAvenue(1);
+        world.setRobotStartStreet(1);
+        world.setRobotStartDirection("E");
+        world.putBall(9, 1);
+        var robot = new Robot();
+        var code = ["from karel import *",
+            "for i in range(8):", "    napred()", "uzmi()"]
+        return {world: world, robot: robot, code: code};
+   },
 
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id4">
-<h2>Питање 4.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><blockquote>
-<div><p>Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ima_loptica_kod_sebe</span><span class="p">()</span>
-<span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-<span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">broj_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-</ol>
-</div></blockquote>
-<dl>
-<dt>opcije:</dt><dd><ul>
-<li><p>oznaka: „а”
-tekst: |</p>
-<blockquote>
-<div><p>1</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „б”
-tekst: |</p>
-<blockquote>
-<div><p>2</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „в”
-tekst: |</p>
-<blockquote>
-<div><p>3</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „г”
-tekst: |</p>
-<blockquote>
-<div><p>4</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „д”
-tekst: |</p>
-<blockquote>
-<div><p>5</p>
-</div></blockquote>
-</li>
+   isSuccess: function(robot, world) {
+        return robot.getStreet() === 1 &&
+        robot.getAvenue() === 9 &&
+        world.getBalls(9, 1) == 0;
+   }
+} x--></textarea>
+                </article>
+            </section>
+            <section class="col-md-12">
+                <article>
+                    <canvas class="world" style="border-style: solid; border-width: 2px; border-color: inherit; background: white;" width="300" height="300">
+                        <p>Please try loading this page in HTML5 enabled web browsers. All the latest versions of famous browsers such as Internet explorer, Chrome, Firefox, Opera support HTML5.</p>
+                    </canvas>
+                </article>
+            </section>
+        </div>
+    </div>
+    <p class="karel_caption karel_caption_text"> (Карел_8_поља_напред_for)</p>
+</p></div></div>
+
+<p>Прочитај сада у <a class="reference external" href="https://www.petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/karel-cas1#id13">приручнику</a>
+детаљно објашњење овог програма и детаљно објашњење петље <code class="docutils literal notranslate"><span class="pre">for</span></code>.</p>
+<p>Увежбај сада петљу <code class="docutils literal notranslate"><span class="pre">for</span></code> тако што ћеш урадити наредна три задатка из
+приручника.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/karel-cas1#id19">Иди 7 поља напред</a></p></li>
+<li><p><a class="reference external" href="https://www.petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/karel-cas1#id22">Покупи 10 лоптица</a></p></li>
+<li><p><a class="reference external" href="https://www.petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/karel-cas1#id24">Покупи пет лоптица на пет поља испред</a></p></li>
 </ul>
-</dd>
-</dl>
-<p>odgovor: „в”</p>
-</div></blockquote>
-</div>
-<div class="section" id="id5">
-<h2>Питање 5.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><blockquote>
-<div><p>Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ima_loptica_kod_sebe</span><span class="p">()</span>
-<span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-<span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="p">(</span><span class="n">ima_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">broj_loptica_kod_sebe</span><span class="p">()):</span>
-  <span class="n">ostavi</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-</ol>
-</div></blockquote>
-<dl>
-<dt>opcije:</dt><dd><ul>
-<li><p>oznaka: „а”
-tekst: |</p>
-<blockquote>
-<div><p>1</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „б”
-tekst: |</p>
-<blockquote>
-<div><p>2</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „в”
-tekst: |</p>
-<blockquote>
-<div><p>3</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „г”
-tekst: |</p>
-<blockquote>
-<div><p>4</p>
-</div></blockquote>
-</li>
-<li><p>oznaka: „д”
-tekst: |</p>
-<blockquote>
-<div><p>5</p>
-</div></blockquote>
-</li>
+<p>Детаљна објашњења ова три задатка можеш погледати у наредној
+видео-лекцији.</p>
+
+    <div  id="Txibc29OzmQ" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/Txibc29OzmQ/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-Txibc29OzmQ" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-Txibc29OzmQ">
+        </div>
+    </div>
+    
+    
+    <p>Петља може бити део тела петље. Такве се петље називају <strong>угнежђене</strong>
+петље. Употреби угнежђене петље у решењу наредног задатка из
+приручника.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.petlja.org/biblioteka/r/lekcije/prirucnik-python-gim/karel-cas1#id28">Покупи по три лоптице на пет поља испред</a></p></li>
 </ul>
-</dd>
-</dl>
-<p>odgovor: „в”</p>
-</div></blockquote>
-</div>
+<p>Решење овог задатка можеш погледати у наредној видео-лекцији.</p>
+
+    <div  id="fEzQrKjTHzY" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/fEzQrKjTHzY/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-fEzQrKjTHzY" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-fEzQrKjTHzY">
+        </div>
+    </div>
+    
+    
+    </div>
 </div>
 
 
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - &lt;no title&gt;' data-toggle="tooltip"><a href="Drugi_cas_4.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Тест' data-toggle="tooltip"><a href="VI_razred_test_1.html">Previous chapter</a></li>
     
+        <li id="relations-next" title='Next chapter - Други час: условне петље, гранање' data-toggle="tooltip"><a href="Drugi_cas_1.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - &lt;no title&gt;' data-toggle="tooltip"><a href="Drugi_cas_4.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Тест' data-toggle="tooltip"><a href="VI_razred_test_1.html">Претходно поглавље</a></li> -->
     <!--  -->
+    <!-- -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Други час: условне петље, гранање' data-toggle="tooltip"><a href="Drugi_cas_1.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 
