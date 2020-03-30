@@ -1,5 +1,5 @@
 ime: Šesti razred # ovde se unosi ime kusa koje zelite, ne mesajte ovo ime sa imenom koje ce se videti na sajtu jer se na sajtu vidi instanca kursa
-dBalias: sesti-milena #moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili updatujemo postojeci
+dBalias: sesti-milena #jedinstveni identifikator kursa, moze sta god autor zeli, najbolje je neka kombinacija ime autora ime kursa, kako bi u bazi znali da li kreiramo novi kurs ili kurs vec postoji pa su izmene na njemu
 logo: 6ologo.png #ovaj deo nije toliko vazan posto u bazi vec postoje logo-i pa cu ja menjati i updatovati svaki yaml validnim imenom
 nauciti: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da pocienj sa -)
   - Кроз ове лекције упознаћеш се са текстуалним програмирањем учећи програмски језик Python.
@@ -18,14 +18,14 @@ sadrzaj: # moze da se navede vise (neophodno je samo u novom redu, tabovano i da
   - Структуре података
   - Основни алгоритми
 lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake lekcije je isti.
-  - tip: section 
-    ime: Садржај #kako zelite da bude ime lekcije, tako ce se svaka lekcija zvati i na petljinom interfejsu, ovde je primer "Sadrzaj" i to mozda moze da zbuni. Milena je htela da sve bude pod jednim modulom, Laza na primer ima vise sekcija: Cas 1, Cas2 itd.. 
+  - tip: section  #kao podnaslov dela kursa na koji ce se lancati obicne lekcije
+    ime: Садржај #kako zelite da bude ime sekcije, tako ce se svaka sekcija zvati i na petljinom interfejsu, ovde je primer "Sadrzaj" i to mozda moze da zbuni. Milena je htela da sve bude pod jednim modulom, Laza na primer ima vise sekcija: Cas 1, Cas2 itd.. 
     order: 1 #kod sekcije postoji u suprotnom prazan, ako mozda iz nekog razloga zelite da promesate redosled sekcija dozvoljeno je. Neophodno je zapamtiti da sve lekcije koje se nalaze ispod neke sekcije pripadaju toj sekciji, sve do sledece sekcije. (nema duplog ugnjezdavanja)
     content: #kod sekcije prazan, kod html-a, quiz-a i pdf-a putanja do file-a, kod yt link
     opis:  #opcioni - samo kod sekcije kako bi se u sadrzaju videlo objasnjenje (ako vec nije naveden sadrzaj gore)
     alias: sadrzaj-lekcija # neophodno je navesti alias lekcije koji je jedinstven na nivou kura, mozete navesti bilo koje ima dok god je jedinstvneno
   - tip: html 
-    ime: Увод
+    ime: Увод #naziv lekcije, vidljivo i na petljinom interfejsu
     order: 
     content: VI_razred_uvod_1.html  #kod html lekcije, content je ime file-a (ako je file u nekom folderu neophodno je navesti putanju do isto u samom build folder: (primer iz skola od kuce) Petlje/Petlje_01_VrstePetlji.html)
     opis: #prazan 
@@ -40,7 +40,7 @@ lekcije: # 5 tipova lekcija: section, html, pdf, video ili quiz. template svake 
     ime: Teст
     order: 
     content: VI_razred_test_1.html #potpuno isti princip vazi i ovde kao i za obicnu html lekciju
-    opis: 0, 1, 121112, 1, 1 #koristimo ovo polje da se izlistaju svi odgovori: koristi se programersko brojanje: 0-a, 1-b itd... Sto se tice fill in the blank samo navedite resenje, bez navodnika
+    opis: 0, 1, 121112, 1, 1 #koristimo ovo polje da se izlistaju svi odgovori: koristi se programersko brojanje: 0-a, 1-b itd... Zarez razdvaja pitanja pa je bitan redosled. Sto se tice fill in the blank samo navedite resenje, bez navodnika. 121112 je fill in the blank odgovor, mogao je da bude i покрет ili tako nesto.
     alias: test1
   - tip: html
     ime: "Други час: условне петље, гранање" #ukoliko ime sadzi u sebi : neophodno ga je staviti pod navodnike, yaml parser gleda to kao specijalan znak pa je neophodno reci da je zapravo string
