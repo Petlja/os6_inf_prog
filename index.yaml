@@ -27,7 +27,7 @@ lekcije:
     alias: cas1
     
   - tip: html 
-    ime: Увод
+    ime: Увод #naziv lekcije, vidljivo i na petljinom interfejsu
     order: 
     content: 1a_uvod.html
     opis: #
