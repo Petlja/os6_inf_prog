@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
   <head>
     <meta charset="utf-8" />
-    <title>Тест &#8212; Шести разред</title>
+    <title>Корњача графика &#8212; Шести разред</title>
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/matrixeq.css" />
@@ -146,8 +146,8 @@
     <script src="_static/jquery-migrate-1.2.1.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Бројачка петља for" href="1c_karel_for.html" />
-    <link rel="prev" title="Робот Карел: линијска структура" href="1b_karel_linijski.html" />
+    <link rel="next" title="Корњача графика - увод" href="4b_kornjaca_uvod_video.html" />
+    <link rel="prev" title="Тест" href="3b_karel_test.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
@@ -211,165 +211,42 @@
 <div class="container col-md-8 col-md-offset-2" id="main-content">
   
   <div class="section" id="id1">
-<h1>Тест<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Питање 1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="karel_osnovno_1">
-            <p>Q-1: Робот у лавиринту на слици се налази на пољу (4,5).</p>
-<img alt="_images/karel1.png" class="align-center" src="_images/karel1.png" />
-<p>На ком ће се пољу наћи робот извршавањем следеће наредбе?</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">levo</span><span class="p">()</span>
-</pre></div>
+<h1>Корњача графика<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="topic">
+<p class="topic-title">На четвртом часу упознаћемо се са следећим елементима:</p>
+<ul class="simple">
+<li><p>корњача графика</p></li>
+<li><p>линијска структура</p></li>
+<li><p>понављање</p></li>
+</ul>
 </div>
-<p>Изабери тачан одговор:</p>
-
-            <li data-component="answer" data-correct id="karel_osnovno_1_opt_a">Налазиће се на истом пољу.</li><li data-component="feedback" id="karel_osnovno_1_opt_a">Тачно</li>
-            
-            <li data-component="answer"  id="karel_osnovno_1_opt_b">Налазиће се на пољу (3,5).</li><li data-component="feedback" id="karel_osnovno_1_opt_b">Нетачно</li>
-            
-            <li data-component="answer"  id="karel_osnovno_1_opt_c">Налазиће се на пољу (5,5).</li><li data-component="feedback" id="karel_osnovno_1_opt_c">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id3">
-<h2>Питање 2<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="karel_osnovno_2">
-            <p>Q-2: Робот у лавиринту на слици се налази на пољу (5,3).</p>
-<img alt="_images/karel1_1.png" class="align-center" src="_images/karel1_1.png" />
-<p>Након извршавања којег од наредних програма ће се робот наћи на пољу (3,3)?</p>
-<dl>
-<dt>Програм 1.</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">levo</span><span class="p">()</span>
-<span class="n">napred</span><span class="p">()</span>
-<span class="n">levo</span><span class="p">()</span>
-<span class="n">napred</span><span class="p">()</span>
-</pre></div>
-</div>
-</dd>
-<dt>Програм 2.</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">karel</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="n">levo</span><span class="p">()</span>
-<span class="n">levo</span><span class="p">()</span>
-<span class="n">napred</span><span class="p">()</span>
-<span class="n">napred</span><span class="p">()</span>
-</pre></div>
-</div>
-</dd>
-</dl>
-<p>Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="karel_osnovno_2_opt_a">Извршавањем програма 1.</li><li data-component="feedback" id="karel_osnovno_2_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="karel_osnovno_2_opt_b">Извршавањем програма 2.</li><li data-component="feedback" id="karel_osnovno_2_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="karel_osnovno_2_opt_c">Извршавањем било ког од дата два програма робот стиже на исто поље (3,3).</li><li data-component="feedback" id="karel_osnovno_2_opt_c">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id4">
-<h2>Питање 3<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-
-        <div class="course-box course-box-question course-content">
-        <div data-component="fillintheblank" id="karel_osnovno_3">
-            <p>Нека је Карел робот у положају као на слици.</p>
-<img alt="_images/karel2.png" class="align-center" src="_images/karel2.png" />
-<p>Поређај команде тако да робот на најкраћи начин стигне до рупе.</p>
-<ol class="arabic">
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">levo</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-<li><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">()</span>
-</pre></div>
-</div>
-</li>
-</ol>
-<p>(Одговор упиши навођењем редних бројева команди у одговарајућем редоследу, нпр. 1221)</p>
-<p>Одговор: <input type="text"></p>
-
-        <script type="application/json">
-            [[{"regex": "^ *^\\s*121112\\s*$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
-        </script>
-
-        </div>
-        </div>
-            </div>
-<div class="section" id="id5">
-<h2>Питање 4<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="karel_nazad">
-            <p>Q-3: Нека је Карел робот у положају као на слици.</p>
-<img alt="_images/karel3.png" class="align-center" src="_images/karel3.png" />
-<dl>
-<dt>У ком положају ће се наћи робот након извршавања следећег дела кода:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">desno</span><span class="p">();</span>  <span class="n">desno</span><span class="p">();</span>
-</pre></div>
-</div>
-</dd>
-</dl>
-<p>Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="karel_nazad_opt_a">Робот ће се померити за два поља на лево и бити на пољу (1,1).</li><li data-component="feedback" id="karel_nazad_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="karel_nazad_opt_b">Робот ће се окренути за 180 степени и налазити се на пољу на ком се налазио и пре извршавања датог кода.</li><li data-component="feedback" id="karel_nazad_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="karel_nazad_opt_c">Робот ће се померити за два поља на десно и бити на пољу (5,1).</li><li data-component="feedback" id="karel_nazad_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="karel_nazad_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="karel_nazad_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
-<div class="section" id="id6">
-<h2>Питање 5<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-
-            <div class="course-box course-box-question course-content">
-            <ul data-component="multiplechoice" data-multipleanswers="false"  id="karel_nazad_2">
-            <p>Q-4: Нека је Карел робот у положају као на слици.</p>
-<img alt="_images/karel3.png" class="align-center" src="_images/karel3.png" />
-<p>На ком пољу ће се робот наћи након извршавања следећег дела кода:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">napred</span><span class="p">();</span> <span class="n">levo</span><span class="p">();</span> <span class="n">levo</span><span class="p">();</span> <span class="n">napred</span><span class="p">();</span>
-</pre></div>
-</div>
-<p>Изабери тачан одговор:</p>
-
-            <li data-component="answer"  id="karel_nazad_2_opt_a">Робот ће се померити за два поља лево и бити на пољу (1,1).</li><li data-component="feedback" id="karel_nazad_2_opt_a">Нетачно</li>
-            
-            <li data-component="answer" data-correct id="karel_nazad_2_opt_b">Робот ће се налазити се на пољу на ком се налазио и пре извршавања датог кода.</li><li data-component="feedback" id="karel_nazad_2_opt_b">Тачно</li>
-            
-            <li data-component="answer"  id="karel_nazad_2_opt_c">Робот ће се померити за два поља десно и бити на пољу (5,1).</li><li data-component="feedback" id="karel_nazad_2_opt_c">Нетачно</li>
-            
-            <li data-component="answer"  id="karel_nazad_2_opt_d">Ниједан од понуђених одговора није тачан.</li><li data-component="feedback" id="karel_nazad_2_opt_d">Нетачно</li>
-            
-
-            </ul>
-            </div>
-            </div>
+<p>Веома леп начин да се прикажу неки основни концепти програмирања је и такозвана корњача-графика у којој се неки замишљени лик креће по екрану остављајући притом траг који чини цртеж. У ранијим језицима
+(пре свега у језику Logo из којег је концепт потекао) лик који је цртао била је једна корњачица, а у Python-у можемо бирати између неколико ликова
+(подразумевано цртање врши један троуглић који се помера, али без обзира на то што је троугаоног облика, ми ћемо га називати корњачом). За разлику од
+робота Карел, који ради само на порталу „Петља” и којег смо испрограмирали специјално за вас, корњача графика је саставни део језика Python и програме са
+корњачом можете писати и на свом рачунару, ван прегледача веба и портала „Петља” (на пример у развојном окружењу IDLE). Потребно је само да на свом рачунару
+имате инсталирану подршку за програмски језик Python 3, коју можете преузети са сајта Python.org (о чему смо већ говорили у уводу).</p>
+<p>Све у вези са корњача графиком можеш прочитати у <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-toctree#id1">Приручнику</a> за 6. разред.
+Детаљније о самој корњача графици погледај <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id2">овде</a>. Са линијском структуром
+писања програма у корњача графици упознај се <a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id12">овде</a>.
+<a class="reference external" href="https://petlja.org/biblioteka/r/lekcije/prirucnik-python/kornjaca-cas4#id21">Овде</a> се можеш упознати са понављањем у корњача графици.</p>
 </div>
 
 
   
       <div class="col-md-12">
 <ul class="pager">
-        <li id="relations-prev" title='Previous chapter - Робот Карел: линијска структура' data-toggle="tooltip"><a href="1b_karel_linijski.html">Previous chapter</a></li>
+        <li id="relations-prev" title='Previous chapter - Тест' data-toggle="tooltip"><a href="3b_karel_test.html">Previous chapter</a></li>
     
-        <li id="relations-next" title='Next chapter - Бројачка петља <code class="docutils literal notranslate"><span class="pre">for</span></code>' data-toggle="tooltip"><a href="1c_karel_for.html">Next chapter</a></li>
+        <li id="relations-next" title='Next chapter - Корњача графика - увод' data-toggle="tooltip"><a href="4b_kornjaca_uvod_video.html">Next chapter</a></li>
 </ul>
 
 <!-- <ul class="pager"> -->
     <!-- -->
-        <!-- <li id="relations-prev" title='Претходно поглавље - Робот Карел: линијска структура' data-toggle="tooltip"><a href="1b_karel_linijski.html">Претходно поглавље</a></li> -->
+        <!-- <li id="relations-prev" title='Претходно поглавље - Тест' data-toggle="tooltip"><a href="3b_karel_test.html">Претходно поглавље</a></li> -->
     <!--  -->
     <!-- -->
-        <!-- <li id="relations-next" title='Следеће поглавље - Бројачка петља <code class="docutils literal notranslate"><span class="pre">for</span></code>' data-toggle="tooltip"><a href="1c_karel_for.html">Следеће поглавље</a></li> -->
+        <!-- <li id="relations-next" title='Следеће поглавље - Корњача графика - увод' data-toggle="tooltip"><a href="4b_kornjaca_uvod_video.html">Следеће поглавље</a></li> -->
     <!-- -->
 <!-- </ul> -->
 
