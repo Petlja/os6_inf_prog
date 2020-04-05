@@ -131,7 +131,7 @@ lekcije:
     opis: #
     alias: 3b_karel_test
 	
-	- tip: section 
+  - tip: section 
     ime: Час 4
     order: 4
     content:
@@ -169,6 +169,6 @@ lekcije:
   - tip: quiz
     ime: Teст
     order: 
-    content: 4е_kornjaca_test.html
+    content: 4e_kornjaca_test.html
     opis: #
     alias: 4е_kornjaca_test

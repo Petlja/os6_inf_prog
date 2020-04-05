@@ -197,21 +197,3 @@ Tест
 
           if (broj_loptica_kod_sebe()):
             ostavi()   
-      
-    opcije:
-      - oznaka: "а"
-        tekst: |
-          1 
-      - oznaka: "б"
-        tekst: |
-          2 
-      - oznaka: "в"
-        tekst: |
-          3        
-      - oznaka: "г"
-        tekst: |
-          4
-      - oznaka: "д"
-        tekst: |
-          5
-    odgovor: "в"
