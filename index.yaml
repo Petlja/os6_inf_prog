@@ -131,7 +131,6 @@ lekcije:
     opis: 
     alias: 3b_karel_test
 
-	
   - tip: section 
     ime: Час 4
     order: 4
@@ -147,7 +146,7 @@ lekcije:
     alias: 4a_kornjaca_lekcija
 
   - tip: video
-    ime: Корњача графика - увод
+    ime: Корњача графика - уводни видео
     order:
     content: https://www.youtube.com/embed/q0btftOGHyE
     opis: 
