@@ -22,5 +22,5 @@
         4b_kornjaca_uvod_video.rst
         4c_kornjaca_linijski_programi_video.rst
         4d_kornjaca_ponavljanje_video.rst
-        4е_kornjaca_test.rst
+        4e_kornjaca_test.rst
 
