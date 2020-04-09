@@ -23,4 +23,13 @@
         4c_kornjaca_linijski_programi_video.rst
         4d_kornjaca_ponavljanje_video.rst
         4e_kornjaca_test.rst
+        5a_uvod.rst
+        5b_grananje.rst
+        5c_ugneydjene_petlje.rst
+        5d_procedure.rst
+        5e_torke.rst
+        5f_kornjaca_test.rst
+        6_kornjaca_test.rst
+
+	
 

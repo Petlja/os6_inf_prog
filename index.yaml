@@ -173,3 +173,69 @@ lekcije:
     content: 4е_kornjaca_test.html
     opis: 
     alias: 4е_kornjaca_test
+
+  - tip: section 
+    ime: Час 5
+    order: 5
+    content:
+    opis:  
+    alias: cas5
+    
+  - tip: html
+    ime: Корњача графика - гранање, угнежђене петље, процедуре, торке / листе
+    order:
+    content: 5a_uvod.html
+    opis: 
+    alias: 5a_uvod
+
+  - tip: video
+    ime: Корњача графика - гранање
+    order:
+    content: https://youtu.be/XJIcrFdJ_Co
+    opis: 
+    alias: 5b_grananje
+
+  - tip: video
+    ime: Корњача графика - угнежђене петље
+    order:
+    content: https://youtu.be/dfeX9T_M9xo
+    opis: 
+    alias: 5c_ugneydjene_petlje
+
+  - tip: video
+    ime: Корњача графика - процедуре
+    order:
+    content: https://youtu.be/A9mKe0iZyks
+    opis: 
+    alias: 5d_procedure
+
+  - tip: html
+    ime: Корњача графика - торке / листе
+    order:
+    content: 5e_torke.html
+    opis: 
+    alias: 5e_torke
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 6_kornjaca_test.html
+    opis: 
+    alias: 6_kornjaca_test
+
+  - tip: section 
+    ime: Час 6
+    order: 6
+    content:
+    opis:  
+    alias: cas6
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 6_kornjaca_test.html
+    opis: 
+    alias: 6_kornjaca_test
+
+
+
