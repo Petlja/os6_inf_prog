@@ -169,9 +169,9 @@ lekcije:
   - tip: quiz
     ime: Teст
     order: 
-    content: 4е_kornjaca_test.html
+    content: 4e_kornjaca_test.html
     opis: 
-    alias: 4е_kornjaca_test
+    alias: 4e_kornjaca_test
 
   - tip: section 
     ime: Час 5
@@ -215,7 +215,7 @@ lekcije:
     opis: 
     alias: 5e_torke
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 5f_kornjaca_test.html
@@ -229,7 +229,7 @@ lekcije:
     opis:  
     alias: cas6
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 6_kornjaca_test.html
@@ -264,7 +264,7 @@ lekcije:
     opis: 
     alias: 7b2_ucitavanje_promenljive
 
-	
+
   - tip: video
     ime: Вежба
     order:
@@ -287,7 +287,7 @@ lekcije:
     alias: 7e_izmena_vrednosti_promenljive
 
 
-- tip: quiz
+  - tip: quiz
     ime: Teст
     order: 
     content: 7f_python_test.html
