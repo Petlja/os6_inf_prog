@@ -218,9 +218,9 @@ lekcije:
 - tip: quiz
     ime: Teст
     order: 
-    content: 6_kornjaca_test.html
+    content: 5f_kornjaca_test.html
     opis: 
-    alias: 6_kornjaca_test
+    alias: 5f_kornjaca_test
 
   - tip: section 
     ime: Час 6
@@ -236,5 +236,61 @@ lekcije:
     opis: 
     alias: 6_kornjaca_test
 
+  - tip: section 
+    ime: Час 7
+    order: 7
+    content:
+    opis:  
+    alias: cas7
+    
+  - tip: html
+    ime: Основне аритметичке операције и примена
+    order:
+    content: 7a_osnovne_aritmeticke_operacije.html
+    opis: 
+    alias: 7a_osnovne_aritmeticke_operacije
 
+  - tip: video
+    ime: Python као калкулатор и променљиве
+    order:
+    content: https://youtu.be/tNf5ImS5mw4
+    opis: 
+    alias: 7b1_python_kao_kalkulator
+
+  - tip: video
+    ime: Учитавање променљиве
+    order:
+    content: https://youtu.be/iOI_S1QFgI4
+    opis: 
+    alias: 7b2_ucitavanje_promenljive
+
+	
+  - tip: video
+    ime: Вежба
+    order:
+    content: https://youtu.be/vHAo8ywwutY
+    opis: 
+    alias: 7c_vezba
+
+  - tip: video
+    ime: Извршавање програма корак по корак
+    order:
+    content: https://youtu.be/wth_pDjOeUQ
+    opis: 
+    alias: 7d_korak_po_korak
+
+  - tip: video
+    ime: Измена вредности променљиве
+    order:
+    content: https://youtu.be/VBTZgr8aaVg
+    opis: 
+    alias: 7e_izmena_vrednosti_promenljive
+
+
+- tip: quiz
+    ime: Teст
+    order: 
+    content: 7f_python_test.html
+    opis: 
+    alias: 7f_python_test
 

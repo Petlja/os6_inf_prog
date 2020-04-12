@@ -30,6 +30,13 @@
         5e_torke.rst
         5f_kornjaca_test.rst
         6_kornjaca_test.rst
+        7a_osnovne_aritmeticke_operacije.rst
+        7b1_python_kao_kalkulator.rst
+        7b2_ucitavanje_promenljive.rst
+        7c_vezba.rst
+        7d_korak_po_korak.rst
+        7e_izmena_vrednosti_promenljive.rst
+        7f_python_test.rst
 
 	
 
