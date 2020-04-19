@@ -204,7 +204,7 @@ lekcije:
   - tip: video
     ime: Корњача графика - процедуре
     order:
-    content:https://www.youtube.com/embed/A9mKe0iZyks
+    content: https://www.youtube.com/embed/A9mKe0iZyks
     opis: 
     alias: 5d_procedure
 
