@@ -353,9 +353,9 @@ lekcije:
   - tip: html
     ime: Дефинисање функција
     order:
-    content: 8c_python_definisanje_funkcija.html
+    content: 9c_python_definisanje_funkcija.html
     opis: 
-    alias: 8c_python_definisanje_funkcija
+    alias: 9c_python_definisanje_funkcija
 
   - tip: quiz
     ime: Teст
@@ -451,9 +451,9 @@ lekcije:
   - tip: quiz    
     ime: Teст
     order: 
-    content: 10d_ponavljanje_test.html
+    content: 11d_ponavljanje_test.html
     opis: 
-    alias: 10d_ponavljanje_test
+    alias: 11d_ponavljanje_test
 	
   - tip: section
     ime: Час 12
@@ -468,3 +468,16 @@ lekcije:
     opis: 
     alias: 12a_uvod
 
+  - tip: quiz    
+    ime: Teст
+    order: 
+    content: 12b_grananje_test.html
+    opis: 
+    alias: 12b_grananje_test
+
+  - tip: quiz    
+    ime: Teст
+    order: 
+    content: 12c_ponavljanje_test.html
+    opis: 
+    alias: 12c_ponavljanje_test
