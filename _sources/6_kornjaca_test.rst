@@ -237,7 +237,7 @@
     :feedback_a: Нетачно    
     :answer_b:  Степенице
     :feedback_b: Нетачно    
-    :answer_c:  Врх тврђаве
+    :answer_c:  Квадратни сигнал
     :feedback_c: Тачно    
     :correct: c
     
