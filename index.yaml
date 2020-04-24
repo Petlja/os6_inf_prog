@@ -482,3 +482,80 @@ lekcije:
     content: 12c_ponavljanje_test.html
     opis: 
     alias: 12c_ponavljanje_test
+
+ime: Час 13
+    order: 1quiz  content:
+    opiТест
+    alias: cas13
+    
+  - tip: html
+    ime: Торке, листе, ниске, скупови, речници
+    order:
+    content: 13a_tlnsr.html
+    opis: 
+    alias: 13a_tlnsr
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 13b_tlnsr_test.html
+    opis: 
+    alias: 13b_tlnsr_test
+
+ime: Час 14
+    order: 1quiz  content:
+    opiТест
+    alias: cas14
+    
+  - tip: html
+    ime: Обрада структура података коришћењем петљи¶
+    order:
+    content: 14a_strukture_petlje.html
+    opis: 
+    alias: 14a_strukture_petlje
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 14b_strukture_petlje_test.html
+    opis: 
+    alias: 14b_strukture_petlje_test
+
+ime: Час 15
+    order: 1quiz  content:
+    opiТест
+    alias: cas15
+    
+  - tip: html
+    ime: Основни алгоритми - сабирање, бројање, множење, минимум, максимум
+    order:
+    content: 15a_algoritmi.html
+    opis: 
+    alias: 15a_algoritmi
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 15b_algoritmi_test.html
+    opis: 
+    alias: 15b_algoritmi_test_test
+
+ime: Час 16
+    order: 1quiz  content:
+    opiТест
+    alias: cas16
+    
+  - tip: html
+    ime: Основни алгоритми - пресликавање, филтрирање, претрага
+    order:
+    content: 16a_algoritmi.html
+    opis: 
+    alias: 16a_algoritmi
+
+  - tip: quiz
+    ime: Тест
+    order:
+    content: 16b_algoritmi_test.html
+    opis: 
+    alias: 16b_algoritmi_test_test
+
