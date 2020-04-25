@@ -483,9 +483,11 @@ lekcije:
     opis: 
     alias: 12c_ponavljanje_test
 
-ime: Час 13
-    order: 1quiz  content:
-    opiТест
+  - tip: section
+    ime: Час 13
+    order: 13
+    content:
+    opis:
     alias: cas13
     
   - tip: html
@@ -502,9 +504,11 @@ ime: Час 13
     opis: 
     alias: 13b_tlnsr_test
 
-ime: Час 14
-    order: 1quiz  content:
-    opiТест
+  - tip: section
+    ime: Час 14
+    order: 14
+    content:
+    opis:
     alias: cas14
     
   - tip: html
@@ -521,9 +525,11 @@ ime: Час 14
     opis: 
     alias: 14b_strukture_petlje_test
 
-ime: Час 15
-    order: 1quiz  content:
-    opiТест
+  - tip: section
+    ime: Час 15
+    order: 15
+    content:
+    opis: 
     alias: cas15
     
   - tip: html
@@ -540,9 +546,11 @@ ime: Час 15
     opis: 
     alias: 15b_algoritmi_test_test
 
-ime: Час 16
-    order: 1quiz  content:
-    opiТест
+  - tip: section
+    ime: Час 16
+    order: 16
+    content:
+    opis:
     alias: cas16
     
   - tip: html
