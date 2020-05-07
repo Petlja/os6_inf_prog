@@ -49,8 +49,9 @@
      else:
      	print('ne mozes da predjes ulicu')
 
+
 Питање 3.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. fillintheblank:: grananje_poredjenje
 
@@ -73,7 +74,7 @@
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_4
+.. mchoice:: grananje_5
     :answer_a: sarenko
     :feedback_a: Тачно
     :answer_b: rumenko
@@ -99,7 +100,7 @@
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_5
+.. mchoice:: grananje_6
     :answer_a: a % 5 == 0
     :feedback_a: Тачно
     :answer_b: a / 5 == 0
@@ -123,7 +124,25 @@
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_6
+.. mchoice:: grananje_7
+    :answer_a: Istinito = true
+    :feedback_a: Нетачно    
+    :answer_b: Istinito = False
+    :feedback_b: Нетачно    
+    :answer_c: Istinito = True
+    :feedback_c: Тачно
+    :answer_d: Istinito = false
+    :feedback_d: Нетачно    
+    :answer_e: Istinito = T 
+    :feedback_e: Нетачно    
+    :correct: c
+
+    Која од наведених линија имену Istinito додељује истинитосну вредност ТАЧНО? Изабери тачан одговор:
+
+Питање 7.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: grananje_8
     :answer_a: True
     :feedback_a: Тачно
     :answer_b: -3 > -24
@@ -141,10 +160,10 @@
      a = -3 > -24
      print(a)
 
-Питање 7.
+Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_7
+.. mchoice:: grananje_9
     :answer_a: True
     :feedback_a: Нетачно    
     :answer_b: 0 > -20
@@ -162,10 +181,10 @@
      a = not(0 > -20)
      print(a)
 
-Питање 8.
+Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_8
+.. mchoice:: grananje_10
     :answer_a: а not> 5
     :feedback_a: Нетачно    
     :answer_b: not (a > 5)
@@ -178,10 +197,10 @@
 
     Који од наредних логичких израза одговара исказу  `a није веће од 5`, где а има бројевну вредност? Изабери тачан одговор:
 
-Питање 9.
+Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_9
+.. mchoice:: grananje_11
     :answer_a: True
     :feedback_a: Нетачно    
     :answer_b: False
@@ -194,21 +213,3 @@
   
      a = 17
      print( (a < 6) and (a > -10) )
-
-Питање 10.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. mchoice:: grananje_10
-    :answer_a: True
-    :feedback_a: Тачно
-    :answer_b: False
-    :feedback_b: Нетачно    
-    :correct: a
-
-    Шта ће Пајтон окружење исписати након извршавања следећег кода? Изабери тачан одговор:
-
-    .. code-block:: python
-  
-     a = 8
-     print( (a < 6) or (a > -10) )
-

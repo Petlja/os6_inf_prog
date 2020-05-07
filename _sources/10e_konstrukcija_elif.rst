@@ -16,7 +16,7 @@
    и да је у гасовитом стању ако јој је температура строго већа од 100
    степени).
 
-.. image:: ../_images/stanje-vode.png
+.. image:: ../_images/voda.png
    :height: 300px   
    :align: center
    
