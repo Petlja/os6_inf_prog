@@ -67,7 +67,7 @@
     .. code-block:: python
 
      for i in range(3):
-     visina = int(input("Unesi broj:"))
+     	visina = int(input("Unesi broj:"))
      if visina > 12:  
         print (visina)
 
