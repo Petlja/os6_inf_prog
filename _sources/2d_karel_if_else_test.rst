@@ -7,7 +7,6 @@ Tест
 
 
 .. mchoice:: grananje2
-    :multiple_answers:
     :answer_a: Да 
     :feedback_a: Тачно
     :answer_b: Не
@@ -31,19 +30,18 @@ Tест
 ~~~~~~~~~
 
 .. mchoice:: grananje1
-    :multiple_answers:
     :answer_a: 1 
     :feedback_a: Тачно
     :answer_b: 2 
     :feedback_b: Нетачно    
     :answer_c: 3        
-    :feedback_c: Тачно
+    :feedback_c: Нетачно    
     :answer_d: 4
     :feedback_d: Нетачно    
     :correct: ['a']
     
     
-    Извршавањем којих од наредних програма ће робот ако може да пређе на наредно поље покупити лоптицу са тог поља (подразумева се да је на сваком пољу лоптица)?
+    Извршавањем ког програма ће робот ако може да пређе на наредно поље покупити лоптицу са тог поља (подразумева се да је на сваком пољу лоптица)?
 
     (1)
       .. code-block:: python
@@ -85,7 +83,6 @@ Tест
 
 
 .. mchoice:: grananje3
-    :multiple_answers:
     :answer_a: Ако постоје лоптице на пољу, робот ће узети све, у супротном ће оставити једну.    
     :feedback_a: Нетачно
     :answer_b: Ако постоје лоптице на пољу, робот ће узети једну, у супротном ће оставити једну.    
@@ -113,7 +110,6 @@ Tест
 ~~~~~~~~~
 
 .. mchoice:: grananje4
-    :multiple_answers:
     :answer_a: 1    
     :feedback_a: Нетачно
     :answer_b: 2    
@@ -166,6 +162,17 @@ Tест
 Питање 5.
 ~~~~~~~~~
 
+.. mchoice:: grananje5
+    :answer_a: 1    
+    :feedback_a: Нетачно
+    :answer_b: 2    
+    :feedback_b: Нетачно
+    :answer_c: 3   
+    :feedback_c: Тачно
+    :answer_d: 4  
+    :feedback_d: Нетачно
+    :correct: ['c']
+	
       Извршавањем којег од наредних делова кода ће робот прво извршити проверу да ли има бар једну лоптицу код себе, а затим оставити једну лоптицу на пољу на ком се налази?
       
       (1)
@@ -192,8 +199,3 @@ Tест
           while (ima_loptica_kod_sebe()):
             ostavi()  
       
-      (5)
-        .. code-block:: python
-
-          if (broj_loptica_kod_sebe()):
-            ostavi()   
