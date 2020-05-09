@@ -4,7 +4,7 @@
 Питање 1.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_1
+.. mchoice:: karel_while_3
     :answer_a: Да
     :feedback_a: Тачно    
     :answer_b: Не
@@ -23,7 +23,7 @@
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_2
+.. mchoice:: karel_while_4
     :answer_a: Да
     :feedback_a: Нетачно    
     :answer_b: Не
@@ -42,7 +42,7 @@
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_3
+.. mchoice:: karel_pitanje_8
     :answer_a: Бројачка петља
     :feedback_a: Тачно    
     :answer_b: Петља са провером услова на почетку
@@ -56,7 +56,7 @@
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_4
+.. mchoice:: karel_while_1
     :answer_a: Тачно
     :feedback_a: Нетачно    
     :answer_b: Нетачно
@@ -75,7 +75,7 @@
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_5
+.. mchoice:: karel_for_1
     :answer_a: napred(); napred(); desno(); napred(); desno();
     :feedback_a: Нетачно    
     :answer_b: napred(); napred(); napred(); desno();
@@ -98,7 +98,7 @@
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_6
+.. mchoice:: karel_for_3
     :answer_a: napred(); napred(); desno(); napred(); desno();
     :feedback_a: Нетачно    
     :answer_b: napred(); napred(); napred(); desno();
@@ -121,7 +121,7 @@
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_7
+.. mchoice:: karel_zacaran_1
     :answer_a: 1
     :feedback_a: Нетачно    
     :answer_b: 2
@@ -176,7 +176,7 @@
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: karel_pitanje_8
+.. mchoice:: karel_lavirint_8
     :answer_a: 1
     :feedback_a: Нетачно    
     :answer_b: 2

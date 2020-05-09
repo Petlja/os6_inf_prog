@@ -74,7 +74,7 @@
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_5
+.. mchoice:: grananje_4
     :answer_a: sarenko
     :feedback_a: Тачно
     :answer_b: rumenko
@@ -100,7 +100,7 @@
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_6
+.. mchoice:: grananje_5
     :answer_a: a % 5 == 0
     :feedback_a: Тачно
     :answer_b: a / 5 == 0
@@ -124,7 +124,7 @@
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_7
+.. mchoice:: grananje_6
     :answer_a: Istinito = true
     :feedback_a: Нетачно    
     :answer_b: Istinito = False
@@ -142,7 +142,7 @@
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_8
+.. mchoice:: grananje_8a
     :answer_a: True
     :feedback_a: Тачно
     :answer_b: -3 > -24
@@ -163,7 +163,7 @@
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_9
+.. mchoice:: grananje_7
     :answer_a: True
     :feedback_a: Нетачно    
     :answer_b: 0 > -20
@@ -184,7 +184,7 @@
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_10
+.. mchoice:: grananje_8
     :answer_a: а not> 5
     :feedback_a: Нетачно    
     :answer_b: not (a > 5)
@@ -200,7 +200,7 @@
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: grananje_11
+.. mchoice:: grananje_9
     :answer_a: True
     :feedback_a: Нетачно    
     :answer_b: False
