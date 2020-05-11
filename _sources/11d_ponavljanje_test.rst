@@ -107,8 +107,8 @@
 
     .. code-block:: python
 
-     for broj in range(1,5):
-         print(broj) 
+        for broj in range(1,5):
+            print(broj) 
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
