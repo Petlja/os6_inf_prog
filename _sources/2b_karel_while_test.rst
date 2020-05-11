@@ -9,7 +9,7 @@
     :feedback_a: Тачно
     :answer_b: Да.
     :feedback_b: Нетачно
-    :correct: ['a']
+    :correct: a
     
     Дата је наредба `while` :
 
@@ -32,7 +32,7 @@
     :feedback_c: Нетачно
     :answer_d: Робот ће оставити једну лоптицу на пољу испред себе.
     :feedback_d: Нетачно
-    :correct: ['a']
+    :correct: a
     
     Дата је наредба `while` :
 
@@ -57,7 +57,7 @@
     :feedback_c: Тачно
     :answer_d: 4
     :feedback_d: Нетачно    
-    :correct: ['a', 'c']
+    :correct: a,c
     
 
     Нека је Карел робот у положају као на слици.
@@ -160,7 +160,7 @@
   :feedback_d: Тачно
   :answer_e: Програм (5)
   :feedback_e: Тачно
-  :correct: ['d', 'e']
+  :correct: d,e
   
 
   Нека се Карел робот налази у лавиринту као на слици

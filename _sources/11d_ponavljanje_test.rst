@@ -20,7 +20,7 @@
     .. code-block:: python
 
      for __________________:
-     	print("Dobar dan")
+         print("Dobar dan")
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,7 +39,7 @@
     .. code-block:: python
 
      for __________________:
-     	print("Dobar dan")
+         print("Dobar dan")
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -60,9 +60,9 @@
     .. code-block:: python
 
        for i in range(28):
-       	o = int(input("unesi broj opravdanih")
-      	n = int(input("unesi broj neopravdanih")
-      	u = o + n
+          o = int(input("unesi broj opravdanih")
+          n = int(input("unesi broj neopravdanih")
+          u = o + n
        print(u)
 
 Питање 4.
@@ -84,9 +84,9 @@
     .. code-block:: python
  
      for i in range(36):
-    	o = int(input("unesi broj opravdanih")
-    	n = int(input("unesi broj neopravdanih")
-    	u = o + n
+        o = int(input("unesi broj opravdanih")
+        n = int(input("unesi broj neopravdanih")
+        u = o + n
         print(u)
 
 Питање 5.
@@ -108,7 +108,7 @@
     .. code-block:: python
 
      for broj in range(1,5):
-     	print(broj) 
+         print(broj) 
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,8 +128,8 @@
 
     .. code-block:: python
 
-     for broj in range(5):
-     print(broj) 
+        for broj in range(5):
+            print(broj) 
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,7 +143,7 @@
     a = int(input("Unesi a"))
     b = int(input("Unesi b"))
     for i in range(a,b+1,8):
-    	print(i)
+        print(i)
 
    Одговор: |blank|
 
@@ -170,7 +170,7 @@
     .. code-block:: python
 
      for i in range(___________):
-     	print(i)
+         print(i)
 
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -188,14 +188,14 @@
 
     Нека је дат следећи задатак:
 
-    `Раша игра жмурке са друговима. Пошто је најмлађи често жмури, али не уме баш да броји. Правило је да се броји до` 200 `(укључујући и` 200 `), сваки пети број, почевши од` 5 `. Испиши Раши редом које треба да изговори.` 
+    `Раша игра жмурке са друговима. Пошто је најмлађи често жмури, али не уме баш да броји. Правило је да се броји до` 200 `(укључујући и` 200 `), сваки пети број, почевши од` 5 `. Испиши Раши редом бројеве које треба да изговори.` 
 
     Шта од понуђеног можеш да упишеш на обележено место у наредном коду да би програм представљао исправно решење задатка? Изабери тачан одговор:
 
     .. code-block:: python
 
      for i in range(___________):
-     	print(i)
+         print(i)
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -217,7 +217,7 @@
 
      lista = ["Душан", "Драган", "Петар"]
      for ime in lista:
-     	print(ime) 
+         print(ime) 
 
 Питање 11. 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -230,7 +230,7 @@
 
     s = 0        
     for i in range(6):         
-    	s = s + i
+        s = s + i
     print(s)
 
    Одговор: |blank|
@@ -249,12 +249,12 @@
 
     p = 0
     for i in range(4):          
-    	p = p * i
+        p = p * i
     print(p)
 
    Одговор: |blank|
 
    - :^\s*0\s*$: Тачно
      :x: Одговор није тачан.
-      
+
 

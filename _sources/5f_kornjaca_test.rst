@@ -15,16 +15,16 @@
     :feedback_d: Нетачно    
     :correct: b
 
-    Шта је резултат извршавања следеће наребе:
+    Шта је резултат извршавања следећих наредби:
 
     .. code-block:: python
 
-	for i in range(10):
-		turtle.forward(10)
-		if i % 2 == 0:
-			turtle.penup()
-		else:
-			turtle.pendown()
+        for i in range(10):
+            turtle.forward(10)
+            if i % 2 == 0:
+                turtle.penup()
+            else:
+                turtle.pendown()
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,15 +41,15 @@
     :correct: c
     
     Шта би требало написати на месту ??? како би се исцртала звезда као на слици? Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	 for i in range(10):
-	   turtle.forward(40)
-	   if ????:
-	      turtle.left(72) 
-	   else:
-	      turtle.right(144)
+
+    .. code::
+
+     for i in range(10):
+         turtle.forward(40)
+         if ????:
+             turtle.left(72) 
+         else:
+             turtle.right(144)
     
     .. image:: ../_images/zvezda.png      
        :align: center
@@ -70,7 +70,7 @@
     :correct: c
     
     Шта је угнежђена петља? Изабери тачан одговор:
-	
+
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -83,14 +83,14 @@
     :feedback_c: Нетачно    
     :correct: a
     
-	Шта недостаје у следећем коду да би била исцртана фигурa као на слици? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  for j in range(4):
-		for i in range(4):
-			turtle.forward(90)
-			turtle.left(90)
+    Шта недостаје у следећем коду да би била исцртана фигурa као на слици? Изабери тачан одговор:
+
+    .. code-block:: python
+
+      for j in range(4):
+        for i in range(4):
+            turtle.forward(90)
+            turtle.left(90)
 
     .. image:: ../_images/4_kvadrata.png      
        :align: center
@@ -99,41 +99,43 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: kornjaca_51
-    :answer_a: Процедура за цртање правоугаоника.
+    :answer_a: Правоугаоник.
     :feedback_a: Нетачно    
-    :answer_b:  Процедура за цртање елипсе
+    :answer_b:  Елипса.
     :feedback_b: нетачно    
-    :answer_c:  Процедура за цртање квадрата.
+    :answer_c:  Квадрат.
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је дефинисано исцртавањем следећих наредби? Изабаери тачан одговор:	
-		
-	.. def poligon(n, a):
-		for i in range(n):
-			turtle.forward(a)
-			turtle.right(360 / n)
+    Шта се може нацртати позивом следеће функције? Изабери тачан одговор:
+
+    .. code-block:: python
+    
+        def poligon(n, a):
+            for i in range(n):
+                turtle.forward(a)
+                turtle.right(360 / n)
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: kornjaca_61
-    :answer_a: Квадрат са ивицама које су црвено, зелене, плаве и жуте боје. 
+    :answer_a: Квадрат са ивицама које су црвене, зелене, плаве и жуте боје. 
     :feedback_a: Тачно    
-    :answer_b:  Правоугаоник са ивицама које су црвено, зелене, плаве и жуте боје.
+    :answer_b:  Правоугаоник са ивицама које су црвене, зелене, плаве и жуте боје.
     :feedback_b: Нетачно    
-    :answer_c:  Квадрат са ивицама које су црвено, жуте, плаве и зелене боје.
+    :answer_c:  Квадрат са ивицама које су црвене, жуте, плаве и зелене боје.
     :feedback_c: Нетачно    
-    :correct: а
+    :correct: a
     
-	Шта је резултат извршавањ следећег програма? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 boje = ("red", "green", "blue", "yellow")
-	 for i in range(4):
-		turtle.color(boje[i])
-		turtle.forward(100)
-		turtle.left(90)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     boje = ("red", "green", "blue", "yellow")
+     for i in range(4):
+        turtle.color(boje[i])
+        turtle.forward(100)
+        turtle.left(90)
 
 

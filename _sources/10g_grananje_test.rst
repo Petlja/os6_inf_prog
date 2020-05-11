@@ -21,9 +21,9 @@
 
      semafor = 'zeleno'
      if (semafor == 'zeleno'):
-     	print('predji ulicu')
+         print('predji ulicu')
      else:
-     	print('ne mozes da predjes ulicu')
+         print('ne mozes da predjes ulicu')
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,9 +45,9 @@
 
      semafor = 'plavo'
      if (semafor == 'zeleno'):
-     	print('predji ulicu')
+         print('predji ulicu')
      else:
-     	print('ne mozes da predjes ulicu')
+         print('ne mozes da predjes ulicu')
 
 
 Питање 3.
@@ -62,9 +62,9 @@
     a = -1
     b = -1
     if (a > b):
-    	print(a)
+        print(a)
     else:
-    	print(b)
+        print(b)
 
    Одговор: |blank|
 
@@ -86,16 +86,16 @@
     :correct: a
 
     Нека је задатак да се напише програм којим се учитавају цене сладоледа Руменко и Шаренко, а затим испише назив скупљег и нека је код који следи његово 
-	решење. Шта ће бити резултат извршавања тог кода уколико се при покретању дају исте цене за сладоледе? Изабери тачан одговор:
+    решење. Шта ће бити резултат извршавања тог кода уколико се при покретању дају исте цене за сладоледе? Изабери тачан одговор:
 
     .. code-block:: python
 
      rumenko=int(input('Unesi cenu za rumenka'))
      sarenko=int(input('Unesi cenu za sarenka'))
      if (rumenko>sarenko):
-     	print("rumenko")
+         print("rumenko")
      else:
-     	print("sarenko")
+         print("sarenko")
 
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,9 +117,9 @@
 
      a = int(input('Unesi jedan broj'))
      if (   ):
-     	print('Broj je deljiv sa 5')
+         print('Broj je deljiv sa 5')
      else:
-     	print('Broj nije deljiv sa 5')
+         print('Broj nije deljiv sa 5')
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

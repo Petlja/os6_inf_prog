@@ -12,13 +12,13 @@
     :correct: a
     
     Да ли је следећа наредба `if` исправно записана. Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	  if moze_napred():
-		napred()
-	  else:
-		ostavi()
+    
+    .. code-block:: python
+    
+      if moze_napred():
+        napred()
+      else:
+        ostavi()
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,13 +31,13 @@
     :correct: b
     
     Да ли је следећа наредба `while` исправно записана. Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	  while moze_napred()
-		napred()
-		uzmi()
-		levo()
+    
+    .. code-block:: python
+    
+      while moze_napred()
+        napred()
+        uzmi()
+        levo()
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,15 +63,15 @@
     :feedback_b: Тачно    
     :correct: b
     
-	Да ли је следећи низ наредби исправно написан? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	  while moze_napred():
-	  napred()
-	  if ima_loptica_na_polju():
-	  	uzmi()
-	
+    Да ли је следећи низ наредби исправно написан? Изабаери тачан одговор:    
+        
+    .. code-block:: python
+    
+      while moze_napred():
+      napred()
+      if ima_loptica_na_polju():
+          uzmi()
+    
 Питање 5.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -86,14 +86,14 @@
     :feedback_d: Нетачно    
     :correct: c
     
-    Погледај део кода који је дат, а затим одговори шта је резултат извршавања овог кода.
+    Који низ наредби има исто дејство као дати део кода?
 
-	.. code-block:: python
+    .. code-block:: python
      
-	 for i in range(2):
-	 	napred()
-		desno()
-	 napred()
+     for i in range(2):
+         napred()
+        desno()
+     napred()
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,14 +109,14 @@
     :feedback_d: Тачно
     :correct: d
 
-	Нека je дат следећи део кода. Погледај код, па одговори шта је резултат извршавања овог кода.
+    Који низ наредби има исто дејство као дати део кода?
 
-	.. code-block:: python
+    .. code-block:: python
 
-  	 napred() 
-  	 for i in range(2):
-	 	desno()
-  	 napred()
+       napred() 
+       for i in range(2):
+         desno()
+       napred()
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,46 +132,46 @@
     :feedback_d: Тачно
     :correct: d
 
-	Испред робота је зачарани лавиринт такав да се дужина лавиринта мења, али се испред Карела на сваком пољу увек налази по 4 лоптице. Којим од наредних програма робот сакупља све лоптице испред себе?
-	
-	.. image:: ../_images/karel3_2.png 
-   	   :align: center
+    Испред робота је зачарани лавиринт такав да се дужина лавиринта мења, али се испред Карела на сваком пољу увек налази по 4 лоптице. Којим од наредних програма робот сакупља све лоптице испред себе?
+    
+    .. image:: ../_images/karel3_2.png 
+          :align: center
 
-	(1)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred():
-		for i in range(4):
-			uzmi()
+    (1)
+    
+    .. code-block:: python
+     
+        while moze_napred():
+            napred():
+            for i in range(4):
+                uzmi()
 
-	(2)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-		for i in range(4)
-			uzmi()
+    (2)
+    
+    .. code-block:: python
+     
+        while moze_napred():
+            napred()
+            for i in range(4)
+                uzmi()
 
-	(3)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-	 for i in range(4)
-	 	uzmi()
+    (3)
+    
+    .. code-block:: python
+     
+        while moze_napred():
+            napred()
+        for i in range(4)
+            uzmi()
 
-	(4)
-	
-	.. code-block:: python
-	 
-	 while moze_napred():
-	 	napred()
-		for i in range(4):
-			uzmi()
+    (4)
+    
+    .. code-block:: python
+     
+        while moze_napred():
+            napred()
+            for i in range(4):
+                uzmi()
 
 Питање 8.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,48 +187,48 @@
     :feedback_d: Нетачно
     :correct: b
 
-	Испред робота је лавиринт као на слици, који од наредних програма ће помоћи роботу да покупи све лоптице испред себе?
-	
-	.. image:: ../_images/karel3_3.png 
-   	   :align: center
+    Испред робота је лавиринт као на слици, који од наредних програма ће помоћи роботу да покупи све лоптице испред себе?
+    
+    .. image:: ../_images/karel3_3.png 
+          :align: center
 
-	(1)
-	
-	.. code-block:: python
-	 
-	 for i in range(5):
-	 	napred():
-		for i in range(3):
-			uzmi()
+    (1)
+    
+    .. code-block:: python
+     
+     for i in range(5):
+         napred():
+        for i in range(3):
+            uzmi()
 
-	(2)
-	
-	.. code-block:: python
-	 
-	 for i in range(3):
-	 	napred()
-		for i in range(5):
-			uzmi()
-
-
-	(3)
-	
-	.. code-block:: python
-	 
-	 for i in range(5):
-		for i in range(3):
-		    napred()
-			uzmi()
+    (2)
+    
+    .. code-block:: python
+     
+     for i in range(3):
+         napred()
+        for i in range(5):
+            uzmi()
 
 
-	(4)
-	
-	.. code-block:: python
-	 
-	 for i in range(3):
-		for i in range(5):
-		    napred()
-			uzmi()
+    (3)
+    
+    .. code-block:: python
+     
+     for i in range(5):
+        for i in range(3):
+            napred()
+            uzmi()
+
+
+    (4)
+    
+    .. code-block:: python
+     
+     for i in range(3):
+        for i in range(5):
+            napred()
+            uzmi()
 
 
 
@@ -246,11 +246,11 @@
     :feedback_d: Тачно
     :correct: d
 
-	Робот је у празном лавиринту и окренут је на десно. Шта је резултат извршавања следећег низа наредби? Изабери тачан одговор:
+    Робот је у празном лавиринту и окренут је на десно. Шта је резултат извршавања следећег низа наредби? Изабери тачан одговор:
 
-	.. code-block:: python
+    .. code-block:: python
 
-  	 for i in range(2):
-	 	napred()
-		levo()
-		levo()
+       for i in range(2):
+         napred()
+        levo()
+        levo()

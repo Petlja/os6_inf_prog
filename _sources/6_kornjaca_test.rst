@@ -15,16 +15,16 @@
     :feedback_d: Нетачно    
     :correct: b
 
-    Шта је резултат извршавања следеће наребе:
+    Шта је резултат извршавања следећих наредби:
 
     .. code-block:: python
 
-	for i in range(10):
-		turtle.forward(10)
-		if i % 2 == 0:
-			turtle.penup()
-		else:
-			turtle.pendown()
+        for i in range(10):
+            turtle.forward(10)
+            if i % 2 == 0:
+                turtle.penup()
+            else:
+                turtle.pendown()
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -41,15 +41,15 @@
     :correct: c
     
     Шта би требало написати на месту ??? како би се исцртала звезда као на слици? Изабери тачан одговор:
-	
-	.. code-block:: python
-	
-	 for i in range(10):
-	   turtle.forward(40)
-	   if ????:
-	      turtle.left(72) 
-	   else:
-	      turtle.right(144)
+
+    .. code::
+
+     for i in range(10):
+       turtle.forward(40)
+       if ????:
+          turtle.left(72) 
+       else:
+          turtle.right(144)
     
     .. image:: ../_images/zvezda.png      
        :align: center
@@ -70,7 +70,7 @@
     :correct: c
     
     Шта је угнежђена петља? Изабери тачан одговор:
-	
+
 Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -83,17 +83,17 @@
     :feedback_c: Нетачно    
     :correct: a
     
-	Шта недостаје у следећем коду да би била исцртана фигур као на слици? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 turtle.speed(10)
-	 n = 8
-	 for i in range(0, 100):
+    Шта недостаје у следећем коду да би била исцртана фигура као на слици? Изабери тачан одговор:
+
+    .. code::
+
+     turtle.speed(10)
+     n = 8
+     for i in range(0, 100):
          turtle.color(???)
          turtle.forward(i)
          turtle.left(360 / n)
-		
+        
     
     .. image:: ../_images/kvadratnaSpirala.png      
        :align: center
@@ -110,16 +110,16 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је резултат извршавања следећих наредби? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 turtle.left(90)
-	 turtle.forward(100)
-	 turtle.right(135)
-	 turtle.forward(141)
-	 turtle.left(135)
-	 turtle.forward(100)
+    Шта је резултат извршавања следећих наредби? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     turtle.left(90)
+     turtle.forward(100)
+     turtle.right(135)
+     turtle.forward(141)
+     turtle.left(135)
+     turtle.forward(100)
 
 Питање 6.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,15 +133,15 @@
     :feedback_c: Нетачно    
     :correct: a
     
-	Шта је резултат извршавања следећег програма? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 boje = ("red", "green", "blue", "yellow")
-	 for i in range(4):
-		turtle.color(boje[i])
-		turtle.forward(100)
-		turtle.left(90)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     boje = ("red", "green", "blue", "yellow")
+     for i in range(4):
+        turtle.color(boje[i])
+        turtle.forward(100)
+        turtle.left(90)
 
 Питање 7.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -155,32 +155,32 @@
     :feedback_c: Нетачно    
     :correct: a
 
-	(1)
-	
-	.. code-block:: python
-	
-	 for i in range(8):
-         	turtle.forward(60)
-         	turtle.right(135)
+    (1)
 
-	(2)
-	
-	.. code-block:: python
-	
-	 for i in range(8):
-         	turtle.forward(135)
-         	turtle.right(60)
+    .. code-block:: python
 
-	(3)
-	
-	.. code-block:: python
-	
-	 for i in range(9):
-         	turtle.forward(135)
-         	turtle.right(60)
+     for i in range(8):
+             turtle.forward(60)
+             turtle.right(135)
 
-	Који од понуђених кодва исцртава звезду као на слици? Изабаери тачан одговор:	
-	
+    (2)
+
+    .. code-block:: python
+    
+     for i in range(8):
+             turtle.forward(135)
+             turtle.right(60)
+
+    (3)
+
+    .. code-block:: python
+
+     for i in range(9):
+             turtle.forward(135)
+             turtle.right(60)
+
+    Који од понуђених кодва исцртава звезду као на слици? Изабери тачан одговор:
+
     .. image:: ../_images/zvezda2.png      
        :align: center
 
@@ -196,23 +196,23 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је резултат извршавања следећег програма? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 boje = ("red", "green", "blue")
-	 for i in range(3):
-         	turtle.color(boje[i])
-    		for j in range(4):
-                	turtle.forward(50)
-                	turtle.right(90)
-    		turtle.right(120)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     boje = ("red", "green", "blue")
+     for i in range(3):
+             turtle.color(boje[i])
+             for j in range(4):
+                    turtle.forward(50)
+                    turtle.right(90)
+             turtle.right(120)
 
 Питање 9.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: 9
-    :answer_a: Исцрта се "пахуљица" са осам латица.
+    :answer_a: Исцрта се осмоугао.
     :feedback_a: Нетачно    
     :answer_b:  Исцрта се "пахуљица" са осам латица које се међусобно налазе под углом од 135 степени.
     :feedback_b: Нетачно    
@@ -220,47 +220,40 @@
     :feedback_c: Тачно    
     :correct: c
     
-	Шта је резултат извршавања следећег програма? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 for i in range(8):
-         	turtle.forward(50)
-         	turtle.backward(50)
-         	turtle.left(45)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     for i in range(8):
+             turtle.forward(50)
+             turtle.backward(50)
+             turtle.left(45)
 
 Питање 10.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: 10
-    :answer_a: Лукови
-    :feedback_a: Нетачно    
+    :answer_a: Квадрати
+    :feedback_a: Нетачно
     :answer_b:  Степенице
-    :feedback_b: Нетачно    
-    :answer_c:  Квадратни сигнал
-    :feedback_c: Тачно    
+    :feedback_b: Нетачно
+    :answer_c:  "Врх тврђаве"
+    :feedback_c: Тачно
     :correct: c
     
-	Шта је резултат извршавања следећег програма? Изабаери тачан одговор:	
-		
-	.. code-block:: python
-	
-	 dim = 20
-	 for i in range(5):
-		turtle.forward(dim)
-     		turtle.left(90)
-     		turtle.forward(dim)
-     		turtle.right(90)
-     		turtle.forward(dim)
-     		turtle.right(90)
-     		turtle.forward(dim)
-     		turtle.left(90)
+    Шта је резултат извршавања следећег програма? Изабери тачан одговор:
 
+    .. code-block:: python
 
-
-
-
-
-
+     dim = 20
+     for i in range(5):
+        turtle.forward(dim)
+             turtle.left(90)
+             turtle.forward(dim)
+             turtle.right(90)
+             turtle.forward(dim)
+             turtle.right(90)
+             turtle.forward(dim)
+             turtle.left(90)
 
 

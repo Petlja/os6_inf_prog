@@ -21,8 +21,8 @@
 
      s = 0
      for i in range(5):
-     	s = s + i
-     	print(s)
+         s = s + i
+         print(s)
 
 Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,25 +39,25 @@
     Која од следећих наредби исисује три пута `Здраво, свете!` ? Изабери тачан одговор:
 
     (1)
-	
+
     .. code-block:: python
-	
+
      for i in range(3):
-     	print("Здраво, свете!")
+         print("Здраво, свете!")
 
     (2)
-	
+
     .. code-block:: python
-	
+
      for i in range(3):
      print("Здраво, свете!")
 
     (3)
-	
+
     .. code-block:: python
-	
+
      for i in range(3)
-     	print("Здраво, свете!")
+         print("Здраво, свете!")
 
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@
    .. code-block:: python
 
     for i in range(9,12,8):
-    	print(i)
+        print(i)
 
    Одговор: |blank|
 
@@ -96,7 +96,7 @@
 
      s = 0
      for i in range(7):
-     	s = s + i
+         s = s + i
      print(s)
 
 Питање 5.
@@ -119,5 +119,5 @@
 
      p = 0
      for i in range(4):
-     	p = p * i
+         p = p * i
      print(p)
