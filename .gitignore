@@ -1,1 +1,5 @@
-build/
+__pycache__
+.vscode
+build_info
+pavement.pyc
+_build
