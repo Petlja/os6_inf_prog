@@ -3,61 +3,88 @@ lang: sr-Cyrl
 title: Информатика и рачунарство за шести разред
 description:
   willLearn: # list
-    - Научићете 1
-    - Научићете 2
+    - основне концепте текстуалног програмирања
+    - израчунавање
+    - контрола тока
+    - структуре података
   requirements:
     - Имаш инсталиран Пајтон
-    - Имаш инсталиран Петљадок
   toc:
-    - Пример_лекције
-    - Пример_лекције2
+    - 1.1. Карел и линијски програми
+    - 1.2. Понављање - петља for
+    - 1.3. Вежбање
+    - Тест - линијска структура
+    - Тест - понављање
+    - 2.1. Карел и условне петље
+    - 2.2. Гранање
+    - 2.3. Вежбање
+    - Тест - условна петља
+    - Тест - гранање
   externalLinks: # opciono 
-    - text: Синтакса restructuredText
+    - text: За сада празно
       href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
-    - text: Синтакса restructuredText 2
-      href: https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html
 
 lessons:
-  - title: Пример_лекција1
-    guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
-    description: Прва лекција
+  - title: Прва лекција
+    guid: 27df52e9-0590-4aab-8102-fc846da2f2c9
+    description: 1_lekcija
+    activities:
+      - type: reading
+        title: Карел и линијски програми
+        file: 1_1_cas.rst
+        description: #opciono
+        guid: b671a912-1714-424a-a543-a500c9e9124d
+      - type: reading
+        title: Понављање - бројачка петља for
+        file: 1_2_cas.rst
+        description: #opciono
+        guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
+      - type: reading
+        title: Вежба
+        file: 1_3_cas.rst
+        description: #opciono
+        guid: 9f8b3122-6225-4c88-98c8-391495c0ba63
+      - type: quiz
+        title: Линијски програми 
+        file: 1_1_test.rst
+        description: #opciono
+        guid: cf916130-252a-41bf-939f-74a513819f3c
+      - type: quiz
+        title: Линијски програми 
+        file: 1_2_test.rst
+        description: #opciono
+        guid: 3f8b87a2-c229-44d9-968b-d4576921c995
+  - title: Друга лекција
+    guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
+    description: 2_lekcija
     activities:
       - type: reading
         title: Пример фајла
-        file: primer_1.rst
+        file: 2_1_cas.rst
         description: #opciono
-        guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
+        guid: fd6be321-a89e-4db3-8d0c-ae4129727802
       - type: reading
-        title: Пример pdf фајла
-        file: primer_dokument.pdf
-        description: ...
-        guid: d90350ae-84e4-4e49-bac8-2d4849e3c409
-      - type: video
-        title: Пример видеа
-        url: https://www.youtube.com/watch?v=flu3-ntQIlE # može da se navede i ceo YT url, a može i samo ID (id u bilo kom yt linku predstavlja 11 karatkera nakon v=)
-        description: ...
-        guid: 61657689-aa6b-46c9-87da-51869d6477ee
-      - type: quiz 
-        title: Пример теста
-        file: primer_test_1.rst
-        description: ...
-        guid: a725f29a-b323-4a1a-b52d-6eae141bc243
-    archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-      - guid: de4d8ced-7457-4257-a156-250bdb711d65
-      - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Пример_лекција2
-    guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
-    description:  Друга лекција
-    activities:
-      - type: reading
-        title: Primer rst fajla
-        file: primer_2.rst
+        title: Пример фајла
+        file: 2_2_cas.rst
         description: #opciono
-        guid: 4576c9a4-2071-4a21-b221-a646477e05be
-archived-lessons: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
-  - guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-  - guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
+        guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
+      - type: reading
+        title: Пример фајла
+        file: 2_3_cas.rst
+        description: #opciono
+        guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
+      - type: quiz
+        title: Условне петље 
+        file: 2_1_test.rst
+        description: #opciono
+        guid: 21cfa052-c696-40d2-88a4-8311579a39f6
+      - type: quiz
+        title: Гранање 
+        file: 2_2_test.rst
+        description: #opciono
+        guid: 15abedc4-6fd8-4b64-8f08-9c63c8e95423
 
+    
 
 
 
