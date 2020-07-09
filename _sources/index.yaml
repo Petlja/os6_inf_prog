@@ -307,13 +307,14 @@ lessons:
         file: 14_4_cas.rst
         description: #opciono
         guid: 02a9415e-0805-49cc-b885-c32eaf769776  
-
-
-
-
-    
-
-
-
-
-
+  - title: Петнаеста лекција
+    folder: 15_lekcija
+    guid: 21d20814-80f7-4177-8212-5c05ab8530bf
+    description: 15_lekcija
+    activities:
+      - type: reading
+        title: Пример фајла
+        file: 15_1_cas.rst
+        description: #opciono
+        guid: 86b61797-d015-462f-9c21-32b93883cb36
+      
