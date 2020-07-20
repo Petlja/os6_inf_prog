@@ -1,92 +1,62 @@
 Вежбање
 #######
 
-Уради за домаћи неколико наредних задатака.
+Ако на часу нисте стигли да урадите све задатке, уради их сада, у
+склопу домаћег задатка. Након тога покушај да урадиш и наредних
+неколико задатака.
 
-Време чекања на станици
-'''''''''''''''''''''''
-.. level:: 2
+
+Прочитане стране књиге
+''''''''''''''''''''''
+.. level:: 1
 
 .. questionnote::
 
-   Јелена је дошла аутобусом на станицу у s1 сати и m1 минута, док је
-   Иванин аутобус стигао у s2 сати и m2 минута. Колико је сати и
-   минута она која је прва стигла чекала ону која је друга стигла?
+   Књига има 282 стране. Марко је првог дана прочитао трећину, другог
+   дана половину остатка, а трећег књигу прочитао до краја. Колико
+   страна је прочитао ког дана? Напиши програм тако да исправно ради
+   и ако је број страна првог дана другачији.
 
-И у овом задатку се тражи да се израчуна растојање између два
-временска тренутка за које се не зна који је први, а који други. Као
-што смо приказали раније, рачунање растојања се своди на рачунање
-апсолутне вредности разлике, а рад са сатима и минутима лакше обављамо
-ако прво претворимо све у минуте, затим израчунамо број минута колико
-су се чекале и након тога то претворимо у сате и минуте.
-   
-.. activecode:: чекање_на_станици
-   :runortest: s1, m1, s2, m2, s, m
-      
+.. activecode:: Читање
+   :runortest: broj_strana, prvi_dan, drugi_dan, treci_dan
+   :enablecopy:
+
    # -*- acsection: general-init -*-
    # -*- acsection: var-init -*-
-   s1 = int(input())
-   m1 = int(input())
-   s2 = int(input())
-   m2 = int(input())
+   broj_strana = 282
    # -*- acsection: main -*-
-   vreme1 = 0  # pretvori u ovom redu s1 sati i m1 minuta u minute
-   vreme2 = 0  # pretvori u ovom redu s2 sati i m2 minuta u minute
-   vreme = 0   # izracunaj u ovom redu duzinu cekanja u minutima
-   s = 0       # u ovom redu izracunaj broj sati cekanja
-   m = 0       # u ovom redu broj minuta cekanja
+   prvi_dan = 0      # ispravi ovaj red
+   drugi_dan = 0     # ispravi ovaj red
+   treci_dan = 0     # ispravi ovaj red
    # -*- acsection: after-main -*-
-   print(s, m)
+   print(prvi_dan, drugi_dan, treci_dan)
    ====
    from unittest.gui import TestCaseGui
    class myTests(TestCaseGui):
-
        def testOne(self):
-          for (s1, m1, s2, m2, s, m) in [(9, 35, 12, 12, 2, 37), (11, 40, 12, 10, 0, 30), (10, 15, 8, 50, 1, 25)]:
-             self.assertEqual((acMainSection(s1 = s1, m1 = m1, s2 = s2, m2 = m2)["s"], acMainSection(s1 = s1, m1 = m1, s2 = s2, m2 = m2)["m"]),  (s, m) ,"Ако је Јелена стигла у %s:%s, а Ивана у %s:%s, онда је Јелена чекала Ивану %s сата и %s минута." % (s1, m1, s2, m2, s, m))
+          for broj_strana, dan in [(369, 123), (333, 111)]:
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["prvi_dan"],dan,"Ако књига има %s страна, први дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["drugi_dan"],dan,"Ако књига има %s страна, други дан је прочитано %s страна." % (broj_strana,dan))
+             self.assertEqual(acMainSection(broj_strana = broj_strana)["treci_dan"],dan,"Ако књига има %s страна, трећи дан је прочитано %s страна." % (broj_strana,dan))
    myTests().main()
+   
 
-.. reveal:: чекање_на_станици_решење1
+.. reveal:: пресек_решење11
    :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
-   .. activecode:: чекање_на_станици_решење2
-		
-      s1 = int(input())
-      m1 = int(input())
-      s2 = int(input())
-      m2 = int(input())
-      vreme1 = s1*60 + m1
-      vreme2 = s2*60 + m2
-      vreme = abs(vreme1 - vreme2)
-      s = vreme // 60
-      m = vreme % 60
-      print(s, "sati i", m, "minuta")
+   Марко је прочитао 94 стране сваког дана. Првог дана је прочитао
+   трећину и остале су му две трећине. Другог дана је прочитао пола од
+   тога тј. опет трећину и за трећи дан му је остала последња трећина.
+	       
+   .. activecode:: Читање_решење
+
+      broj_strana = 282		
+      prvi_dan = broj_strana / 3
+      drugi_dan = (broj_strana - prvi_dan) / 2
+      treci_dan = broj_strana - prvi_dan - drugi_dan
+      print(treci_dan)
+
+      
 
 
-Просек 3 броја
-''''''''''''''
-.. level:: 2
-
-.. questionnote::
-
-   Димитрије, Ања, Ивона и Марко су високи редом 165, 162, 158 и
-   171 cm. Пријављују трочлану екипу за школски турнир у кошарци и у
-   формулару је неопходно да наведу просечну висину своје екипе, али
-   се још нису одлучили ко ће сачињавати екипу. Дефиниши функцију за
-   израчунавање просека три броја, а затим испиши просечне висине за
-   сваку од 4 могуће варијанте трочлане екипе.
-
-   
-.. activecode:: просек3броја
-
-   # definiši funkciju prosek koja izračunava prosek 3 data broja
-   def ...
-
-   dimitrije = 165
-   anja = 162
-   ivona = 158
-   marko = 171
-   print("Anja, Ivona, Marko:", prosek(anja, ivona, marko))
-   print("Dimitrije, Ivona, Marko:", prosek(dimitrije, ivona, marko))
-   # dopuni program za preostale dve kombinacije

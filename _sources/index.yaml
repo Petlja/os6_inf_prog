@@ -13,22 +13,22 @@ description:
     - 1.1. Карел и линијски програми
     - 1.2. Понављање - петља for
     - 1.3. Вежбање
-    - Тест - линијска структура
-    - Тест - понављање
     - 2.1. Карел и условне петље
     - 2.2. Гранање
     - 2.3. Вежбање
-    - Тест - условна петља
-    - Тест - гранање
     - 3.1. Робот Карел - вежбање 
+    - Обнављање - робот Карел
     - 4.1.Корњача графика - линијски програми
     - 4.2. Корњача графика - понављање
     - 4.3. Вежбање
+    - 4.4. Тест - корњача графика
     - 5.1. Корњача графика - гранање
     - 5.2. Корњача графика - угнежђене петље
     - 5.3. Корњача графика - процедуре
     - 5.4. Корњача графика - торке / листе
     - 5.5. Вежбање
+    - 5.6. Tест
+    - 6.1. Тест - корњача графика
     - 7.1. Основне аритметичке операције и примена
     - 7.2. Променљиве - имена међурезултата
     - 7.3. Ниске
@@ -39,6 +39,9 @@ description:
     - 9.1. Коришћење и дефинисање функција
     - 9.2. Дефинисање функција
     - 9.3. Вежбање
+    - 10.1. Гранање
+    - 10.2. Гранање - комбиновање више логичких услова
+    - 10.3. Тест - гранање
     - 11.1. Коришћење и дефинисање функција
     - 11.2. Дефинисање функција
     - 11.3. Вежбање
@@ -76,17 +79,7 @@ lessons:
         title: Вежба
         file: 1_3_cas.rst
         description: #opciono
-        guid: 9f8b3122-6225-4c88-98c8-391495c0ba63
-      - type: quiz
-        title: Линијски програми 
-        file: 1_1_test.rst
-        description: #opciono
-        guid: cf916130-252a-41bf-939f-74a513819f3c
-      - type: quiz
-        title: Линијски програми 
-        file: 1_2_test.rst
-        description: #opciono
-        guid: 3f8b87a2-c229-44d9-968b-d4576921c995
+        guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
   - title: Друга лекција
     folder: 2_lekcija
     guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
@@ -107,16 +100,6 @@ lessons:
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-      - type: quiz
-        title: Условне петље 
-        file: 2_1_test.rst
-        description: #opciono
-        guid: 21cfa052-c696-40d2-88a4-8311579a39f6
-      - type: quiz
-        title: Гранање 
-        file: 2_2_test.rst
-        description: #opciono
-        guid: 15abedc4-6fd8-4b64-8f08-9c63c8e95423
   - title: Трећа лекција
     folder: 3_lekcija
     guid: dac0c143-9242-4fed-b9b6-473891f2a3de
@@ -129,184 +112,214 @@ lessons:
         guid: 555d0479-5d91-44e4-a1f9-764c4142455f
   - title: Четврта лекција
     folder: 4_lekcija
-    guid: 676dd536-7ff9-4c5e-956a-8b0e8ce2f9b2
+    guid: 8a9680c9-7ad4-480a-bf27-cc4087a0fbce
     description: 4_lekcija
     activities:
-      - type: reading
+      - type: quiz
         title: Пример фајла
-        file: 4_1_cas.rst
+        file: 4_1_test.rst
         description: #opciono
-        guid: 6b2aa988-d93d-4a82-85bc-b875357d7693
-      - type: reading
+        guid: 4895f105-61e5-4a58-83b5-0bbca5bdd586
+      - type: quiz
         title: Пример фајла
-        file: 4_2_cas.rst
+        file: 4_2_test.rst
         description: #opciono
-        guid: 6cac0078-2dc1-4bf5-b872-64627f74e208
-      - type: reading
-        title: Пример фајла
-        file: 4_3_cas.rst
-        description: #opciono
-        guid: 8bcaad95-c00b-4fea-9517-e5ae9c0aa374
+        guid: b0cb8941-7d62-45d8-8399-7284b3741de5
   - title: Пета лекција
     folder: 5_lekcija
-    guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
+    guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
     description: 5_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 5_1_cas.rst
         description: #opciono
-        guid: caf7f6ce-2f76-455a-a46e-90183cbd2d37
+        guid: ea1bcbdd-059c-4c28-91ba-8c46e7d0e952
       - type: reading
         title: Пример фајла
         file: 5_2_cas.rst
         description: #opciono
-        guid: 9a5db7aa-ef66-4ca8-8c4e-bbd28d09a90c
+        guid: 554440e0-81d0-4d31-9b23-5d8fd58fe7e9
       - type: reading
         title: Пример фајла
         file: 5_3_cas.rst
         description: #opciono
+        guid: 0be322ea-d13d-45fa-9aba-cc3344872f18
+  - title: Шеста лекција
+    folder: 6_lekcija
+    guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
+    description: 6_lekcija
+    activities:
+      - type: reading
+        title: Пример фајла
+        file: 6_1_cas.rst
+        description: #opciono
+        guid: caf7f6ce-2f76-455a-a46e-90183cbd2d37
+      - type: reading
+        title: Пример фајла
+        file: 6_2_cas.rst
+        description: #opciono
+        guid: 9a5db7aa-ef66-4ca8-8c4e-bbd28d09a90c
+      - type: reading
+        title: Пример фајла
+        file: 6_3_cas.rst
+        description: #opciono
         guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
       - type: reading
         title: Пример фајла
-        file: 5_4_cas.rst
+        file: 6_4_cas.rst
         description: #opciono
         guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
       - type: reading
         title: Пример фајла
-        file: 5_5_cas.rst
+        file: 6_5_cas.rst
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
-  - title: Седма лекција
+  - title: Седма
     folder: 7_lekcija
-    guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
+    guid: 1d417170-fa6b-4bdb-a3c9-137568bb52bf
     description: 7_lekcija
     activities:
-      - type: reading
+      - type: quiz
         title: Пример фајла
-        file: 7_1_cas.rst
+        file: 4_4_test.rst
         description: #opciono
-        guid: babe0f6f-50f0-4403-a397-56a64906618a
-      - type: reading
-        title: Пример фајла
-        file: 7_2_cas.rst
-        description: #opciono
-        guid: 9b315409-894f-46be-a362-16e233ea9677
-      - type: reading
-        title: Пример фајла
-        file: 7_3_cas.rst
-        description: #opciono
-        guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
-      - type: reading
-        title: Пример фајла
-        file: 7_4_cas.rst
-        description: #opciono
-        guid: 32d0b23d-cad0-479b-bdc1-dd977905c8d9
+        guid: 6e128a28-bfa7-45d5-81a4-c5372150f070
   - title: Осма лекција
     folder: 8_lekcija
-    guid: e0438475-0523-49c4-ad13-47272ec38464
+    guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
     description: 8_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 8_1_cas.rst
         description: #opciono
-        guid: 694f25d3-9cf3-4794-9f48-84727ec77cb4
+        guid: ee8759b0-069a-40da-87fb-b9518e39fa59
       - type: reading
         title: Пример фајла
         file: 8_2_cas.rst
         description: #opciono
-        guid: f05e1e5e-6d88-4926-8c2e-a98223dac25a
+        guid: b8b21901-7e30-452b-a004-f855275bf3df
       - type: reading
         title: Пример фајла
         file: 8_3_cas.rst
         description: #opciono
-        guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
+        guid: 8f38c9bc-e247-4f1d-b7ed-f170dc934275
+      - type: reading
+        title: Пример фајла
+        file: 8_4_cas.rst
+        description: #opciono
+        guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
   - title: Девета лекција
     folder: 9_lekcija
-    guid: dc58977e-d63e-4fa0-9b03-02f303ac359c
+    guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
     description: 9_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 9_1_cas.rst
         description: #opciono
-        guid: f74013bc-df72-4a96-b595-37f9c136dbae
+        guid: babe0f6f-50f0-4403-a397-56a64906618a
       - type: reading
         title: Пример фајла
         file: 9_2_cas.rst
         description: #opciono
-        guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23
+        guid: 9b315409-894f-46be-a362-16e233ea9677
       - type: reading
         title: Пример фајла
         file: 9_3_cas.rst
         description: #opciono
-        guid: 577976b6-f0a9-4faa-b63e-f064398bdaa6     
+        guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
+  - title: Десета лекција
+    folder: 10_lekcija
+    guid: e0438475-0523-49c4-ad13-47272ec38464
+    description: 10_lekcija
+    activities:
+      - type: reading
+        title: Пример фајла
+        file: 10_1_cas.rst
+        description: #opciono
+        guid: 694f25d3-9cf3-4794-9f48-84727ec77cb4
+      - type: reading
+        title: Пример фајла
+        file: 10_2_cas.rst
+        description: #opciono
+        guid: f05e1e5e-6d88-4926-8c2e-a98223dac25a
+      - type: reading
+        title: Пример фајла
+        file: 10_3_cas.rst
+        description: #opciono
+        guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
   - title: Једанаеста лекција
     folder: 11_lekcija
-    guid: 7d5538f2-21f1-4fea-8b44-abca3afc2841
+    guid: dc58977e-d63e-4fa0-9b03-02f303ac359c
     description: 11_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 11_1_cas.rst
         description: #opciono
-        guid: 75ae88dd-2c8c-4836-8162-3f526585ae82
+        guid: f74013bc-df72-4a96-b595-37f9c136dbae
       - type: reading
         title: Пример фајла
         file: 11_2_cas.rst
         description: #opciono
-        guid: b2852b4f-d177-4b80-802b-984c5ffd12b7
-      - type: reading
-        title: Пример фајла
-        file: 11_3_cas.rst
-        description: #opciono
-        guid: f414e036-14a8-49be-86c7-ed008b340ff3  
-  - title: Дванаеста лекција
+        guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23  
+  - title: Дванаест лекција
     folder: 12_lekcija
-    guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
+    guid: 69fe5da0-2bc4-4f49-8948-866e7bef9af7
     description: 12_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 12_1_cas.rst
         description: #opciono
-        guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
+        guid: ef84c9b2-9b37-48f9-98d9-395aebaace18    
       - type: reading
         title: Пример фајла
         file: 12_2_cas.rst
         description: #opciono
-        guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
-      - type: reading
+        guid: 9c1b0d6f-c346-46d7-b20f-aee69dad88a1
+      - type: quiz
         title: Пример фајла
         file: 12_3_cas.rst
         description: #opciono
-        guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
+        guid: c31ebc9a-6093-41b2-b08d-fc7380876492
+  - title: Тринаеста лекција
+    folder: 13_lekcija
+    guid: 13317b39-3082-450f-9830-3af9ae2ac8cd
+    description: 13_lekcija
+    activities:
+      - type: quiz
+        title: Пример фајла
+        file: 13_1_test.rst
+        description: #opciono
+        guid: 1ba00ef3-7099-4015-bdc9-e9bfdabad389    
+      - type: quiz
+        title: Пример фајла
+        file: 13_2_test.rst
+        description: #opciono
+        guid: aa0a2973-9f8e-4c67-a4b2-84a5cfad0bbc
   - title: Четрнаеста лекција
     folder: 14_lekcija
-    guid: 198098a9-5bfc-409e-9835-9ce81ed1db1d
+    guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
     description: 14_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 14_1_cas.rst
         description: #opciono
-        guid: b1607e25-f5a6-4c45-80dc-6527babb2081
+        guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
       - type: reading
         title: Пример фајла
         file: 14_2_cas.rst
         description: #opciono
-        guid: 9d982610-f505-48a9-baa7-109a447017f3
+        guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
       - type: reading
         title: Пример фајла
         file: 14_3_cas.rst
         description: #opciono
-        guid: c2782304-e0d7-40de-b797-78c6391d078c  
-      - type: reading
-        title: Пример фајла
-        file: 14_4_cas.rst
-        description: #opciono
-        guid: 02a9415e-0805-49cc-b885-c32eaf769776  
+        guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
   - title: Петнаеста лекција
     folder: 15_lekcija
     guid: 21d20814-80f7-4177-8212-5c05ab8530bf
@@ -317,4 +330,14 @@ lessons:
         file: 15_1_cas.rst
         description: #opciono
         guid: 86b61797-d015-462f-9c21-32b93883cb36
+  - title: Шеснаеста лекција
+    folder: 16_lekcija
+    guid: 50007e24-1aab-4735-9cc6-704b07032c81
+    description: 16_lekcija
+    activities:
+      - type: reading
+        title: Пример фајла
+        file: 16_1_test.rst
+        description: #opciono
+        guid: c773fd73-adba-4272-8924-9e4ef972e6e6
       
