@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Тест &#8212; Petlja - Информатика и рачунарство за шести разред</title>
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/runestonebase.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/matrixeq.js"></script>
+    <script src="../_static/mchoice.js"></script>
+    <script src="../_static/timedmc.js"></script>
+    <script src="../_static/timed.js"></script>
+    <script src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="../_static/mchoice-i18n.en.js"></script>
+    <script src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/jquery.highlight.js"></script>
+    <script src="../_static/bookfuncs.js"></script>
+    <script src="../_static/codemirror.js"></script>
+    <script src="../_static/xml.js"></script>
+    <script src="../_static/css.js"></script>
+    <script src="../_static/python.js"></script>
+    <script src="../_static/htmlmixed.js"></script>
+    <script src="../_static/javascript.js"></script>
+    <script src="../_static/activecode-i18n.en.js"></script>
+    <script src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/skulpt.min.js"></script>
+    <script src="../_static/skulpt-stdlib.js"></script>
+    <script src="../_static/activecode.js"></script>
+    <script src="../_static/clike.js"></script>
+    <script src="../_static/timed_activecode.js"></script>
+    <script src="../_static/tabbedstuff.js"></script>
+    <script src="../_static/runestonevideo.js"></script>
+    <script src="../_static/shortanswer.js"></script>
+    <script src="../_static/timed_shortanswer.js"></script>
+    <script src="../_static/poll.js"></script>
+    <script src="../_static/showEval.js"></script>
+    <script src="../_static/d3.v2.min.js"></script>
+    <script src="../_static/jquery.ba-bbq.min.js"></script>
+    <script src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script src="../_static/pytutor.js"></script>
+    <script src="../_static/codelens.js"></script>
+    <script src="../_static/clickable.js"></script>
+    <script src="../_static/timedclickable.js"></script>
+    <script src="../_static/dragndrop.js"></script>
+    <script src="../_static/timeddnd.js"></script>
+    <script src="../_static/dragndrop-i18n.en.js"></script>
+    <script src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/fitb.js"></script>
+    <script src="../_static/timedfitb.js"></script>
+    <script src="../_static/fitb-i18n.en.js"></script>
+    <script src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/webglinteractive.js"></script>
+    <script src="../_static/FileSaver.min.js"></script>
+    <script src="../_static/Blob.js"></script>
+    <script src="../_static/reveal.js"></script>
+    <script src="../_static/animationbase.js"></script>
+    <script src="../_static/datafile.js"></script>
+    <script src="../_static/lib/prettify.js"></script>
+    <script src="../_static/lib/hammer.min.js"></script>
+    <script src="../_static/parsons.js"></script>
+    <script src="../_static/parsons-i18n.en.js"></script>
+    <script src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/timedparsons.js"></script>
+    <script src="../_static/karelCorner.js"></script>
+    <script src="../_static/karelRobot.js"></script>
+    <script src="../_static/karelWorld.js"></script>
+    <script src="../_static/karelRobotDrawer.js"></script>
+    <script src="../_static/karelUI.js"></script>
+    <script src="../_static/karel.js"></script>
+    <script src="../_static/karel-i18n.en.js"></script>
+    <script src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script src="../_static/notes.js"></script>
+    <script src="../_static/pygamelib-init.js"></script>
+    <script src="../_static/blockly/blockly_compressed.js"></script>
+    <script src="../_static/blockly/blocks_compressed.js"></script>
+    <script src="../_static/blockly/python_compressed.js"></script>
+    <script src="../_static/blockly/msg-sr.js"></script>
+    <script src="../_static/blockpy/utilities.js"></script>
+    <script src="../_static/blockpy/python_errors.js"></script>
+    <script src="../_static/blockpy/ast_node_visitor.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter.js"></script>
+    <script src="../_static/blockpy/pytifa.js"></script>
+    <script src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
+    <script src="../_static/blockpy/python_to_blockly.js"></script>
+    <script src="../_static/blockpy/imported.js"></script>
+    <script src="../_static/blockpy/blocks/class.js"></script>
+    <script src="../_static/blockpy/blocks/comment.js"></script>
+    <script src="../_static/blockpy/blocks/comprehensions.js"></script>
+    <script src="../_static/blockpy/blocks/dict.js"></script>
+    <script src="../_static/blockpy/blocks/if.js"></script>
+    <script src="../_static/blockpy/blocks/io.js"></script>
+    <script src="../_static/blockpy/blocks/lists.js"></script>
+    <script src="../_static/blockpy/blocks/sets.js"></script>
+    <script src="../_static/blockpy/blocks/loops.js"></script>
+    <script src="../_static/blockpy/blocks/parking.js"></script>
+    <script src="../_static/blockpy/blocks/tuple.js"></script>
+    <script src="../_static/blockpy/blocks/turtles.js"></script>
+    <script src="../_static/blockpy/blocks/text.js"></script>
+    <script src="../_static/blockpy-modal.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../_static/jquery-fix.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../_static/bootstrap-sphinx.js"></script>
+    <script src="../_static/waypoints.min.js"></script>
+    <script src="../_static/rangy-core.js"></script>
+    <script src="../_static/rangy-textrange.js"></script>
+    <script src="../_static/rangy-cssclassapplier.js"></script>
+    <script src="../_static/user-highlights.js"></script>
+    <script src="../_static/jquery.idle-timer.js"></script>
+    <script src="../_static/processing-1.4.1.min.js"></script>
+    <script src="../_static/jquery.hotkey.js"></script>
+    <script src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+
+<script type="text/javascript">
+  eBookConfig = {};
+  eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+  eBookConfig.app = eBookConfig.host+'/runestone';
+  eBookConfig.ajaxURL = eBookConfig.app+'/ajax/';
+  eBookConfig.course = 'Информатика и рачунарство за шести разред';
+  eBookConfig.logLevel = 0;
+  eBookConfig.loginRequired = false;
+  eBookConfig.build_info = "";
+  eBookConfig.isLoggedIn = false;
+  eBookConfig.useRunestoneServices = false;
+  eBookConfig.python3 = true;
+  eBookConfig.basecourse = 'Информатика и рачунарство за шести разред';
+  eBookConfig.runestone_version = '3.1.1';
+  eBookConfig.imagesDir = '../_images/';
+  eBookConfig.staticDir = '../_static/';
+  if(typeof(Sk) != "undefined")
+      Sk.imgPath = eBookConfig.imagesDir;
+</script>
+
+<div id="fb-root"></div>
+
+
+
+  </head><body>
+
+
+<!-- Begin navbar -->
+
+<nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+     <img src="../_static/img/logo.png" style="width:80px; height: 80px;"> 
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="margin-top: 10px; margin-left: 25px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../">Petlja - Информатика и рачунарство за шести разред</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="margin-left: 50%;margin-top: 5%;font-size: 20px;">
+  
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+    <ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_lekcija/index.html">Прва лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1_1_cas.html">Робот Карел и линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1_2_cas.html">Понављање - бројачка петља <cite>for</cite></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../1_lekcija/1_3_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2_lekcija/index.html">Друга лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2_1_cas.html">Робот Карел - условне петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2_2_cas.html">Робот Карел - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../2_lekcija/2_3_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../3_lekcija/index.html">Трећа лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../3_lekcija/3_1_cas.html">Робот Карел - вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../4_lekcija/index.html">Четврта лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4_1_test.html">Тест - линијска структура и понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../4_lekcija/4_2_test.html">Тест - условна петља и гранање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../5_lekcija/index.html">Пета лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5_1_cas.html">Корњача графика - линијски програми</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5_2_cas.html">Корњача графика - понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../5_lekcija/5_3_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../6_lekcija/index.html">Шеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6_1_cas.html">Корњача графика - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6_2_cas.html">Корњача графика - угнежђене петље</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6_3_cas.html">Корњача графика - процедуре</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6_4_cas.html">Корњача графика - торке/листе</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../6_lekcija/6_5_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="index.html">Седма</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_4_test.html">Тест - корњача графика</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../8_lekcija/index.html">Осма лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8_1_cas.html">Основне аритметичке операције и примена</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8_2_cas.html">Променљиве - имена међурезултата</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8_3_cas.html">Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../8_lekcija/8_4_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../9_lekcija/index.html">Девета лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9_1_cas.html">Цели и реални бројеви</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9_2_cas.html">Реално и целобројно дељење</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../9_lekcija/9_3_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../10_lekcija/index.html">Десета лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10_1_cas.html">Коришћење и дефинисање функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10_2_cas.html">Дефинисање функција</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../10_lekcija/10_3_cas.html">Вежбање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../11_lekcija/index.html">Једанаеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../11_lekcija/11_1_cas.html">Гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../11_lekcija/11_2_cas.html">Комбинација више логичких услова</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../12_lekcija/index.html">Дванаест лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12_1_cas.html">Понављање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12_2_cas.html">Условна петља</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../12_lekcija/12_3_cas.html">Угнежђене петље</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../13_lekcija/index.html">Тринаеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13_1_test.html">Тест - гранање</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../13_lekcija/13_2_test.html">Тест - понављање</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../14_lekcija/index.html">Четрнаеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../14_lekcija/14_1_cas.html">Структуре података: Торке, листе, ниске, скупови, речници</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../14_lekcija/14_2_cas.html">Ниске</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../14_lekcija/14_2_cas.html#id11">Врсте реченица</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../14_lekcija/14_3_cas.html">Скупови</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../15_lekcija/index.html">Петнаеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../15_lekcija/15_1_cas.html">Обрада структура података коришћењем петљи</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../16_lekcija/index.html">Шеснаеста лекција</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../16_lekcija/16_1_test.html">Тест</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+
+        </div>
+      </div>
+  </div>
+<div class="container col-md-12" id="continue-reading"></div>
+
+<div class="container col-md-10 col-md-offset-2" id="main-content" style="margin-top: 70px;">
+  
+  <div class="section" id="id1">
+<h1>Тест<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Питање 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k1">
+            <p>Q-77: Шта је резултат извршавања следеће наребе:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</pre></div>
+</div>
+
+            <li data-component="answer"  id="k1_opt_a">Исцртава се дуж дужине 10 пиксела.</li><li data-component="feedback" id="k1_opt_a">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="k1_opt_b">Исцртава се испрекидана линија која има 5 видљивих и 5 невидљивих цртица.</li><li data-component="feedback" id="k1_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="k1_opt_c">Исцртава се испрекидана линија дебљине 5 пиксела</li><li data-component="feedback" id="k1_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="k1_opt_d">Исцртава се испрекидана линија која има 10 видљивих и 10 невидљивих цртица.</li><li data-component="feedback" id="k1_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id3">
+<h2>Питање 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k2">
+            <p>Q-78: Шта би требало написати на месту ??? како би се исцртала звезда као на слици? Изабери тачан одговор:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span>for i in range(10):
+  turtle.forward(40)
+  if ????:
+     turtle.left(72)
+  else:
+     turtle.right(144)
+</pre></div>
+</div>
+</div></blockquote>
+<img alt="7_lekcija/../_images/zvezda.png" class="align-center" src="7_lekcija/../_images/zvezda.png" />
+
+            <li data-component="answer"  id="k2_opt_a">i / 2 = 0</li><li data-component="feedback" id="k2_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="k2_opt_b">i // 2 == 0</li><li data-component="feedback" id="k2_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="k2_opt_c">i % 2 == 0</li><li data-component="feedback" id="k2_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="k2_opt_d">i % 2 = 0</li><li data-component="feedback" id="k2_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id4">
+<h2>Питање 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k3">
+            <p>Q-79: Шта је угнежђена петља? Изабери тачан одговор:</p>
+
+            <li data-component="answer"  id="k3_opt_a">Петља иза петље.</li><li data-component="feedback" id="k3_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="k3_opt_b">Две петље које се позивају у једном задатку.</li><li data-component="feedback" id="k3_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="k3_opt_c">Петља унутар петље.</li><li data-component="feedback" id="k3_opt_c">Тачно</li>
+            
+            <li data-component="answer"  id="k3_opt_d">Петља која се извршава паран број пута.</li><li data-component="feedback" id="k3_opt_d">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id5">
+<h2>Питање 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k4">
+            <p>Q-80:     Шта недостаје у следећем коду да би била исцртана фигурa као на слици? Изабаери тачан одговор:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+              <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+              <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<img alt="7_lekcija/../_images/4_kvadrata.png" class="align-center" src="7_lekcija/../_images/4_kvadrata.png" />
+
+            <li data-component="answer"  id="k4_opt_a">У нивоу спољашње петље for, на крају, једна наредба turtle.left(90).</li><li data-component="feedback" id="k4_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="k4_opt_b">У нивоу спољашње петље for једна наредба turtle.forward(90).</li><li data-component="feedback" id="k4_opt_b">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="k4_opt_c">У нивоу унутрашње петље for, на крају, једна наредба turtle.left(90).</li><li data-component="feedback" id="k4_opt_c">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id6">
+<h2>Питање 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k5">
+            <p>Q-81:     Шта је резултат извршавања слдећег кода?</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">poligon</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">a</span><span class="p">):</span>
+     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+             <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+             <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">360</span> <span class="o">/</span> <span class="n">n</span><span class="p">)</span>
+
+<span class="n">poligon</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+
+            <li data-component="answer"  id="k5_opt_a">Исцртава се десетоугао чија је страница дужине 4 пиксела.</li><li data-component="feedback" id="k5_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="k5_opt_b">Исцртава се правоугаоник чије су дужине страница 4 и 10 пиксела.</li><li data-component="feedback" id="k5_opt_b">нетачно</li>
+            
+            <li data-component="answer" data-correct id="k5_opt_c">Исцртава се квадрат чија је страница дужине 10 пиксела.</li><li data-component="feedback" id="k5_opt_c">Тачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+<div class="section" id="id7">
+<h2>Питање 6.<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="k21">
+            <p>Q-82:     Шта је резултат извршавањa следећег програма? Изабери тачан одговор:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">boje</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">,</span> <span class="s2">&quot;yellow&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">boje</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+      <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+
+            <li data-component="answer" data-correct id="k21_opt_a">Квадрат страница црвене, зелене, плаве и жуте боје.</li><li data-component="feedback" id="k21_opt_a">Тачно</li>
+            
+            <li data-component="answer"  id="k21_opt_b">Правоугаоник страница црвене, зелене, плаве и жуте боје.</li><li data-component="feedback" id="k21_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="k21_opt_c">Квадрат страница црвене, жуте, плаве и зелене боје.</li><li data-component="feedback" id="k21_opt_c">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            </div>
+</div>
+
+
+  
+      <div class="col-md-12">
+<ul class="pager">
+</ul>
+
+<!-- <ul class="pager"> -->
+    <!-- -->
+    <!-- -->
+<!-- </ul> -->
+
+<script type="text/javascript">
+
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+
+</script>
+</div>
+  
+</div>
+<footer class="footer col-md-12">
+    <div class="container">
+        <div class="text-center">
+            <hr>
+            <p class="text-muted">
+                <span class="pull-left">&copy; 2019 Petlja (Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>)</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32029811-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+  </body>
+</html>

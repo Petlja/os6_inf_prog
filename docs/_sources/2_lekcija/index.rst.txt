@@ -8,5 +8,3 @@
     2_1_cas.rst
     2_2_cas.rst
     2_3_cas.rst
-    2_1_test.rst
-    2_2_test.rst
