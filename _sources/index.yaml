@@ -4,103 +4,67 @@ title: Информатика и рачунарство за шести разр
 description:
   willLearn: # list
     - основне концепте текстуалног програмирања
-    - израчунавање
-    - контрола тока
-    - структуре података
+
   requirements:
     - Имаш инсталиран Пајтон
   toc:
-    - 1.1. Карел и линијски програми
-    - 1.2. Понављање - петља for
-    - 1.3. Вежбање
-    - 2.1. Карел и условне петље
-    - 2.2. Гранање
-    - 2.3. Вежбање
-    - 3.1. Робот Карел - вежбање 
-    - Обнављање - робот Карел
-    - 4.1.Корњача графика - линијски програми
-    - 4.2. Корњача графика - понављање
-    - 4.3. Вежбање
-    - 4.4. Тест - корњача графика
-    - 5.1. Корњача графика - гранање
-    - 5.2. Корњача графика - угнежђене петље
-    - 5.3. Корњача графика - процедуре
-    - 5.4. Корњача графика - торке / листе
-    - 5.5. Вежбање
-    - 5.6. Tест
-    - 6.1. Тест - корњача графика
-    - 7.1. Основне аритметичке операције и примена
-    - 7.2. Променљиве - имена међурезултата
-    - 7.3. Ниске
-    - 7.4. Вежбање
-    - 8.1. Цели и реални бројеви
-    - 8.2. Реално и целобројно дељење
-    - 8.3. Вежбање
-    - 9.1. Коришћење и дефинисање функција
-    - 9.2. Дефинисање функција
-    - 9.3. Вежбање
-    - 10.1. Гранање
-    - 10.2. Гранање - комбиновање више логичких услова
-    - 10.3. Тест - гранање
-    - 11.1. Коришћење и дефинисање функција
-    - 11.2. Дефинисање функција
-    - 11.3. Вежбање
-    - 12.1. Понављање
-    - 12.2. Условне петље
-    - 12.3. Угнежђене петље
-    - 14.1. Структуре података
-    - 14.2. Ниске
-    - 14.3. Скупови
-    - 14.4. Условне петље
-    - 15.1. Обрада структура података коришћењем петљи
-    
-        
+    - Робот Карел
+    - Корњача графика
+    - Израчунавања
+    - Контрола тока
+    - Структуре података 
+  
   externalLinks: # opciono 
-    - text: За сада празно
-      href: https://docutils.sourceforge.io/docs/user/rst/quickref.html
+  
+   - text: Петљин приручник за Пајтон
+     href: https://petlja.org/biblioteka/r/kursevi/prirucnik-python-gim
+   - text: Петљин приручник за библиотеку Пајгејм
+     href: https://petlja.org/biblioteka/r/kursevi/pygame-prirucnik-gim
+   - text: Збирка кратких питања из програмирања за први разред
+     href: https://petlja.org/biblioteka/r/kursevi/python-zbirka-pitanja-gim
 
 lessons:
-  - title: Прва лекција
+  - title: 1. лекција - робот Карел
     folder: 1_lekcija
     guid: 27df52e9-0590-4aab-8102-fc846da2f2c9
     description: 1_lekcija
     activities:
       - type: reading
-        title: Карел и линијски програми
+        title: 1.1. Робот Карел и линијски програми
         file: 1_1_cas.rst
         description: #opciono
         guid: b671a912-1714-424a-a543-a500c9e9124d
       - type: reading
-        title: Понављање - бројачка петља for
+        title: 1.2. Робот Карел и бројачка петља for
         file: 1_2_cas.rst
         description: #opciono
         guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
       - type: reading
-        title: Вежба
+        title: 1.3.Вежбање
         file: 1_3_cas.rst
         description: #opciono
         guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
-  - title: Друга лекција
+  - title: 2. лекција - робот Карел
     folder: 2_lekcija
     guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
     description: 2_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 2.1. Робот Карел - условне петље
         file: 2_1_cas.rst
         description: #opciono
         guid: fd6be321-a89e-4db3-8d0c-ae4129727802
       - type: reading
-        title: Пример фајла
+        title: 2.2. Робот Карел - гранање
         file: 2_2_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
       - type: reading
-        title: Пример фајла
+        title: 2.3. Вежбање
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-  - title: Трећа лекција
+  - title: 3. лекција
     folder: 3_lekcija
     guid: dac0c143-9242-4fed-b9b6-473891f2a3de
     description: 3_lekcija
@@ -110,22 +74,22 @@ lessons:
         file: 3_1_cas.rst
         description: #opciono
         guid: 555d0479-5d91-44e4-a1f9-764c4142455f
-  - title: Четврта лекција
+  - title: 4. лекција
     folder: 4_lekcija
     guid: 8a9680c9-7ad4-480a-bf27-cc4087a0fbce
     description: 4_lekcija
     activities:
       - type: quiz
-        title: Пример фајла
+        title: Квиз - робот Карел (линијска структура и понављање)
         file: 4_1_test.rst
         description: #opciono
         guid: 4895f105-61e5-4a58-83b5-0bbca5bdd586
       - type: quiz
-        title: Пример фајла
+        title: Квиз - робот Карел (условне петље и гранање)
         file: 4_2_test.rst
         description: #opciono
         guid: b0cb8941-7d62-45d8-8399-7284b3741de5
-  - title: Пета лекција
+  - title: 5. лекција
     folder: 5_lekcija
     guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
     description: 5_lekcija
@@ -145,7 +109,7 @@ lessons:
         file: 5_3_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3344872f18
-  - title: Шеста лекција
+  - title: 6. лекција
     folder: 6_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
     description: 6_lekcija
@@ -175,17 +139,17 @@ lessons:
         file: 6_5_cas.rst
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
-  - title: Седма
+  - title: 7. лекција
     folder: 7_lekcija
     guid: 1d417170-fa6b-4bdb-a3c9-137568bb52bf
     description: 7_lekcija
     activities:
       - type: quiz
-        title: Пример фајла
-        file: 4_4_test.rst
+        title: 7. Квиз - корњача графика
+        file: 7_1.rst
         description: #opciono
         guid: 6e128a28-bfa7-45d5-81a4-c5372150f070
-  - title: Осма лекција
+  - title: 8. лекција
     folder: 8_lekcija
     guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
     description: 8_lekcija
@@ -210,7 +174,7 @@ lessons:
         file: 8_4_cas.rst
         description: #opciono
         guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
-  - title: Девета лекција
+  - title: 9. лекција
     folder: 9_lekcija
     guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
     description: 9_lekcija
@@ -230,7 +194,7 @@ lessons:
         file: 9_3_cas.rst
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
-  - title: Десета лекција
+  - title: 10. лекција
     folder: 10_lekcija
     guid: e0438475-0523-49c4-ad13-47272ec38464
     description: 10_lekcija
@@ -250,94 +214,105 @@ lessons:
         file: 10_3_cas.rst
         description: #opciono
         guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
-  - title: Једанаеста лекција
+  - title: 11. лекција
     folder: 11_lekcija
-    guid: dc58977e-d63e-4fa0-9b03-02f303ac359c
+    guid: dc78977e-d63e-4fa0-9b03-02f303ac359c
     description: 11_lekcija
     activities:
+      - type: quiz
+        title: 11.1. Квиз - аритметичке операције
+        file: 11_1.rst
+        description: #opciono
+        guid: f74013bc-df72-4a96-b095-37f9c136dммe
+      - type: quiz
+        title: 11.1. Квиз - целобројно и реално дељење
+        file: 11_2.rst
+        description: #opciono
+        guid: f74013bc-df72-4a96-b095-37f9c1323bae
+      - type: quiz
+        title: 11.1. Квиз - Функције
+        file: 11_3.rst
+        description: #opciono
+        guid: f74013bc-df72-4a96-b095-37f90936dbae
+      
+  - title: 12. лекција
+    folder: 12_lekcija
+    guid: dc58977e-d63e-4fa0-9b03-89f303ac359c
+    description: 12_lekcija
+    activities:
       - type: reading
-        title: Пример фајла
-        file: 11_1_cas.rst
+        title: Квиз - израчунавања, функције
+        file: 12_1_cas.rst
         description: #opciono
         guid: f74013bc-df72-4a96-b595-37f9c136dbae
       - type: reading
         title: Пример фајла
-        file: 11_2_cas.rst
+        file: 12_2_cas.rst
         description: #opciono
         guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23  
-  - title: Дванаест лекција
-    folder: 12_lekcija
+  - title: 13. лекција
+    folder: 13_lekcija
     guid: 69fe5da0-2bc4-4f49-8948-866e7bef9af7
-    description: 12_lekcija
+    description: 13_lekcija
     activities:
       - type: reading
         title: Пример фајла
-        file: 12_1_cas.rst
+        file: 13_1_cas.rst
         description: #opciono
         guid: ef84c9b2-9b37-48f9-98d9-395aebaace18    
       - type: reading
         title: Пример фајла
-        file: 12_2_cas.rst
+        file: 13_2_cas.rst
         description: #opciono
         guid: 9c1b0d6f-c346-46d7-b20f-aee69dad88a1
       - type: quiz
         title: Пример фајла
-        file: 12_3_cas.rst
+        file: 13_3_cas.rst
         description: #opciono
         guid: c31ebc9a-6093-41b2-b08d-fc7380876492
-  - title: Тринаеста лекција
-    folder: 13_lekcija
+  - title: 14. лекција
+    folder: 14_lekcija
     guid: 13317b39-3082-450f-9830-3af9ae2ac8cd
-    description: 13_lekcija
+    description: 14_lekcija
     activities:
       - type: quiz
-        title: Пример фајла
-        file: 13_1_test.rst
+        title: 14.1. Квиз - гранање
+        file: 14_1_test.rst
         description: #opciono
         guid: 1ba00ef3-7099-4015-bdc9-e9bfdabad389    
       - type: quiz
-        title: Пример фајла
-        file: 13_2_test.rst
+        title: 14.2. Квиз - понављање
+        file: 14_2_test.rst
         description: #opciono
         guid: aa0a2973-9f8e-4c67-a4b2-84a5cfad0bbc
-  - title: Четрнаеста лекција
-    folder: 14_lekcija
-    guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
-    description: 14_lekcija
-    activities:
-      - type: reading
-        title: Пример фајла
-        file: 14_1_cas.rst
-        description: #opciono
-        guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
-      - type: reading
-        title: Пример фајла
-        file: 14_2_cas.rst
-        description: #opciono
-        guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
-      - type: reading
-        title: Пример фајла
-        file: 14_3_cas.rst
-        description: #opciono
-        guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
-  - title: Петнаеста лекција
+  - title: 15. лекција
     folder: 15_lekcija
-    guid: 21d20814-80f7-4177-8212-5c05ab8530bf
+    guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
     description: 15_lekcija
     activities:
       - type: reading
         title: Пример фајла
         file: 15_1_cas.rst
         description: #opciono
-        guid: 86b61797-d015-462f-9c21-32b93883cb36
-  - title: Шеснаеста лекција
+        guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
+      - type: reading
+        title: Пример фајла
+        file: 15_2_cas.rst
+        description: #opciono
+        guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
+      - type: reading
+        title: Пример фајла
+        file: 15_3_cas.rst
+        description: #opciono
+        guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
+  - title: 16. лекција
     folder: 16_lekcija
-    guid: 50007e24-1aab-4735-9cc6-704b07032c81
+    guid: 21d20814-80f7-4177-8212-5c05ab8530bf
     description: 16_lekcija
     activities:
       - type: reading
         title: Пример фајла
-        file: 16_1_test.rst
+        file: 16_1.rst
         description: #opciono
-        guid: c773fd73-adba-4272-8924-9e4ef972e6e6
-      
+        guid: 86b61797-d015-462f-9c21-32b93883cb36
+  
