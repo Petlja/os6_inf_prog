@@ -1,0 +1,98 @@
+16.1. Квиз - структуре података
+================================
+
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp1
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: a
+
+    На који од следећих начин се исписују елементи листе ``lista = [1,22,43,5]``? Изабери тачан одговор:
+
+    (1)
+
+    .. code-block:: python
+
+     for broj in lista:
+     	print(broj)
+
+    (2)
+
+    .. code-block:: python
+
+     for broj in lista:
+     	print(broj)
+
+    (3)
+
+    .. code-block:: python
+
+     for broj in lista:
+     	print(broj)
+
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: ss2
+    :answer_a: lista(2)
+    :feedback_a: Нетачно
+    :answer_b: lista.append(2)
+    :feedback_b: Тачно    
+    :answer_c: lista[2]
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који од следећих начина се додаје елемент 2 мна крај дате листе ``lista =[1, 5, 9, 7]``?
+
+
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: s3
+    :answer_a: d(lista)
+    :feedback_a: Нетачно
+    :answer_b: len(lista)
+    :feedback_b: Тачно    
+    :answer_c: lista.len()
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који од следећих начина одредити дужину листе ``lista = [1,2,3,4]`` (број елемената листе)?
+
+Питање 4.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp4
+    :answer_a: i in range(ocene)
+    :feedback_a: Нетачно
+    :answer_b: i i in range(broj_ocena)
+    :feedback_b: Тачно    
+    :answer_c: i in range(broj_ocena):
+    :feedback_c: Нетачно    
+    :correct: b
+
+    
+
+Питање 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: sp5
+    :answer_a: lista[1]
+    :feedback_a: Нетачно
+    :answer_b: lista[0]
+    :feedback_b: Тачно    
+    :answer_c: lista[2]
+    :feedback_c: Нетачно    
+    :correct: b
+
+    Дата је листа ``lista = [2,3,4,5]``, на који од следећих начина се може издвојити први елемент листе?
+
+
+
+
