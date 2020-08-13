@@ -32,6 +32,13 @@
        turtle.forward(0)     #   idi napred 100 koraka
        turtle.left(0)        #   okreni se nalevo za 90 stepeni
 
+Погледај наредни видео:
+
+.. ytpopup:: d1vAfYFq-l8
+    :width: 735
+    :height: 415
+    :align: center
+
 
 Провери своје разумевање петљи тако што ћеш поређати наредбе програма
 у ком корњача исцртава једнакостранични троугао.
@@ -80,6 +87,15 @@
        turtle.penup()               # podigni olovku
        turtle.forward(20)           # idi napred 20 koraka
        turtle.pendown()             # spusti olovku
+
+
+Погледај наредни видео:
+
+.. ytpopup:: JeoAB84nG7w
+    :width: 735
+    :height: 415
+    :align: center
+
 
 Отисци корњаче
 ''''''''''''''
