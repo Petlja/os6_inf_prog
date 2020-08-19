@@ -265,7 +265,7 @@ lessons:
         file: 13_2_cas.rst
         description: #opciono
         guid: 9c1b0d6f-c346-46d7-b20f-aee69dad88a1
-      - type: quiz
+      - type: reading
         title: Пример фајла
         file: 13_3_cas.rst
         description: #opciono
