@@ -24,18 +24,18 @@ description:
      href: https://petlja.org/biblioteka/r/kursevi/python-zbirka-pitanja-gim
 
 lessons:
-  - title: 1. лекција - робот Карел
+  - title: 1. Робот Карел - линијски програми и бројачка петља
     folder: 1_lekcija
     guid: 27df52e9-0590-4aab-8102-fc846da2f2c9
     description: 1_lekcija
     activities:
       - type: reading
-        title: 1.1. Робот Карел и линијски програми
+        title: 1.1. Линијски програми
         file: 1_1_cas.rst
         description: #opciono
         guid: b671a912-1714-424a-a543-a500c9e9124d
       - type: reading
-        title: 1.2. Робот Карел и бројачка петља for
+        title: 1.2. Бројачка петља for
         file: 1_2_cas.rst
         description: #opciono
         guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
@@ -44,37 +44,37 @@ lessons:
         file: 1_3_cas.rst
         description: #opciono
         guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
-  - title: 2. лекција - робот Карел
+  - title: 2. Робот Карел - условна петља и гранање
     folder: 2_lekcija
     guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
     description: 2_lekcija
     activities:
       - type: reading
-        title: 2.1. Робот Карел - условне петље
+        title: 1.4. Условне петље
         file: 2_1_cas.rst
         description: #opciono
         guid: fd6be321-a89e-4db3-8d0c-ae4129727802
       - type: reading
-        title: 2.2. Робот Карел - гранање
+        title: 1.5. Гранање
         file: 2_2_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
       - type: reading
-        title: 2.3. Вежбање
+        title: 1.6. Вежбање
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-  - title: 3. лекција
+  - title: 3. Робот Карел - систематизација
     folder: 3_lekcija
     guid: dac0c143-9242-4fed-b9b6-473891f2a3de
     description: 3_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 1.7. Систематизација
         file: 3_1_cas.rst
         description: #opciono
         guid: 555d0479-5d91-44e4-a1f9-764c4142455f
-  - title: 4. лекција
+  - title: 4. Квиз
     folder: 4_lekcija
     guid: 8a9680c9-7ad4-480a-bf27-cc4087a0fbce
     description: 4_lekcija
@@ -89,7 +89,7 @@ lessons:
         file: 4_2_test.rst
         description: #opciono
         guid: b0cb8941-7d62-45d8-8399-7284b3741de5
-  - title: 5. лекција
+  - title: 5. Корњача графика
     folder: 5_lekcija
     guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
     description: 5_lekcija
@@ -109,7 +109,7 @@ lessons:
         file: 5_3_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3344872f18
-  - title: 6. лекција
+  - title: 6. Корњача графика
     folder: 6_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
     description: 6_lekcija
@@ -139,7 +139,7 @@ lessons:
         file: 6_5_cas.rst
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
-  - title: 7. лекција
+  - title: 7. Квиз
     folder: 7_lekcija
     guid: 1d417170-fa6b-4bdb-a3c9-137568bb52bf
     description: 7_lekcija
@@ -149,7 +149,7 @@ lessons:
         file: 7_1.rst
         description: #opciono
         guid: 6e128a28-bfa7-45d5-81a4-c5372150f070
-  - title: 8. лекција
+  - title: 8. Израчунавања
     folder: 8_lekcija
     guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
     description: 8_lekcija
@@ -174,7 +174,7 @@ lessons:
         file: 8_4_cas.rst
         description: #opciono
         guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
-  - title: 9. лекција
+  - title: 9. Израчунавања
     folder: 9_lekcija
     guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
     description: 9_lekcija
@@ -194,7 +194,7 @@ lessons:
         file: 9_3_cas.rst
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
-  - title: 10. лекција
+  - title: 10. Израчунавања
     folder: 10_lekcija
     guid: e0438475-0523-49c4-ad13-47272ec38464
     description: 10_lekcija
@@ -214,7 +214,7 @@ lessons:
         file: 10_3_cas.rst
         description: #opciono
         guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
-  - title: 11. лекција
+  - title: 11. Израчунавања
     folder: 11_lekcija
     guid: dc78977e-d63e-4fa0-9b03-02f303ac359c
     description: 11_lekcija
@@ -235,7 +235,7 @@ lessons:
         description: #opciono
         guid: f74013bc-df72-4a96-b095-37f90936dbae
       
-  - title: 12. лекција
+  - title: 12. Контрола тока програма
     folder: 12_lekcija
     guid: dc58977e-d63e-4fa0-9b03-89f303ac359c
     description: 12_lekcija
@@ -250,7 +250,7 @@ lessons:
         file: 12_2_cas.rst
         description: #opciono
         guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23  
-  - title: 13. лекција
+  - title: 13. Контрола тока програма
     folder: 13_lekcija
     guid: 69fe5da0-2bc4-4f49-8948-866e7bef9af7
     description: 13_lekcija
@@ -270,7 +270,7 @@ lessons:
         file: 13_3_cas.rst
         description: #opciono
         guid: c31ebc9a-6093-41b2-b08d-fc7380876492
-  - title: 14. лекција
+  - title: 14. Квиз
     folder: 14_lekcija
     guid: 13317b39-3082-450f-9830-3af9ae2ac8cd
     description: 14_lekcija
@@ -285,7 +285,7 @@ lessons:
         file: 14_2_test.rst
         description: #opciono
         guid: aa0a2973-9f8e-4c67-a4b2-84a5cfad0bbc
-  - title: 15. лекција
+  - title: 15. Структуре података
     folder: 15_lekcija
     guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
     description: 15_lekcija
@@ -305,7 +305,7 @@ lessons:
         file: 15_3_cas.rst
         description: #opciono
         guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
-  - title: 16. лекција
+  - title: 16. Квиз
     folder: 16_lekcija
     guid: 21d20814-80f7-4177-8212-5c05ab8530bf
     description: 16_lekcija

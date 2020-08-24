@@ -25,19 +25,19 @@
     :hidden:
     :maxdepth: 3
 
-    1. лекција - робот Карел <1_lekcija/index>
-    2. лекција - робот Карел <2_lekcija/index>
-    3. лекција <3_lekcija/index>
-    4. лекција <4_lekcija/index>
-    5. лекција <5_lekcija/index>
-    6. лекција <6_lekcija/index>
-    7. лекција <7_lekcija/index>
-    8. лекција <8_lekcija/index>
-    9. лекција <9_lekcija/index>
-    10. лекција <10_lekcija/index>
-    11. лекција <11_lekcija/index>
-    12. лекција <12_lekcija/index>
-    13. лекција <13_lekcija/index>
-    14. лекција <14_lekcija/index>
-    15. лекција <15_lekcija/index>
-    16. лекција <16_lekcija/index>
+    1. Робот Карел - линијски програми и бројачка петља <1_lekcija/index>
+    2. Робот Карел - условна петља и гранање <2_lekcija/index>
+    3. Робот Карел - систематизација <3_lekcija/index>
+    4. Квиз <4_lekcija/index>
+    5. Корњача графика <5_lekcija/index>
+    6. Корњача графика <6_lekcija/index>
+    7. Квиз <7_lekcija/index>
+    8. Израчунавања <8_lekcija/index>
+    9. Израчунавања <9_lekcija/index>
+    10. Израчунавања <10_lekcija/index>
+    11. Израчунавања <11_lekcija/index>
+    12. Контрола тока програма <12_lekcija/index>
+    13. Контрола тока програма <13_lekcija/index>
+    14. Квиз <14_lekcija/index>
+    15. Структуре података <15_lekcija/index>
+    16. Квиз <16_lekcija/index>
