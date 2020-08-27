@@ -105,17 +105,17 @@ lessons:
     description: 5_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 5.1. Линијски програми
         file: 5_1_cas.rst
         description: #opciono
         guid: ea1bcbdd-059c-4c28-91ba-8c46e7d0e952
       - type: reading
-        title: Пример фајла
+        title: 5.2. Понављање
         file: 5_2_cas.rst
         description: #opciono
         guid: 554440e0-81d0-4d31-9b23-5d8fd58fe7e9
       - type: reading
-        title: Пример фајла
+        title: 5.3. Вежбање
         file: 5_3_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3344872f18
