@@ -125,27 +125,27 @@ lessons:
     description: 6_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 6.1. Гранање
         file: 6_1_cas.rst
         description: #opciono
         guid: caf7f6ce-2f76-455a-a46e-90183cbd2d37
       - type: reading
-        title: Пример фајла
+        title: 6.2. Корњача графика - угнежђене петље
         file: 6_2_cas.rst
         description: #opciono
         guid: 9a5db7aa-ef66-4ca8-8c4e-bbd28d09a90c
       - type: reading
-        title: Пример фајла
+        title: 6.3. Процедуре
         file: 6_3_cas.rst
         description: #opciono
         guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
       - type: reading
-        title: Пример фајла
+        title: 6.4. Торке/листе
         file: 6_4_cas.rst
         description: #opciono
         guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
       - type: reading
-        title: Пример фајла
+        title: 6.5. Вежбање
         file: 6_5_cas.rst
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
@@ -165,22 +165,22 @@ lessons:
     description: 8_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 8.1. Основне аритметичке операције и примена
         file: 8_1_cas.rst
         description: #opciono
         guid: ee8759b0-069a-40da-87fb-b9518e39fa59
       - type: reading
-        title: Пример фајла
+        title: 8.2. Променљиве - имена међурезултата
         file: 8_2_cas.rst
         description: #opciono
         guid: b8b21901-7e30-452b-a004-f855275bf3df
       - type: reading
-        title: Пример фајла
+        title: 8.3. Ниске
         file: 8_3_cas.rst
         description: #opciono
         guid: 8f38c9bc-e247-4f1d-b7ed-f170dc934275
       - type: reading
-        title: Пример фајла
+        title: 8.4. Вежбање - изрази
         file: 8_4_cas.rst
         description: #opciono
         guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
@@ -190,17 +190,17 @@ lessons:
     description: 9_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 9.1. Цели и реални бројеви
         file: 9_1_cas.rst
         description: #opciono
         guid: babe0f6f-50f0-4403-a397-56a64906618a
       - type: reading
-        title: Пример фајла
+        title: 9.2. Реално и целобројно дељење
         file: 9_2_cas.rst
         description: #opciono
         guid: 9b315409-894f-46be-a362-16e233ea9677
       - type: reading
-        title: Пример фајла
+        title: 9.3. Вежбање - цели и реални бројеви
         file: 9_3_cas.rst
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
@@ -210,17 +210,17 @@ lessons:
     description: 10_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 10.1. Коришћење и дефинисање функција
         file: 10_1_cas.rst
         description: #opciono
         guid: 694f25d3-9cf3-4794-9f48-84727ec77cb4
       - type: reading
-        title: Пример фајла
+        title: 10.2. Дефинисање функција
         file: 10_2_cas.rst
         description: #opciono
         guid: f05e1e5e-6d88-4926-8c2e-a98223dac25a
       - type: reading
-        title: Пример фајла
+        title: 10.3. Вежбање
         file: 10_3_cas.rst
         description: #opciono
         guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
@@ -256,7 +256,7 @@ lessons:
         description: #opciono
         guid: f74013bc-df72-4a96-b595-37f9c136dbae
       - type: reading
-        title: Пример фајла
+        title: 12.2. Комбинација више логичких услова
         file: 12_2_cas.rst
         description: #opciono
         guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23  
@@ -266,17 +266,17 @@ lessons:
     description: 13_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 13.1 Понављање
         file: 13_1_cas.rst
         description: #opciono
         guid: ef84c9b2-9b37-48f9-98d9-395aebaace18    
       - type: reading
-        title: Пример фајла
+        title: 13.2. Условна петља
         file: 13_2_cas.rst
         description: #opciono
         guid: 9c1b0d6f-c346-46d7-b20f-aee69dad88a1
       - type: reading
-        title: Пример фајла
+        title: 13.3. Угнежђене петље
         file: 13_3_cas.rst
         description: #opciono
         guid: c31ebc9a-6093-41b2-b08d-fc7380876492
@@ -301,17 +301,17 @@ lessons:
     description: 15_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 15.1. Структуре података - Торке, листе
         file: 15_1_cas.rst
         description: #opciono
         guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
       - type: reading
-        title: Пример фајла
+        title: 15.2. Ниске
         file: 15_2_cas.rst
         description: #opciono
         guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
       - type: reading
-        title: Пример фајла
+        title: 15.3. Скупови
         file: 15_3_cas.rst
         description: #opciono
         guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
@@ -321,7 +321,7 @@ lessons:
     description: 16_lekcija
     activities:
       - type: reading
-        title: Пример фајла
+        title: 16.1. Квиз - структуре података
         file: 16_1.rst
         description: #opciono
         guid: 86b61797-d015-462f-9c21-32b93883cb36
