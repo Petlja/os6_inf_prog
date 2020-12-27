@@ -1,0 +1,112 @@
+12.4. Квиз
+##########
+
+Питање 1.
+~~~~~~~~~~~~~~~~
+
+.. mchoice:: p1124
+    :answer_a: i in range( 3 )
+    :feedback_a: Тачно
+    :answer_b: i in 3
+    :feedback_b: Нетачно    
+    :answer_c: range(3)
+    :feedback_c: Нетачно    
+    :answer_d: i = 3
+    :feedback_d: Нетачно    
+    :correct: a
+
+    Који од понуђених кодова треба додати на обележено место да би програм при извршавању 3 пута исписао Dobar dan? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     for __________________:
+     	print("Dobar dan")
+
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: p2124
+    :answer_a: i in range(1, 5)
+    :feedback_a: Тачно
+    :answer_b: i in range(5)
+    :feedback_b: Нетачно    
+    :answer_c: i in range(14, 19)
+    :feedback_c: Нетачно    
+    :correct: a
+
+    Са којим од понуђених кодова додатим на обележено место програм НЕЋЕ при извршавању исписати 5 пута  `Dobar dan` ? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     for __________________:
+     	print("Dobar dan")
+
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: p3124
+    :answer_a: 28 пута ће бити исписан број 4.
+    :feedback_a: Нетачно    
+    :answer_b: 56 пута ће бити исписан број 2.
+    :feedback_b: Нетачно    
+    :answer_c: 28 пута ће бити исписан број 2.
+    :feedback_c: Нетачно    
+    :answer_d: Биће исписан број 4.
+    :feedback_d: Тачно
+    :correct: d
+
+    Шта ће бити резултат наредног програма, ако му се при покретању на сваком уносу даје број 2? Изабери тачан одговор:
+
+    .. code-block:: python
+
+       for i in range(28):
+       	o = int(input("unesi broj opravdanih")
+      	n = int(input("unesi broj neopravdanih")
+      	u = o + n
+       print(u)
+
+Питање 4.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: p4124
+    :answer_a: 36 пута ће бити исписан број 4.
+    :feedback_a: Тачно
+    :answer_b: 72 пута ће бити исписан број 2.
+    :feedback_b: Нетачно    
+    :answer_c: 36 пута ће бити исписан број 2.
+    :feedback_c: Нетачно    
+    :answer_d: Биће исписан број 4.
+    :feedback_d: Нетачно    
+    :correct: a
+
+    Шта ће бити резултат наредног програма ако му се при покретању да 36 примерака броја 2? Изабери тачан одговор:
+
+    .. code-block:: python
+ 
+     for i in range(36):
+    	o = int(input("unesi broj opravdanih")
+    	n = int(input("unesi broj neopravdanih")
+    	u = o + n
+        print(u)
+
+Питање 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: p5124
+    :answer_a: Биће исписани бројеви 1, 2, 3, 4.
+    :feedback_a: Тачно
+    :answer_b: Биће пет пута исписан текст broj.
+    :feedback_b: Нетачно    
+    :answer_c: Биће исписани бројеви од 1, 2, 3, 4, 5.
+    :feedback_c: Нетачно    
+    :answer_d: Ниједан од понуђених одговора није тачан.
+    :feedback_d: Нетачно    
+    :correct: a
+
+    Шта ће бити резултат извршавања следећег Пајтон кода? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     for broj in range(1,5):
+     	print(broj) 
+

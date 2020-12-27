@@ -1,115 +1,109 @@
+15.3. Квиз
+##########
 
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-15.3. Скупови
-#############
+.. mchoice:: sp1
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: a
 
-Ако знамо имена свих фудбалера који су давали голове током једне
-ревијалне утакмице и то редом, како су давали голове можемо
-једноставно одредити скуп свих фудбалера који су се уписали у листу
-стрелаца. Наиме, ако формирамо скуп на основу имена стрелаца
-аутоматски ће бити уклоњени дупликати.
+    На који од следећих начин се исписују елементи листе ``lista = [1, 22, 43, 5]``? Изабери тачан одговор:
 
-.. activecode:: скуп
-		
-   strelci = {"Mesi", "Ronaldo", "Mesi", "Ibrahimović", "Ibrahimović", "Nejmar", "Nejmar"}
-   print(strelci)
+    (1)
 
-Скуп дефинишемо тако што између витичастих заграда (заграда ``{`` и
-``}``) наводимо елементе раздвојене зарезима. Елементи скупа у овом
-примеру су биле ниске, а можемо разматрати и скупове елемената другог
-типа (на пример, скупове бројева).
+    .. code-block:: python
 
-Скуп од торке/листе/ниске
-&&&&&&&&&&&&&&&&&&&&&&&&&
+     for broj in lista:
+     	print(broj)
 
-Ако су елементи скупа чланови неке торке или листе, можемо лако добити
-скуп свих елемената (коришћењем функције ``set`` као у следећем
-програму).
+    (2)
 
-.. activecode:: скуп_од_листе
-		
-   golovi = ["Mesi", "Ronaldo", "Mesi", "Ibrahimović", "Ibrahimović", "Nejmar", "Nejmar"]
-   strelci = set(golovi)
-   print(strelci)
+    .. code-block:: python
 
-И од ниске можемо једноставно добити скуп карактера које она садржи
-(опет помоћу функције ``set``).
+     for broj in lista:
+     	print(lista[broj])
 
-Провера припадности скупу
-&&&&&&&&&&&&&&&&&&&&&&&&&
+    (3)
 
-Слично као и код осталих структура података, провера припадности скупу
-може се извршити оператором ``in``. Покушај да то примениш у наредном
-задатку.
+    .. code-block:: python
 
-Да ли је Миодраг награђен?
-''''''''''''''''''''''''''
+     for broj in range(lista):
+     	print(lista[broj])
 
-.. questionnote:: 
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Познат је скуп награђених ученика. Напиши програм који проверава да
-   ли је Миодраг освојио награду.
+.. mchoice:: spp2
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Тачно    
+    :correct: c
 
-.. activecode:: члан_скупа_награђених
+    На који од следећих начин се исписује сваки други елемент листе ``lista``? Изабери тачан одговор:
 
-   nagradjeni = {"Lenka", "Sofija", "Dimitrije"} 
-   if "Miodrag" ???:
-       print("Bravo!")
-   else:                       
-       print("Nažalost, Miodrag nije među nagrađenima.")
+    (1)
 
+    .. code-block:: python
 
-Скуповне операције
-&&&&&&&&&&&&&&&&&&
+     for i in range(1, len(lista), 1):
+     	print(lista[i])
 
-У језику Python можемо веома једноставно израчунати **унију**,
-**пресек** и **разлику** скупова. Ако су ``A`` и ``B`` скупови, онда
-је ``A | B`` њихова унија, ``A & B`` њихов пресек, а ``A - B`` њихова
-разлика. Провери да ли се сећаш ових операција из математике тако што
-ћеш решити наредни тест.
+    (2)
 
+    .. code-block:: python
 
-.. dragndrop:: identifier
-    :match_1: A & B|||{3}
-    :match_2: A | B|||{3, 4, 5, 6, 7}
-    :match_3: A - B|||{6, 7}
-    :match_4: B - A|||{4, 5}
-    :match_5: (A - B) | (B - A)|||{4, 5, 6, 7}
+     for elem in lista:
+     	print(elem)
 
-    Ако је A = {3, 6, 7}, а B = {3, 4, 5}, повежи скуповне
-    операције са њиховим резултатима.
+    (3)
 
+    .. code-block:: python
 
-Прикажимо како се скуповне операције могу употребити у решењу наредног
-задатка.
+     for elem in lista[::2]:
+     	print(elem)
+	
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Девојчице које тренирају два спорта
-'''''''''''''''''''''''''''''''''''
-.. level:: 1
-   
-.. questionnote::
+.. mchoice:: spp3
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Тачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: b
 
-  Један скуп садржи девојчице из одељења које тренирају ритмичку
-  гимнастику, а други оне које тренирају одбојку. Одреди скуп
-  девојчица које тренирају оба спорта, скуп девојчица које тренирају
-  бар један од њих и скуп девојчица које тренирају само одбојку.
+    На који начин се може проћи кроз све елементе речника `predmeti`
+    који пресликава називе предмета у оцене из тих предмета. Изабери
+    тачан одговор:
+    
+    (1)
 
-.. activecode:: скупови_спортисткиња  
+    .. code-block:: python
 
-   ritmicka = {"Ana", "Milica", "Jovana", "Gordana"}
-   odbojka = {"Tara", "Nađa", "Milica", "Jovana", "Aleksandra"}
-   dva_sporta = ritmicka ??? odbojka       # upiši odgovarajući operator
-   bar_jedan_sport = ritmicka ??? odbojka  # upiši odgovarajući operator
-   samo_odbojka = odbojka ??? ritmicka     # upiši odgovarajući operator
-   print(dva_sporta)
-   print(bar_jedan_sport)
-   print(samo_odbojka)
+     for (predmet, ocena) in predmeti:
+     	print(predmet, ocena)
 
-Ако све урадиш како треба, добићеш решење
+    (2)
 
-::
+    .. code-block:: python
 
-   {'Milica', 'Jovana'}
-   {'Ana', 'Milica', 'Jovana', 'Gordana', 'Tara', 'Nađa', 'Aleksandra'}
-   {'Tara', 'Nađa', 'Aleksandra'}   
+     for (predmet, ocena) in predmeti.items():
+     	print(predmet, ocena)
 
+    (3)
+
+    .. code-block:: python
+
+     for predmet in predmeti.items():
+     	print(predmeti[predmet])

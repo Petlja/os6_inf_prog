@@ -1,42 +1,8 @@
-16.1. Квиз - структуре података
-================================
+14.3. Квиз
+##########
+
 
 Питање 1.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. mchoice:: sp1
-    :answer_a: 1
-    :feedback_a: Тачно
-    :answer_b: 2
-    :feedback_b: Нетачно    
-    :answer_c: 3
-    :feedback_c: Нетачно    
-    :correct: a
-
-    На који од следећих начин се исписују елементи листе ``lista = [1,22,43,5]``? Изабери тачан одговор:
-
-    (1)
-
-    .. code-block:: python
-
-     for broj in lista:
-     	print(broj)
-
-    (2)
-
-    .. code-block:: python
-
-     for broj in lista:
-     	print(broj)
-
-    (3)
-
-    .. code-block:: python
-
-     for broj in lista:
-     	print(broj)
-
-Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: ss2
@@ -51,7 +17,7 @@
     На који од следећих начина се додаје елемент 2 мна крај дате листе ``lista =[1, 5, 9, 7]``?
 
 
-Питање 3.
+Питање 2.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: s3
@@ -65,21 +31,22 @@
 
     На који од следећих начина одредити дужину листе ``lista = [1,2,3,4]`` (број елемената листе)?
 
-Питање 4.
+Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp4
-    :answer_a: i in range(ocene)
+    :answer_a: 1 in range(ocene)
     :feedback_a: Нетачно
-    :answer_b: i i in range(broj_ocena)
+    :answer_b: 1 in ocene
     :feedback_b: Тачно    
-    :answer_c: i in range(broj_ocena):
+    :answer_c: ocene contains 1
     :feedback_c: Нетачно    
     :correct: b
 
-    
+Како се проверава да ли број `1` припада листи `ocene`?
+	      
 
-Питање 5.
+Питање 4.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: sp5
@@ -93,6 +60,20 @@
 
     Дата је листа ``lista = [2,3,4,5]``, на који од следећих начина се може издвојити први елемент листе?
 
+Питање 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. mchoice:: sp6
+    :answer_a: matematika = 3.5
+    :feedback_a: Нетачно
+    :answer_b: ocena["matematika"] = 3.5
+    :feedback_b: Тачно    
+    :answer_c: ocena[matematika] = 3.5
+    :feedback_c: Нетачно
+    :answer_d: ocena["matematika"] = 3,5
+    :feedback_d: Нетачно
+    :correct: b
 
-
+    Речник називу сваког предмета додељује просечну оцену из тог
+    предмета. Којом наредбом се математици придружује просечна оцена
+    3,5?

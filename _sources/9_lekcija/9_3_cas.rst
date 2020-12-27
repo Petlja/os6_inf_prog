@@ -1,62 +1,168 @@
-9.3. Вежбање - цели и реални бројеви
-####################################
+9.3. Квиз
+#########
 
-Ако на часу нисте стигли да урадите све задатке, уради их сада, у
-склопу домаћег задатка. Након тога покушај да урадиш и наредних
-неколико задатака.
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. fillintheblank:: funк_1
 
-Прочитане стране књиге
-''''''''''''''''''''''
-.. level:: 1
+   Шта ће бити резултат извршавања следећег кода?
 
-.. questionnote::
+   .. code-block:: python
 
-   Књига има 282 стране. Марко је првог дана прочитао трећину, другог
-   дана половину остатка, а трећег књигу прочитао до краја. Колико
-   страна је прочитао ког дана? Напиши програм тако да исправно ради
-   и ако је број страна првог дана другачији.
+	 def obim(a):
+		return 4 * a
+	 print(obim(6))
 
-.. activecode:: Читање
-   :runortest: broj_strana, prvi_dan, drugi_dan, treci_dan
-   :enablecopy:
+   Одговор: |blank|
 
-   # -*- acsection: general-init -*-
-   # -*- acsection: var-init -*-
-   broj_strana = 282
-   # -*- acsection: main -*-
-   prvi_dan = 0      # ispravi ovaj red
-   drugi_dan = 0     # ispravi ovaj red
-   treci_dan = 0     # ispravi ovaj red
-   # -*- acsection: after-main -*-
-   print(prvi_dan, drugi_dan, treci_dan)
-   ====
-   from unittest.gui import TestCaseGui
-   class myTests(TestCaseGui):
-       def testOne(self):
-          for broj_strana, dan in [(369, 123), (333, 111)]:
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["prvi_dan"],dan,"Ако књига има %s страна, први дан је прочитано %s страна." % (broj_strana,dan))
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["drugi_dan"],dan,"Ако књига има %s страна, други дан је прочитано %s страна." % (broj_strana,dan))
-             self.assertEqual(acMainSection(broj_strana = broj_strana)["treci_dan"],dan,"Ако књига има %s страна, трећи дан је прочитано %s страна." % (broj_strana,dan))
-   myTests().main()
-   
-
-.. reveal:: пресек_решење11
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
-
-   Марко је прочитао 94 стране сваког дана. Првог дана је прочитао
-   трећину и остале су му две трећине. Другог дана је прочитао пола од
-   тога тј. опет трећину и за трећи дан му је остала последња трећина.
-	       
-   .. activecode:: Читање_решење
-
-      broj_strana = 282		
-      prvi_dan = broj_strana / 3
-      drugi_dan = (broj_strana - prvi_dan) / 2
-      treci_dan = broj_strana - prvi_dan - drugi_dan
-      print(treci_dan)
-
+   - :^\s*24\s*$: Тачно
+     :x: Одговор није тачан.
       
+
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: funк2
+    :answer_a: return a * a
+    :feedback_a: Тачно
+    :answer_b: return а * 2
+    :feedback_b: Нетачно    
+    :answer_c: а * а
+    :feedback_c: Нетачно    
+    :answer_d: return kvadrat
+    :feedback_d: Нетачно    
+    :correct: a
+
+    Коју од понуђених линија кода треба додати на обележено место да би на исправан начин била дефинисана функција која израчунава квадрат добијеног броја? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     def stepen(a):
+
+     _________________
+
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. fillintheblank:: funк3
+
+   Шта ће бити резултат извршавања следећег кода?
+
+   .. code-block:: python
+
+	def f(a):
+		return - 3 * a
+	print(f(0) - f(-1))
+
+   Одговор: |blank|
+
+   - :^\s*\-3\s*$: Тачно
+     :x: Одговор није тачан.
+      
+
+Питање 4.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. fillintheblank:: funк4
+
+   Шта ће бити резултат извршавања следећег кода?
+
+   .. code-block:: python
+
+    def f(a):
+   	return 2 * a + 3
+  
+    print(f(-2) - f(f(2)))
+
+   Одговор: |blank|
+
+   - :^\s*\-18\s*$: Тачно
+     :x: Одговор није тачан.
+      
+Питање 5.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. fillintheblank:: funк5
+
+   За коју ће вредност додељену променљивој m Пајтон окружење при покретању исписати 15?
+
+   .. code-block:: python
+
+    def f(a):
+    	if a % 5 == 0:
+    		return 2 * a
+    	else:
+      		return a + 1
+
+    m = int(input("unesi ceo broj"))
+    print(f(m))
+
+   Одговор: |blank|
+
+   - :^\s*14\s*$: Тачно
+     :x: Одговор није тачан.
+      
+      
+
+
+
+
+Питање 6.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: funк6
+    :multiple_answers:
+    :answer_a: return s, return m
+    :feedback_a: Нетачно    
+    :answer_b: return s, m
+    :feedback_b: Тачно
+    :answer_c: (s, m)
+    :feedback_c: Нетачно    
+    :answer_d: return (s, m)
+    :feedback_d: Тачно
+    :correct: ['b', 'd']
+
+    Дат је задатак у којем се тражи да се за време које је Алекса провео у читању књиге дато у минутима испише исто време изражено у сатима 
+	и минутима. Коју од понуђених линија кода треба додати на обележено место да би на исправан начин била дефинисана функција, 
+	а програм за унето време исписивао тачан резултат? Изабери тачан одговор: 
+
+    .. code-block:: python
+
+     def vreme(a):
+     	s = a // 60
+     	m = a % 60
+     	____________
+	
+     x = int(input("Unesi koliko minuta je Aleksa citao knjigu"))
+     (s,m) = f(x)
+     m = int(input("unesi ceo broj"))
+     print(s, m)
+
+
+Питање 7.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: funк7
+    :answer_a: 33 "33"
+    :feedback_a: Нетачно    
+    :answer_b: 33 "1122"
+    :feedback_b: Тачно
+    :answer_c: 1122 "1122"
+    :feedback_c: Нетачно    
+    :answer_d: 33 33
+    :feedback_d: Нетачно    
+    :answer_e: Пајтон окружење ће пријавити грешку при извршавању датог програма.
+    :feedback_e: Нетачно    
+    :correct: b
+
+    Шта ће бити резултат извршавања следећег програма? Изабери тачан одговор: 
+
+    .. code-block:: python
+
+      def f(l,n):
+      	return l + n
+  
+      print(f(11,22)," ",f("11","22"))
 
 

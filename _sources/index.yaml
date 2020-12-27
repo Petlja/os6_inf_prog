@@ -6,8 +6,11 @@ description:
     Овај курс је намењен ученицима 6. разреда основне школе за предмет Информатика и рачунарство у току другог полугодишта. 
     У оквиру овог курса детаљно je обрађенa наставнa темa Рачунарство кроз демонстрацију текстуалног програмирања применом програмског језика Пајтон. 
     Курс у потпуности прати план наставе и учења за овај предмет. Курс је подељен по часовима. Материјал намењен за 
-    један школски час се састоји од лекције, дела са питалицама, којима се ученицима скреће
-    пажња на најбитније делове из садржаја лекције и кратких квизова, који имају за циљ проверу усвојеног градива.
+    један школски час се састоји од лекције, видео илустрације, као и дела са питалицама којима се ученицима скреће
+    пажња на најбитније делове из садржаја лекције. Курс садржи и мале тестове, који имају за циљ проверу усвојених појмова.
+    Курс у нет.кабинет - у је конципиран тако да прво долази лекција у оквиру које се налазе објашњења онога што се обрађује током часа, након тога долази квиз 
+    у коме свако од вас може да провери колико је вањано савладао садржај лекције и на крају, ту је Вежбање. Вежбање вероватно нећете стићи да обрадите током часа, већ су то
+    задаци за самосталан рад и увежбавање онога што сте до тог тренутка обрадили. Такође, улога вежбања је да и да утврдите пређено градиво.с
     
     Поред рада у школи, курс се може пролазити и самостално.
 
@@ -16,7 +19,7 @@ description:
     - основне концепте текстуалног програмирања
 
   requirements:
-    - Имаш инсталиран Пајтон
+    - инсталиран Пајтон
   toc:
     - Робот Карел
     - Корњача графика
@@ -49,280 +52,364 @@ lessons:
         file: 1_2_cas.rst
         description: #opciono
         guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
-      - type: reading
-        title: 1.3.Вежбање
+      - type: quiz
+        title: 1.4. Квиз
         file: 1_3_cas.rst
         description: #opciono
+        guid: 498mm35b-3e01-4d69-ba48-549dc26dfa2a
+      - type: reading
+        title: 1.3. Вежбање
+        file: 1_4_cas.rst
+        description: #opciono
         guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
+        
   - title: 2. Робот Карел - условна петља и гранање
     folder: 2_lekcija
     guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
     description: 2_lekcija
     activities:
       - type: reading
-        title: 1.4. Условне петље
+        title: 2.1. Условне петље
         file: 2_1_cas.rst
         description: #opciono
         guid: fd6be321-a89e-4db3-8d0c-ae4129727802
       - type: reading
-        title: 1.5. Гранање
+        title: 2.2. Гранање
         file: 2_2_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
       - type: reading
-        title: 1.6. Вежбање
+        title: 2.3. Квиз
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-  - title: 3. Робот Карел - систематизација
+      - type: quiz
+        title: 2.4. Вежбање
+        file: 2_4_cas.rst
+        description: #opciono
+        guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
+        
+  - title: 3. Робот Карел - задаци за вежбање
     folder: 3_lekcija
     guid: dac0c143-9242-4fed-b9b6-473891f2a3de
     description: 3_lekcija
     activities:
       - type: reading
-        title: 1.7. Систематизација
+        title: 3.1. Робот Карел - задаци за вежбање
         file: 3_1_cas.rst
         description: #opciono
         guid: 555d0479-5d91-44e4-a1f9-764c4142455f
-  - title: 4. Квиз
+        
+  - title: 4. Корњача графика - линијски програми и петље
     folder: 4_lekcija
-    guid: 8a9680c9-7ad4-480a-bf27-cc4087a0fbce
+    guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
     description: 4_lekcija
     activities:
-      - type: quiz
-        title: Квиз - робот Карел (линијска структура и понављање)
-        file: 4_1_test.rst
-        description: #opciono
-        guid: 4895f105-61e5-4a58-83b5-0bbca5bdd586
-      - type: quiz
-        title: Квиз - робот Карел (условне петље и гранање)
-        file: 4_2_test.rst
-        description: #opciono
-        guid: b0cb8941-7d62-45d8-8399-7284b3741de5
-  - title: 5. Корњача графика
-    folder: 5_lekcija
-    guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
-    description: 5_lekcija
-    activities:
       - type: reading
-        title: 5.1. Линијски програми
-        file: 5_1_cas.rst
+        title: 4.1. Наредбе корњаче
+        file: 4_1_cas.rst
         description: #opciono
         guid: ea1bcbdd-059c-4c28-91ba-8c46e7d0e952
       - type: reading
-        title: 5.2. Понављање
-        file: 5_2_cas.rst
+        title: 4.2. Линијски програми
+        file: 4_2_cas.rst
         description: #opciono
         guid: 554440e0-81d0-4d31-9b23-5d8fd58fe7e9
       - type: reading
-        title: 5.3. Вежбање
-        file: 5_3_cas.rst
+        title: 4.3. Петље
+        file: 4_3_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3344872f18
-  - title: 6. Корњача графика
-    folder: 6_lekcija
+      - type: quiz
+        title: 4.4. Квиз
+        file: 4_4_cas.rst
+        description: #opciono
+        guid: 0be322ea-d13d-45fa-9aba-cc3lo4872f18
+      - type: quiz
+        title: 4.5. Вежбање
+        file: 4_5_cas.rst
+        description: #opciono
+        guid: b3f341de-5720-4a2c-a1b0-ba71ad3d4384
+        
+  - title: 5. Корњача графика - гранање, процедуре, торке/листе
+    folder: 5_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
-    description: 6_lekcija
+    description: 5_lekcija
     activities:
       - type: reading
-        title: 6.1. Гранање
-        file: 6_1_cas.rst
+        title: 5.1. Гранање
+        file: 5_1_cas.rst
         description: #opciono
         guid: caf7f6ce-2f76-455a-a46e-90183cbd2d37
       - type: reading
-        title: 6.2. Корњача графика - угнежђене петље
-        file: 6_2_cas.rst
+        title: 5.2. Угнежђене петље
+        file: 5_2_cas.rst
         description: #opciono
         guid: 9a5db7aa-ef66-4ca8-8c4e-bbd28d09a90c
       - type: reading
-        title: 6.3. Процедуре
-        file: 6_3_cas.rst
+        title: 5.3. Процедуре
+        file: 5_3_cas.rst
         description: #opciono
         guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
       - type: reading
-        title: 6.4. Торке/листе
-        file: 6_4_cas.rst
+        title: 5.4. Торке/листе
+        file: 5_4_cas.rst
         description: #opciono
         guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
-      - type: reading
-        title: 6.5. Вежбање
-        file: 6_5_cas.rst
+      - type: quiz
+        title: 5.5. Квиз
+        file: 5_5_cas.rst
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
-  - title: 7. Квиз
-    folder: 7_lekcija
-    guid: 1d417170-fa6b-4bdb-a3c9-137568bb52bf
-    description: 7_lekcija
-    activities:
-      - type: quiz
-        title: 7. Квиз - корњача графика
-        file: 7_1.rst
+      - type: reading
+        title: 5.6. Вежбање
+        file: 5_6_cas.rst
         description: #opciono
-        guid: 6e128a28-bfa7-45d5-81a4-c5372150f070
-  - title: 8. Израчунавања
-    folder: 8_lekcija
-    guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
-    description: 8_lekcija
+        guid: ea256727-522e-4490-ac5a-05115c3a3faa
+
+  - title: 6. Корњача графика - задаци за вежбање
+    folder: 6_lekcija
+    guid: 65566e0c-8422-4e22-bf13-d71fe5523c1d
+    description: 6_lekcija
     activities:
       - type: reading
-        title: 8.1. Основне аритметичке операције и примена
-        file: 8_1_cas.rst
+        title: 6.1. Корњача графика - задаци вежбање
+        file: 6_1_cas.rst
+        description: #opciono
+        guid: 058ed212-0c4d-4ba6-b762-ea6e4505b0fc
+
+        
+  - title: 7. Израчунавања - изрази, оператори, променљиве
+    folder: 7_lekcija
+    guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
+    description: 7_lekcija
+    activities:
+      - type: reading
+        title: 7.1. Основне аритметичке операције и примена
+        file: 7_1_cas.rst
         description: #opciono
         guid: ee8759b0-069a-40da-87fb-b9518e39fa59
       - type: reading
-        title: 8.2. Променљиве - имена међурезултата
-        file: 8_2_cas.rst
+        title: 7.2. Променљиве - имена међурезултата
+        file: 7_2_cas.rst
         description: #opciono
         guid: b8b21901-7e30-452b-a004-f855275bf3df
       - type: reading
-        title: 8.3. Ниске
-        file: 8_3_cas.rst
+        title: 7.3. Тестирање и дебаговање програма
+        file: 7_3_cas.rst
         description: #opciono
         guid: 8f38c9bc-e247-4f1d-b7ed-f170dc934275
+      - type: quiz
+        title: 7.4. Квиз
+        file: 7_4_cas.rst
+        description: #opciono
+        guid: 58723fa5-9ac3-4fda-a9ca-e3c18795389f
       - type: reading
-        title: 8.4. Вежбање - изрази
-        file: 8_4_cas.rst
+        title: 7.5. Вежбање
+        file: 7_5_cas.rst
         description: #opciono
         guid: eaa6da7a-78a7-4173-a539-5948c4c4ce40
-  - title: 9. Израчунавања
-    folder: 9_lekcija
+        
+  - title: 8. Израчунавања - цели и реални бројеви, дељење
+    folder: 8_lekcija
     guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
-    description: 9_lekcija
+    description: 8_lekcija
     activities:
       - type: reading
-        title: 9.1. Цели и реални бројеви
-        file: 9_1_cas.rst
+        title: 8.1. Цели и реални бројеви
+        file: 8_1_cas.rst
         description: #opciono
         guid: babe0f6f-50f0-4403-a397-56a64906618a
       - type: reading
-        title: 9.2. Реално и целобројно дељење
-        file: 9_2_cas.rst
+        title: 8.2. Реално и целобројно дељење
+        file: 8_2_cas.rst
         description: #opciono
         guid: 9b315409-894f-46be-a362-16e233ea9677
       - type: reading
-        title: 9.3. Вежбање - цели и реални бројеви
-        file: 9_3_cas.rst
+        title: 8.3. Позициони запис бројева 
+        file: 8_3_cas.rst
+        description: #opciono
+        guid: 108e3cec-75ac-41c3-b931-d5c8e28a36ff
+      - type: quiz
+        title: 8.4. Квиз
+        file: 8_4_cas.rst
+        description: #opciono
+        guid: f9f4ec27-397b-4e27-93f9-019dfb1f453e
+      - type: reading
+        title: 8.5. Вежбање
+        file: 8_5_cas.rst
         description: #opciono
         guid: 70c7ce9d-e68d-4b34-83e8-65c22f5fa878
-  - title: 10. Израчунавања
-    folder: 10_lekcija
+
+  - title: 9. Израчунавања - коришћење и дефинисање функција
+    folder: 9_lekcija
     guid: e0438475-0523-49c4-ad13-47272ec38464
-    description: 10_lekcija
+    description: 9_lekcija
     activities:
       - type: reading
-        title: 10.1. Коришћење и дефинисање функција
-        file: 10_1_cas.rst
+        title: 9.1. Коришћење функција
+        file: 9_1_cas.rst
         description: #opciono
         guid: 694f25d3-9cf3-4794-9f48-84727ec77cb4
       - type: reading
-        title: 10.2. Дефинисање функција
-        file: 10_2_cas.rst
+        title: 9.2. Дефинисање функција
+        file: 9_2_cas.rst
         description: #opciono
         guid: f05e1e5e-6d88-4926-8c2e-a98223dac25a
-      - type: reading
-        title: 10.3. Вежбање
-        file: 10_3_cas.rst
+      - type: quiz
+        title: 9.3. Квиз
+        file: 9_3_cas.rst
         description: #opciono
-        guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5
-  - title: 11. Израчунавања
+        guid: df2e60d5-9cd0-47c3-b7ab-c80be8cb4d3d
+      - type: reading
+        title: 9.4. Вежбање
+        file: 9_4_cas.rst
+        description: #opciono
+        guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5        
+        
+  - title: 10. Израчунавања - задаци за вежбање
+    folder: 10_lekcija
+    guid: b9447e4b-0afc-4518-b374-e001ec1b788f
+    description: 10_lekcija
+    activities:
+      - type: reading
+        title: 10.1. Израчунавања - задаци за вежбање
+        file: 10_1_cas.rst
+        description: #opciono
+        guid: e72a5898-9c15-4734-943a-5da09b20d28a
+        
+  - title: 11. Гранање 
     folder: 11_lekcija
-    guid: dc78977e-d63e-4fa0-9b03-02f303ac359c
+    guid: 3f281ebb-2aa8-48f0-8913-89eb281fc64d
     description: 11_lekcija
     activities:
-      - type: quiz
-        title: 11.1. Квиз - аритметичке операције
-        file: 11_1.rst
+      - type: reading
+        title: 11.1. Гранање
+        file: 11_1_cas.rst
         description: #opciono
-        guid: f74013bc-df72-4a96-b095-37f9c136dммe
-      - type: quiz
-        title: 11.1. Квиз - целобројно и реално дељење
-        file: 11_2.rst
+        guid: 160a3e72-c7c5-4170-96cf-475c22bc1eec
+      - type: reading
+        title: 11.2. Комбинација више логичких услова
+        file: 11_2_cas.rst
         description: #opciono
-        guid: f74013bc-df72-4a96-b095-37f9c1323bae
-      - type: quiz
-        title: 11.1. Квиз - Функције
-        file: 11_3.rst
+        guid: 10b5abc5-d204-475e-9057-8ade59943236
+      - type: reading
+        title: 11.3. Конструкција elif
+        file: 11_3_cas.rst
         description: #opciono
-        guid: f74013bc-df72-4a96-b095-37f90936dbae
-      
-  - title: 12. Контрола тока програма
+        guid: 9799de49-73c8-4b79-9b62-ad81bd792128
+      - type: quiz
+        title: 11.4. Квиз
+        file: 11_4_cas.rst
+        description: #opciono
+        guid: 5a853abd-2045-44e6-82d9-301decf1138a
+      - type: reading
+        title: 11.5. Вежбање
+        file: 11_5_cas.rst
+        description: #opciono
+        guid: f8751dac-80d3-443b-900e-9ebbaf6820bb
+
+  - title: 12. Понављање 
     folder: 12_lekcija
-    guid: dc58977e-d63e-4fa0-9b03-89f303ac359c
+    guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
     description: 12_lekcija
     activities:
       - type: reading
-        title: Квиз - израчунавања, функције
+        title: 12.1. Понављање
         file: 12_1_cas.rst
         description: #opciono
-        guid: f74013bc-df72-4a96-b595-37f9c136dbae
+        guid: 1b469fa03-6e83-4f19-bf1b-97bff2cd9f84
       - type: reading
-        title: 12.2. Комбинација више логичких услова
+        title: 12.2. Условна петља
         file: 12_2_cas.rst
         description: #opciono
-        guid: 6de8fd2e-d4e4-4faa-afa0-1797cd6b3a23  
-  - title: 13. Контрола тока програма
+        guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
+      - type: reading
+        title: 12.3. Угнежђене петље
+        file: 12_3_cas.rst
+        description: #opciono
+        guid: ab9f7f5e-b554-45bf-ad4e-9c5f70761a88
+      - type: quiz
+        title: 12.4. Квиз
+        file: 12_4_cas.rst
+        description: #opciono
+        guid: d66bdebb-3d61-4269-b689-0a1ad7cef559
+      - type: reading
+        title: 12.5. Вежбање
+        file: 12_5_cas.rst
+        description: #opciono
+        guid: 9ca1b7f1-a88e-4fa6-8033-f889024963ed
+
+  - title: 13. Контрола тока - задаци за вежбање
     folder: 13_lekcija
-    guid: 69fe5da0-2bc4-4f49-8948-866e7bef9af7
+    guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228  
     description: 13_lekcija
     activities:
       - type: reading
-        title: 13.1 Понављање
+        title: 13.1. Контрола тока - задаци вежбање
         file: 13_1_cas.rst
         description: #opciono
-        guid: ef84c9b2-9b37-48f9-98d9-395aebaace18    
-      - type: reading
-        title: 13.2. Условна петља
-        file: 13_2_cas.rst
-        description: #opciono
-        guid: 9c1b0d6f-c346-46d7-b20f-aee69dad88a1
-      - type: reading
-        title: 13.3. Угнежђене петље
-        file: 13_3_cas.rst
-        description: #opciono
-        guid: c31ebc9a-6093-41b2-b08d-fc7380876492
-  - title: 14. Квиз
+        guid: f14addc7-a6b4-4ba7-bc38-54e51e6a585c
+
+  - title: 14. Структуре података
     folder: 14_lekcija
-    guid: 13317b39-3082-450f-9830-3af9ae2ac8cd
+    guid: 86923893-3746-4cc6-b3d5-1f69091e4b97
     description: 14_lekcija
     activities:
-      - type: quiz
-        title: 14.1. Квиз - гранање
-        file: 14_1_test.rst
+      - type: reading
+        title: 14.1. Торке, листе и ниске
+        file: 14_1_cas.rst
         description: #opciono
-        guid: 1ba00ef3-7099-4015-bdc9-e9bfdabad389    
-      - type: quiz
-        title: 14.2. Квиз - понављање
-        file: 14_2_test.rst
+        guid: fbc6dd0b-f551-4a60-914d-673ee8c0ecf3
+      - type: reading
+        title: 14.2. Скупови и речници
+        file: 14_2_cas.rst
         description: #opciono
-        guid: aa0a2973-9f8e-4c67-a4b2-84a5cfad0bbc
-  - title: 15. Структуре података
+        guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
+      - type: quiz
+        title: 14.3. Квиз
+        file: 14_3_cas.rst
+        description: #opciono
+        guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
+      - type: reading
+        title: 14.4. Вежбање
+        file: 14_4_cas.rst
+        description: #opciono
+        guid: e1807cea-7406-49e1-b061-020d521fc5b5
+        
+  - title: 15. Структуре података и петље
     folder: 15_lekcija
-    guid: 9a9665a4-534c-4270-909c-ecc7799ad47d
+    guid: 0a8c8243-ee8e-4d9b-97a9-9eef7d9754e2
     description: 15_lekcija
     activities:
       - type: reading
-        title: 15.1. Структуре података - Торке, листе
+        title: 15.1. Торке, листе, ниске и петље
         file: 15_1_cas.rst
         description: #opciono
-        guid: dd04ae99-f323-4472-a644-fbd0ad7abf5f
+        guid: 6d9ba56e-7ada-4e3a-84f5-8ef96ddc2f08
       - type: reading
-        title: 15.2. Ниске
+        title: 15.2. Речници и петље
         file: 15_2_cas.rst
         description: #opciono
-        guid: 35d6d90b-fadc-437a-a6ad-0c2c81d1b866
-      - type: reading
-        title: 15.3. Скупови
+        guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
+      - type: quiz
+        title: 15.3. Квиз
         file: 15_3_cas.rst
         description: #opciono
-        guid: b9c1f186-a3f7-4f47-988b-2612b78c16e4        
-  - title: 16. Квиз
+        guid: 234c7173-6473-4544-920d-6a56d73d1372
+      - type: reading
+        title: 15.4. Вежбање
+        file: 15_4_cas.rst
+        description: #opciono
+        guid: 730987e6-ec3c-40b1-9741-64fe6cd0944c
+
+  - title: 16. Откривање и исправљање грешака
     folder: 16_lekcija
-    guid: 21d20814-80f7-4177-8212-5c05ab8530bf
+    guid: 3d4c4bdf-dd5f-4dc0-953f-4d59ca05cc90
     description: 16_lekcija
     activities:
       - type: reading
-        title: 16.1. Квиз - структуре података
-        file: 16_1.rst
+        title: 16.1. Откривање и исправљање грешака и коришћење дебагера
+        file: 16_1_cas.rst
         description: #opciono
-        guid: 86b61797-d015-462f-9c21-32b93883cb36
-  
+        guid: bbb08795-16b5-4cd1-be94-932d7225a44c
