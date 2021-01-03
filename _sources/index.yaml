@@ -78,12 +78,12 @@ lessons:
         file: 2_2_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
-      - type: reading
+      - type: quiz
         title: 2.3. Квиз
         file: 2_3_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
-      - type: quiz
+      - type: reading
         title: 2.4. Вежбање
         file: 2_4_cas.rst
         description: #opciono
