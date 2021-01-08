@@ -82,12 +82,12 @@ lessons:
         title: 2.3. Квиз
         file: 2_3_cas.rst
         description: #opciono
-        guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
+        guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
       - type: reading
         title: 2.4. Вежбање
         file: 2_4_cas.rst
         description: #opciono
-        guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
+        guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
         
   - title: 3. Робот Карел - задаци за вежбање
     folder: 3_lekcija
@@ -125,7 +125,7 @@ lessons:
         file: 4_4_cas.rst
         description: #opciono
         guid: 0be322ea-d13d-45fa-9aba-cc3lo4872f18
-      - type: quiz
+      - type: reading
         title: 4.5. Вежбање
         file: 4_5_cas.rst
         description: #opciono
@@ -160,12 +160,12 @@ lessons:
         title: 5.5. Квиз
         file: 5_5_cas.rst
         description: #opciono
-        guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
+        guid: ea256727-522e-4490-ac5a-05115c3a3faa
       - type: reading
         title: 5.6. Вежбање
         file: 5_6_cas.rst
         description: #opciono
-        guid: ea256727-522e-4490-ac5a-05115c3a3faa
+        guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
 
   - title: 6. Корњача графика - задаци за вежбање
     folder: 6_lekcija
