@@ -163,3 +163,32 @@
      else:
      	print('Не може!')
 
+
+Питање 8.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: grananje_9
+    :answer_a: Биће исписано "Artikal je poskupeo!"
+    :feedback_a: Нетачно    
+    :answer_b: Биће исписано "Unesi cenu artikla"
+    :feedback_b: Нетачно    
+    :answer_c: Биће исписано "Artikal je na sniženju!"
+    :feedback_c: Тачно
+    :answer_d: Биће исписано "Stara cena!"
+    :feedback_d: Нетачно    
+    :correct: c
+
+    Шта је резултат извршавања следећег кода уколико је а = 750?
+
+    .. code-block:: python
+
+     a = int(input('Unesi cenu artikla'))
+     if ( a > 12800):
+     	print('Artikal je poskupeo!')
+     elif (a < 900):
+     	print('Artikal je na sniženju!')
+     else:
+     	print('Stara cena!')
+
+
+

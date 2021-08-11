@@ -110,3 +110,69 @@
      for broj in range(1,5):
      	print(broj) 
 
+Питање 6.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: p5125
+    :answer_a: (1)
+    :feedback_a: Тачно
+    :answer_b: (2)
+    :feedback_b: Нетачно    
+    :answer_c: (3)
+    :feedback_c: Нетачно    
+    :answer_d: (4)
+    :feedback_d: Нетачно    
+    :correct: a
+
+    Шта ће бити резултат извршавања следећег Пајтон кода? Изабери тачан одговор:
+
+    .. code-block:: python
+
+     for i in range(3):
+     	for j in range(2): 
+     	   print(i,j) 
+
+
+    (1)
+
+    .. code-block:: python
+
+     0 0
+     0 1
+     1 0
+     1 1
+     2 0
+     2 1
+
+    (2)
+
+    .. code-block:: python
+
+     1 1
+     1 2
+     1 1
+     1 2
+     2 1
+     2 2
+
+    (3)
+
+    .. code-block:: python
+
+     0 0
+     1 1
+     2 2
+     3 0
+     0 1
+     1 2
+
+    (3)
+
+    .. code-block:: python
+
+     1 1
+     2 2
+     3 1
+     1 2
+     2 1
+     1 2
