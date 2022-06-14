@@ -1,129 +1,209 @@
-1.3. Квиз
-#########
+1.2. Бројачка петља `for`
+#######################################
 
-~~~~~~~~      
-Питање 1
-~~~~~~~~
+Често робот исту наредбу треба да понови више пута. Да би се такви
+програми могли једноставније писати је коришћење **петљи**. 
 
-.. fillintheblank:: karel_osnovno_3
+У наставку ћеш се детаљније упознати са **бројачком петљом**.
 
-   Нека је Карел робот у положају као на слици.
-    
-   .. image:: ../../_images/karel2.png   
+
+Иди 8 поља напред
+'''''''''''''''''
+
+.. questionnote::
+
+   У наредном лавиринту постоји 8 поља испред робота. Коришћењем
+   петље учини да робот дође до лоптице и да је затим покупи.
+
+Један начин да решимо задатак је да роботу 8 пута задамо наредбу да
+иде напред и затим наредбу да покупи лоптицу.
+   
+.. karel:: Карел_8_поља_напред
+   :blockly:
+
+   {
+      setup: function() {
+	   var world = new World(9, 1);
+           world.setRobotStartAvenue(1);
+           world.setRobotStartStreet(1);
+           world.setRobotStartDirection("E");
+	   world.putBall(9, 1);
+           var robot = new Robot();
+	   var code = ["from karel import *",
+	       "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "napred()", "uzmi()"]
+	   return {world: world, robot: robot, code: code};
+      },
+
+      isSuccess: function(robot, world) {
+           return robot.getStreet() === 1 &&
+           robot.getAvenue() === 9 &&
+	   world.getBalls(9, 1) == 0;
+      }
+   }
+
+
+Замислимо колико би досадно било куцати десет или сто пута наредбу да
+робот иде напред, када би лавиринт био већи. Пошто се у програмима
+често јавља потреба да се неке наредбе понављају, сви програмски
+језици обезбеђују начин да се то постигне. У програмском језику
+Python, који наш робот Карел разуме, понављање се постиже коришћење
+наредбе ``for``. Понављања у програмима се називају **циклуси** или
+**петље** (по чему је наша фондација "Петља" добила име). Погледајмо
+како се претходни програм може скратити употребом петље ``for``.
+
+.. karel:: Карел_8_поља_напред_for
+   :blockly:
+
+   {
+      setup: function() {
+	   var world = new World(9, 1);
+           world.setRobotStartAvenue(1);
+           world.setRobotStartStreet(1);
+           world.setRobotStartDirection("E");
+	   world.putBall(9, 1);
+           var robot = new Robot();
+	   var code = ["from karel import *",
+	       "for i in range(8):", "    napred()", "uzmi()"]
+	   return {world: world, robot: robot, code: code};
+      },
+
+      isSuccess: function(robot, world) {
+           return robot.getStreet() === 1 &&
+           robot.getAvenue() === 9 &&
+	   world.getBalls(9, 1) == 0;
+      }
+   }
+
+Овде смо употребили петљу ``for i in range(n):`` која је уобичајени
+начин да се изрази да се наредбе наведене у телу петље извршавају
+``n`` пута (ми смо уместо ``n`` навели ``8``, чиме смо постигли то да
+се наредба ``napred()`` изврши 8 пута). Овим смо дакле рекли "Понови
+пет пута корак напред". Уместо ``i`` смо могли употребити и неко друго
+слово или реч (или знак ``_``).
+
+Наредбе које се понављају (за њих се каже да чине **тело** петље) се
+обавезно морају увући у односу на наредбу ``for`` (обично помоћу
+неколико размака, најчешће 4, или једног табулатора тј. карактера
+*Tab* који се на тастатурама налази лево од тастера *Q*). Када се
+петља заврши, извршава се наредба која је наведена иза петље и то
+поравната са речју ``for`` (у претходном програму то је наредба
+``uzmi()``).  Наредба ``uzmi()`` након петље ``for`` није увучена, што
+значи да се она извршава само једном и то када се заврши извршавање
+петље ``for`` тј. када се њено тело изврши одговарајући број
+пута. Када би она била увучена и она би се понављала.
+
+Резимирајмо све горе наведено у следећој видео илустрацији:
+
+.. ytpopup:: TnXzzmUIC70
+      :width: 735
+      :height: 415
       :align: center
-    
-   Поређај команде тако да робот на најкраћи начин стигне до рупе.
-    
-   (1) 
-     .. code-block:: python
-       
-       levo()
-    
-   (2) 
-     .. code-block:: python
-       
-       napred()
-    
-    
-   (Одговор упиши навођењем редних бројева команди у одговарајућем редоследу, нпр. 1221)
-    
-    
-   - :^\s*121112|\s*$: Тачно
-     :x: Одговор није тачан.
-	    
-~~~~~~~~      
-Питање 2
-~~~~~~~~
-
-.. mchoice:: karel_nazad
-    :answer_a: Робот ће се померити за два поља на лево и бити на пољу (1,1).
-    :feedback_a: Нетачно    
-    :answer_b: Робот ће се окренути за 180 степени и налазити се на пољу на ком се налазио и пре извршавања датог кода.        
-    :feedback_b: Тачно
-    :answer_c: Робот ће се померити за два поља на десно и бити на пољу (5,1).
-    :feedback_c: Нетачно    
-    :answer_d: Ниједан од понуђених одговора није тачан.     
-    :feedback_d: Нетачно    
-    :correct: b
-    
-    Нека је Карел робот у положају као на слици.
-     
-    .. image:: ../../_images/karel3.png 
-       :align: center
-     
-    У ком положају ће се наћи робот након извршавања следећег дела кода:
-     
-    .. code-block:: python
-        
-       desno(); desno();
 
 
-~~~~~~~~      
-Питање 3
-~~~~~~~~
 
-.. mchoice:: karel_nazad_2
-    :answer_a: Робот ће се померити за два поља лево и бити на пољу (1,1).
-    :feedback_a: Нетачно    
-    :answer_b: Робот ће се налазити се на пољу на ком се налазио и пре извршавања датог кода. 
-    :feedback_b: Тачно
-    :answer_c: Робот ће се померити за два поља десно и бити на пољу (5,1).       
-    :feedback_c: Нетачно    
-    :answer_d: Ниједан од понуђених одговора није тачан.     
-    :feedback_d: Нетачно    
-    :correct: b
-    
-    Нека је Карел робот у положају као на слици.
-     
-    .. image:: ../../_images/karel3.png 
-       :align: center
-     
-    На ком пољу ће се робот наћи након извршавања следећег дела кода:
-     
-    .. code-block:: python
-        
-       napred(); levo(); levo(); napred();
+Неке честе грешке
+'''''''''''''''''
 
-~~~~~~~~~
-Питање 4
-~~~~~~~~~
+Нагласимо да се на крају линије у којој се употребљава наредба ``for``
+обавезно ставља двотачка (симбол ``:``). Ако се она не наведе добићеш
+поруку о грешци
 
-.. mchoice:: karel_for_range
-    :answer_a: for i in range:
-    :feedback_a: Нетачно    
-    :answer_b: for i in range()
-    :feedback_b: Нетачно    
-    :answer_c: for i in range(4):
-    :feedback_c: Тачно
-    :answer_d: for i in (1,4): 
-    :feedback_d: Нетачно    
-    :correct: c
-    
-    Која од наредних наредби је прави облик коришћења  петље for којом се описује понављање 4 пута: 
+::
+
+   SyntaxError: bad input on line ???
+
+Ово значи ``Синтаксичка грешка: лош унос на линији ???`` - број линије
+ти може указати на то где је грешка направљена (немој да заборавиш да
+провериш и линију изнад те). Јако честа грешка програмера-почетника је
+да забораве двотачку на крају наредбе ``for`` - обрати пажњу на тај
+важан детаљ.
+
+Ако заборавиш да увучеш тело петље, поново ћеш добити поруку
+
+::
+
+   SyntaxError: bad input on line ???
+
+Још једна грешка која може наступити услед неодговарајућег увлачења
+наредби је и
+
+::
+   
+   IndentationError: unindent does not match any outer indentation level on line ???
+
+На енглеском језику ``IndentationError`` значи *Грешка у
+увлачењу*.
 
 
-~~~~~~~~~
-Питање 5
-~~~~~~~~~
+У складу са претходном дискусијом, исправи наредни програм.
 
-.. mchoice:: karel_for
-    :answer_a: napred(); napred(); desno(); napred(); desno();
-    :feedback_a: Нетачно    
-    :answer_b: napred(); napred(); napred(); desno();
-    :feedback_b: Нетачно    
-    :answer_c: napred(); desno(); napred(); desno(); napred(); 
-    :feedback_c: Тачно
-    :answer_d: napred(); desno(); desno(); napred(); 
-    :feedback_d: Нетачно    
-    :correct: c
+.. karel:: Карел_8_поља_напред_for_грешке
 
-    Нека je дат следећи део кода.
+   {
+      setup: function() {
+	   var world = new World(9, 1);
+           world.setRobotStartAvenue(1);
+           world.setRobotStartStreet(1);
+           world.setRobotStartDirection("E");
+	   world.putBall(9, 1);
+           var robot = new Robot();
+	   var code = ["from karel import *",
+	       "for i in range(8)", "napred()", " uzmi()"]
+	   return {world: world, robot: robot, code: code};
+      },
 
-    .. code-block:: python
+      isSuccess: function(robot, world) {
+           return robot.getStreet() === 1 &&
+           robot.getAvenue() === 9 &&
+	   world.getBalls(9, 1) == 0;
+      }
+   }
 
-       for i in range(2):
-          napred()
-          desno()
-       napred()
 
-    Који од наредних кодова ће дати исти резултат при извршавању? Изабери тачан одговор:
+Петљама ћемо се много детаљније бавити у поглављу `Понављање
+<Ponavljanje.html>`_.
+
+Иди 7 поља напред
+'''''''''''''''''
+
+Пробај сада самостално да допуниш наредни програм тако да робот покупи
+лоптицу. Не заборави да се пре петље окрене у правом смеру.
+
+.. karel:: Карел_7_поља_напред
+   :blockly:
+
+   {
+      setup: function() {
+	   var world = new World(1, 8);
+           world.setRobotStartAvenue(1);
+           world.setRobotStartStreet(1);
+           world.setRobotStartDirection("E");
+	   world.putBall(1, 8);
+           var robot = new Robot();
+	   var code = ["from karel import *"]
+	   return {world: world, robot: robot, code: code};
+      },
+
+      isSuccess: function(robot, world) {
+           return robot.getStreet() === 8 &&
+           robot.getAvenue() === 1 &&
+	   world.getBalls(1, 8) == 0;
+      }
+   }
+
+.. reveal:: Карел_7_поља_напред_reveal
+   :showtitle: Прикажи решење
+   :hidetitle: Сакриј решење
+
+   Карел треба прво да се окрене налево, затим да иде 7 пута напред и
+   на крају да узме лоптицу. Прекопирај наредни код у претходни
+   програм и испробај га.
+   
+   .. activecode:: Карел_7_поља_напред_решење
+      :passivecode: true
+   
+      levo()
+      for i in range(7):
+         napred()
+      uzmi()
+      
