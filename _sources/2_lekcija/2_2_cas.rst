@@ -102,7 +102,7 @@
 	   var code = ["from karel import *",
         "for i in range(3): # ponovi tri puta",
         "    ??? # idi napred",
-        "    if True: # ako je na polju loptica",
+        "    if ???: # ako je na polju loptica",
         "        ??? # uzmi lopticu"]
             return {world: world, robot: robot, code: code};
             },
@@ -298,65 +298,3 @@
 	   return true;
       }
     }
-
-
-Још једна идеја за решење може биће следећа. Ако робот може да се
-помери напред, онда ћемо му рећи да се помери напред и нако тога ћемо
-му рећи да провери да ли се на пољу налази лоптица и да је узме. У
-супротном, ако робот не може да се помери напред, значи да је дошао до
-зида и тада ћемо му рећи да се окрене на лево. Све ово ћемо понављати
-у једној петљи (која ће се извршити 20 пута, што је тачно број корака
-који је потребан да би робот обишао цео круг). Покушај да наредни код
-допуниш тако да робот успешно покупи све лоптице.
-
-.. karel:: Карел_покупи_лоптице_у_круг_2
-    :blockly:
-   
-    {
-      setup: function() {
-           var dim = 5;
-	   var world = new World(dim, dim);
-           world.setRobotStartAvenue(1);
-           world.setRobotStartStreet(1);
-           world.setRobotStartDirection("E");
-
-	   for (var i = 1; i <= dim; i++)
-	      if (Math.random() > 0.5)
-	         world.putBall(i, 1);
-	   for (var i = 1; i <= dim; i++)
-	      if (Math.random() > 0.5)
-	         world.putBall(i, dim);
-	   for (var i = 2; i <= dim-1; i++)
-	      if (Math.random() > 0.5)
-	         world.putBall(1, i);
-	   for (var i = 2; i <= dim-1; i++)
-	      if (Math.random() > 0.5)
-	         world.putBall(dim, i);
-
-	   world.addEWWall(2, 1, dim-2);
-	   world.addEWWall(2, dim-1, dim-2);
-           world.addNSWall(1, 2, dim-2);
-           world.addNSWall(dim-1, 2, dim-2);
-	   
-           var robot = new Robot();
-	   var code = ["from karel import *",
-        "for i in range(20):",
-        "    if moze_napred():",
-        "        ??? # popravi ovu liniju",
-        "        if ima_loptica_na_polju():",
-        "            ??? # popravi ovu liniju",
-        "    else:",
-        "        ??? # popravi ovu liniju"
-            ]
-            return {world: world, robot: robot, code: code};
-            },
-
-      isSuccess: function(robot, world) {
-           for (var i = 1; i <= world.dim; i++)
-	      for (var j = 1; j <= world.dim; j++)
-	         if (world.getBalls(i, j) != 0)
-	         return false;
-	   return true;
-      }
-    }
-
