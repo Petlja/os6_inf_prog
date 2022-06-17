@@ -31,20 +31,17 @@
 
 По сличном принципу можемо нацртати и наизглед доста сложеније облике.
 
-Компликованија звезда
+Четири квадрата
 '''''''''''''''''''''
 
 .. questionnote::
 
-   Напиши програм у којем корњача црта звездицу приказану на слици.
-   Она се састоји од 20 троуглова чија је страница дугачка 60 корака,
-   који су распоређени око правилног двадесетоугла чија је дужина
-   странице 10 корака.
+   Напиши програм у којем корњача црта облик који се састоји од четири квадрата, како је приказано на наредној слици.
 
-   .. image:: ../../_images/kornjaca-komplikovana-zvezda.png
+   .. image:: ../../_images/4_kvadrata.png
       :align: center
 	      
-Исправи наредни програм тако да се добије облик са слике.
+Дефиниши процедуру за цртање квадрата, а затим размисли како су ти квадрати међусобно распоређени, тј. колико треба да се окрене корњача након завршетка цртања сваког квадрата.
 	      
 .. activecode:: полигони_угнежђена_петља_1
    :nocodelens:
@@ -52,28 +49,14 @@
    :playtask:
 
    import turtle
-   m = 20
-   n = 3
-   turtle.speed(0)
-   for i in range(0):
-       turtle.color("red")
-       for j in range(0):
-           turtle.forward(0)
-           turtle.left(0)
-       turtle.color("black")
-       turtle.forward(0)
-       turtle.left(0)
+   n = 100
+   # dopuni resenje
    ====
    import turtle
-   m = 20
-   n = 3
-   turtle.speed(0)
-   for i in range(m):
-       turtle.color("red")
-       for j in range(n):
-           turtle.forward(60)
-	   turtle.left(360/n)
-       turtle.color("black")
-       turtle.forward(10)
-       turtle.left(360/m)
+   n = 100
+   for j in range(4):
+       for i in range(4):
+           turtle.forward(n)
+           turtle.left(90)
+       turtle.left(90)
          
