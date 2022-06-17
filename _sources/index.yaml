@@ -86,18 +86,23 @@ lessons:
         description: #opciono
         guid: fd6be321-a89e-4db3-8d0c-ae4129727802
       - type: reading
-        title: 2.2. Гранање
+        title: 2.2. Вежбање
         file: 2_2_cas.rst
+        description: #opciono
+        guid: bdd3dd96-f0ba-4539-9937-ad61d020fa8c  
+      - type: reading
+        title: 2.3. Гранање
+        file: 2_3_cas.rst
         description: #opciono
         guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
       - type: quiz
-        title: 2.3. Квиз
-        file: 2_3_cas.rst
+        title: 2.4. Квиз
+        file: 2_4_cas.rst
         description: #opciono
         guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
       - type: reading
-        title: 2.4. Вежбање
-        file: 2_4_cas.rst
+        title: 2.5. Вежбање
+        file: 2_5_cas.rst
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
         

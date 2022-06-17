@@ -1,163 +1,246 @@
-2.4. Вежбање 
-############
+2.4. Квиз
+=========
 
-На крају ти остављамо неколико задатака за вежбу. Оне задатке које не
-стигнеш да урадиш на часу уради за домаћи задатак.
+Питање 1.
+~~~~~~~~~
+.. mchoice:: while1
+    :answer_a: Не.
+    :feedback_a: Тачно
+    :answer_b: Да.
+    :feedback_b: Нетачно
+    :correct: ['a']
+    
+    Дата је наредба `while` :
 
-
-Лоптице на три стране
-'''''''''''''''''''''
-
-
-
-.. questionnote::
-
-   Помози роботу да покупи све лоптице. Пошто је лавиринт зачаран,
-   мораћеш да употребиш петљу са провером услова.
-
-.. karel:: Карел_лоптице_на_три_стране
-  :blockly:
-
-   {
-     setup: function() {
-
-         function random(n) {
-             return Math.floor(n * Math.random());
-         }
-     
-         var N = 4 + random(3);
-         var world = new World(N, N);
-         world.setRobotStartAvenue(1);
-         world.setRobotStartStreet(N);
-         world.setRobotStartDirection("S");
-         for (var i = N-1; i >= 1; i--)
-            world.putBall(1, i);
-         for (var i = 2; i <= N; i++)
-            world.putBall(i, 1);
-         for (var i = 2; i <= N; i++)
-             world.putBall(N, i);
-     
-         world.addNSWall(1, 2, N-1);
-         world.addEWWall(2, 1, N-2);
-         world.addNSWall(N-1, 2, N-1); ;
-         var robot = new Robot();
-         var code = ["from karel import *"]
-         return {world: world, robot: robot, code: code};
-     },
-
-     isSuccess: function(robot, world) {
-          for (var i = 1; i <= world.getAvenues(); i++)
-             for (var j = 1; j <= world.getStreets(); j++)
-                if (world.getBalls(i, j) != 0)
-                   return false;
-         return true;
-     }
-   }
-
-.. reveal:: Карел_лоптице_на_три_стране_reveal
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
-
-   Једно могуће решење (не и једино) је следеће.               
-
-   .. activecode:: Карел_лоптице_на_три_стране_решење
-      :passivecode: true
-                    
+    .. code-block:: python
+    
       from karel import *
-      for i in range(3):
-          while moze_napred():
-              napred()
-              uzmi()
-          levo() 
+      while ima_loptica_na_polju()
+        uzmi()    
+ 
+    Ова наредба је написана у складу са правилима програмског језика Пајтон? Изабери тачан одговор.
 
-Покупи лоптице до којих можеш да дођеш
-''''''''''''''''''''''''''''''''''''''
+Питање 2.
+~~~~~~~~~
+.. mchoice:: while2
+    :answer_a: Робот ће оставити све лоптице које има код себе на пољу на коме је.
+    :feedback_a: Тачно
+    :answer_b: Робот ће оставити све лоптице које има код себе на пољу испред себе.
+    :feedback_b: Нетачно
+    :answer_c: Робот ће оставити једну лоптицу на пољу на коме се налази.
+    :feedback_c: Нетачно
+    :answer_d: Робот ће оставити једну лоптицу на пољу испред себе.
+    :feedback_d: Нетачно
+    :correct: ['a']
+    
+    Дата је наредба `while` :
 
-.. questionnote::
-
-   Помози роботу да покупи све лоптице. Наравно, лавиринт је опет
-   зачаран и распоред препрека и лоптица испред робота се мења
-   приликом сваког покретања програма.
-   
-.. karel:: Карел_покупи_лоптице_до_којих_можеш_да_дођеш
-    :blockly:
-   
-    {
-      setup: function() {
-
-         function random(n) {
-             return Math.floor(n * Math.random());
-         }
-
-         var world = new World(4 + random(4), 2);
-         world.setRobotStartAvenue(1);
-         world.setRobotStartStreet(2);
-         world.setRobotStartDirection("E");
-
-         world.addEWWall(1, 1, 1);
-         var balls = 0;
-         var prevBall = false;
-         for (var i = 2; i <= world.getAvenues(); i++) {
-             if (random(2) == 0 || (balls == 0 && i == world.getAvenues() - 1)) {
-                 balls++;
-                 if (!prevBall)
-                    world.addNSWall(i-1, 1, 1);
-                 world.putBall(i, 1);
-                 prevBall = true;
-             } else {
-                 if (prevBall)
-                    world.addNSWall(i-1, 1, 1);
-                 world.addEWWall(i, 1, 1);
-                 prevBall = false;
-             }
-         }
-
-         var robot = new Robot();
-         var code = ["from karel import *"]
-         return {world: world, robot: robot, code: code};
-      },
-
-      isSuccess: function(robot, world) {
-           for (var i = 1; i <= world.getAvenues(); i++)
-              for (var j = 1; j <= world.getStreets(); j++)
-                 if (world.getBalls(i, j) != 0)
-                    return false;
-          return true;
-      }
-    }
-
-У сваком кораку робот треба да се помери напред, затим да се окрене за
-90 степени (ка југу) и провери да ли је испред њега препрека. Ако нема
-препреке тј. ако може да иде напред, онда треба да оде напред, узме
-лоптицу, окрене се за 180 степени (ка северу), поново оде напред и
-окрене се за 90 степени (ка истоку). У супротном само треба да се
-окрене за 90 степени (ка истоку).
-
-.. reveal:: Карел_покупи_лоптице_до_којих_можеш_да_дођеш_reveal
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
-
-   Једно могуће решење (не и једино) је следеће.               
-
-   .. activecode:: Карел_покупи_лоптице_до_којих_можеш_да_дођеш_решење
-      :passivecode: true
-                    
+    .. code-block:: python
+    
       from karel import *
-      while moze_napred():
-          napred()
-          # okreni se prema jugu
-          desno()
-          # proveri da li je prepreka ispred tebe
-          if moze_napred():
-              # idi po lopticu
-              napred()
-              uzmi()
-              # vrati se nazad
-              levo()
-              levo()
-              napred()
-              desno()
-          else:
-              # okreni se prema istoku
-              levo()
+      while ima_loptica_kod_sebe():
+        ostavi()    
+
+
+    Шта је резултат извршавања ове наредбе? Изабери тачан одговор.
+
+Питање 3.
+~~~~~~~~~
+.. mchoice:: karel_uzmi
+    :multiple_answers:
+    :answer_a: 1 
+    :feedback_a: Тачно
+    :answer_b: 2 
+    :feedback_b: Нетачно    
+    :answer_c: 3        
+    :feedback_c: Тачно
+    :answer_d: 4
+    :feedback_d: Нетачно    
+    :correct: ['a', 'c']
+    
+
+    Нека је Карел робот у положају као на слици.
+
+    .. image:: ../../_images/karel4.png 
+      :align: center
+
+    Извршавањем којих од наредних програма ће робот стићи до поља (4,1) и узети лоптицу?
+
+    (1)
+      .. code-block:: python
+        
+        from karel import *
+        while mozeNapred():
+            napred()
+        uzmi()
+
+    (2)        
+      .. code-block:: python
+        
+        from karel import *
+        while mozeNapred():
+            napred()
+            uzmi()
+
+    (3)
+      .. code-block:: python
+        
+        from karel import *
+        for i in range(3):
+            napred()
+        uzmi()
+
+    (4)
+      .. code-block:: python
+        
+        from karel import *
+        for i in range(3):
+            napred()
+            uzmi()
+
+      Изабери тачанe одговорe:
+
+Питање 4.
+~~~~~~~~~
+.. fillintheblank:: karel_jedna_petlja2
+
+    Нека је Карел робот у положају као на слици
+
+    .. image:: ../../_images/karel8.png 
+      :align: center
+
+    и нека је његов задатак да сиђе низ степенице и caкупи све лоптице које му се нађу на путу. 
+    Дат је недовршен програм који би требало да представља решење роботовог задатка. 
+
+    .. code-block:: python
+
+      from karel import *      
+      while (moze_napred()):    
+        ____________
+          
+        ____________
+
+    У блоку петље недостаје неколико наредби. Допуни тело петље навођењем што мање понуђених наредби у одговарајућем редоследу, тако да Карел узме сваку лоптицу чим може, а да се извршавањем програма исправно решава задатак.
+
+    (1)
+      .. code-block:: python
+
+        napred() 
+
+    (2)
+      .. code-block:: python
+
+        desno()
+
+    (3)
+      .. code-block:: python
+
+        uzmi()
+
+    (Одговор упиши навођењем редних бројева наредби распоређених у одговарајући редослед, нпр. 12213)
+    Одговор: |blank|
+
+   - :^\s*1213222|1212223\s*$: Тачно
+     :x: Одговор није тачан.
+      
+
+Питање 5.
+~~~~~~~~~
+
+.. mchoice:: karel_brloptica_for
+  :multiple_answers:
+  :answer_a: Програм (1)
+  :feedback_a: Нетачно    
+  :answer_b: Програм (2)
+  :feedback_b: Нетачно    
+  :answer_c: Програм (3)
+  :feedback_c: Нетачно    
+  :answer_d: Програм (4)
+  :feedback_d: Тачно
+  :answer_e: Програм (5)
+  :feedback_e: Тачно
+  :correct: ['d', 'e']
+  
+
+  Нека се Карел робот налази у лавиринту као на слици
+
+  .. image:: ../../_images/karel10.png 
+    :align: center
+
+  и нека је лавиринт ЗАЧАРАН тако да се при сваком покретању програма
+  може променити дужина лавиринта и број лоптица на пољима. У свакој
+  верзији лавиринт се састоји из једнаког броја поља са лоптицама и
+  поља са рупама наизменично распоређених (као на слици).
+
+  Извршавањем којих од наредних програма ће робот проћи кроз цео
+  лавиринт, на сваком месту где има лоптица сакупити све лоптице и
+  убацити их у прву наредну рупу?
+
+  Напомена: Сматра се да је код исправан уколико при извршавању Пајтон
+  окружење не пријави грешку, као што је грешка која би се јавила при
+  извршавању команде napred() када се робот налази испред зида
+  лавиринта.
+
+  (1)
+    .. code-block:: python
+
+      from karel import *   
+      while (moze_napred()):
+        while (ima_loptica_na_polju()):
+          uzmi()
+        while (ima_loptica_kod_sebe()):
+          ostavi()
+        napred()   
+
+  (2)
+    .. code-block:: python
+
+      from karel import *   
+      napred()
+      while (moze_napred()):
+        while (ima_loptica_kod_sebe()):
+          ostavi()
+        napred()
+        while (ima_loptica_na_polju()):
+          uzmi()
+        napred()  
+
+  (3)
+    .. code-block:: python
+
+      from karel import *   
+      while (moze_napred()):
+        while (ima_loptica_na_polju()):
+          uzmi()
+        napred()
+        while (ima_loptica_kod_sebe()):
+          ostavi()
+        napred()  
+
+  (4)
+    .. code-block:: python
+
+      from karel import *   
+      while (moze_napred()):
+        napred()
+        while (ima_loptica_na_polju()):
+          uzmi()
+        napred()
+        while (ima_loptica_kod_sebe()):
+          ostavi()
+
+  (5)
+    .. code-block:: python
+
+      from karel import *   
+      while (moze_napred()):
+        while (ima_loptica_na_polju()):
+          uzmi()
+        napred()
+        while (ima_loptica_kod_sebe()):
+          ostavi()
+
+
+
+  Изабери тачанe одговорe:
 
