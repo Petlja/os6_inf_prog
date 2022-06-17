@@ -14,7 +14,8 @@
 
    Помози роботу да покупи све лоптице. Наравно, лавиринт је опет
    зачаран и распоред препрека и лоптица испред робота се мења
-   приликом сваког покретања програма.
+   приликом сваког покретања програма. Лоптице се налазе доњем реду 
+   лавиринта.
    
 .. karel:: Карел_покупи_лоптице_до_којих_можеш_да_дођеш
     :blockly:
@@ -98,3 +99,68 @@
               # okreni se prema istoku
               levo()
 
+
+Кретање у круг
+''''''''''''''
+
+
+Покушај да решиш и наредни, мало тежи задатак. 
+
+.. questionnote::
+
+   Напиши програм којим се роботу наређује да се креће у круг око
+   лавиринта и да покупи све лоптице на које наиђе.
+
+
+Једна идеја за решење је да четири пута поновимо наредбе којима робот
+иде напред докле год може и купи све лоптице на које наиђе.
+
+.. karel:: Карел_покупи_лоптице_у_круг_1
+    :blockly:
+   
+    {
+      setup: function() {
+           var dim = 5;
+	   var world = new World(dim, dim);
+           world.setRobotStartAvenue(1);
+           world.setRobotStartStreet(1);
+           world.setRobotStartDirection("E");
+
+	   for (var i = 1; i <= dim; i++)
+	      if (Math.random() > 0.5)
+	         world.putBall(i, 1);
+	   for (var i = 1; i <= dim; i++)
+	      if (Math.random() > 0.5)
+	         world.putBall(i, dim);
+	   for (var i = 2; i <= dim-1; i++)
+	      if (Math.random() > 0.5)
+	         world.putBall(1, i);
+	   for (var i = 2; i <= dim-1; i++)
+	      if (Math.random() > 0.5)
+	         world.putBall(dim, i);
+
+	   world.addEWWall(2, 1, dim-2);
+	   world.addEWWall(2, dim-1, dim-2);
+           world.addNSWall(1, 2, dim-2);
+           world.addNSWall(dim-1, 2, dim-2);
+	   
+           var robot = new Robot();
+	   var code = ["from karel import *",
+        "for i in range(4):",
+        "    while moze_napred():",
+        "        ??? # popravi ovu liniju",
+        "        if ima_loptica_na_polju():",
+        "            ??? # popravi ovu liniju",
+        "    ??? # popravi ovu liniju"
+        ]
+            return {world: world, robot: robot, code: code};
+            },
+
+      isSuccess: function(robot, world) {
+           for (var i = 1; i <= world.dim; i++)
+	      for (var j = 1; j <= world.dim; j++)
+	         if (world.getBalls(i, j) != 0)
+	         return false;
+	   return true;
+      }
+    }
