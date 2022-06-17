@@ -223,12 +223,12 @@
 
 .. mchoice:: kornjaca_10
     :answer_a: 1
-    :feedback_a: Нетачно    
+    :feedback_a: Tачно    
     :answer_b:  2
     :feedback_b: Нетачно        
     :answer_c:  3
-    :feedback_c: Tачно
-    :correct: c
+    :feedback_c: Нетачно
+    :correct: a
 
     Која од наредних сличица је резултат извршавања кода који је дат?	
    
