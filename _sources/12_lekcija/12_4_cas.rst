@@ -5,15 +5,15 @@
 ~~~~~~~~~~~~~~~~
 
 .. mchoice:: p1124
-    :answer_a: i in range( 3 )
-    :feedback_a: Тачно
+    :answer_a: i = 3
+    :feedback_a: Нетачно
     :answer_b: i in 3
     :feedback_b: Нетачно    
     :answer_c: range(3)
     :feedback_c: Нетачно    
-    :answer_d: i = 3
-    :feedback_d: Нетачно    
-    :correct: a
+    :answer_d: i in range( 3 )
+    :feedback_d: Тачно    
+    :correct: d
 
     Који од понуђених кодова треба додати на обележено место да би програм при извршавању 3 пута исписао Dobar dan? Изабери тачан одговор:
 
@@ -69,15 +69,15 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: p4124
-    :answer_a: 36 пута ће бити исписан број 4.
-    :feedback_a: Тачно
+    :answer_a: 36 пута ће бити исписан број 2.
+    :feedback_a: Нетачно
     :answer_b: 72 пута ће бити исписан број 2.
     :feedback_b: Нетачно    
-    :answer_c: 36 пута ће бити исписан број 2.
-    :feedback_c: Нетачно    
+    :answer_c: 36 пута ће бити исписан број 4.
+    :feedback_c: Тачно    
     :answer_d: Биће исписан број 4.
     :feedback_d: Нетачно    
-    :correct: a
+    :correct: c
 
     Шта ће бити резултат наредног програма ако му се при покретању да 36 примерака броја 2? Изабери тачан одговор:
 
@@ -114,15 +114,15 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. mchoice:: p5125
-    :answer_a: (1)
-    :feedback_a: Тачно
-    :answer_b: (2)
-    :feedback_b: Нетачно    
+    :answer_a: (2)
+    :feedback_a: Нетачно
+    :answer_b: (1)
+    :feedback_b: Тачно    
     :answer_c: (3)
     :feedback_c: Нетачно    
     :answer_d: (4)
     :feedback_d: Нетачно    
-    :correct: a
+    :correct: b
 
     Шта ће бити резултат извршавања следећег Пајтон кода? Изабери тачан одговор:
 
