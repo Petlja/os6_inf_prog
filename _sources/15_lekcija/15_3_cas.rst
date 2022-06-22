@@ -68,8 +68,8 @@
 
     .. code-block:: python
 
-     for elem in lista[::2]:
-     	print(elem)
+     for i in range(0, len(lista), 2):
+     	print(lista[i])
 	
 Питање 3.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
