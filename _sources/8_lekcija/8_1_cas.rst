@@ -106,6 +106,12 @@
 на почетку рада програма. Подсетимо се, учитавање реалног броја може
 се извршити помоћу ``float(input("..."))``.
 
+   .. activecode:: банковни_рачун_решење_2
+
+      stanje_pre = float(input("Unesi početno stanje:"))
+      uplata = ???
+      stanje_posle = stanje_pre + uplata
+      print(stanje_posle)
 
 .. reveal:: пресек_решење2
    :showtitle: Прикажи решење
@@ -114,6 +120,6 @@
    .. activecode:: банковни_рачун_решење_1
 
       stanje_pre = float(input("Unesi početno stanje:"))
-      uplata = ???
+      uplata = float(input("Unesite iznos uplate:"))
       stanje_posle = stanje_pre + uplata
       print(stanje_posle)
