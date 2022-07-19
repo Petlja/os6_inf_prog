@@ -74,21 +74,27 @@ lessons:
     type: reading
   - description: ''
     file: 1_2_cas.html
-    guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
+    guid: e8a20f11-f753-4b04-b5b2-e53db2a5edb5
     src: 1_2_cas.rst
-    title: 1.2. Бројачка петља for
+    title: 1.2 Вежбање
     type: reading
   - description: ''
     file: 1_3_cas.html
-    guid: 498mm35b-3e01-4d69-ba48-549dc26dfa2a
+    guid: 58fb0d70-fb33-4017-929c-ff44453a2ae5
     src: 1_3_cas.rst
-    title: 1.3. Квиз
-    type: quiz
+    title: 1.3. Бројачка петља for
+    type: reading
   - description: ''
     file: 1_4_cas.html
-    guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
+    guid: 498mm35b-3e01-4d69-ba48-549dc26dfa2a
     src: 1_4_cas.rst
-    title: 1.4. Вежбање
+    title: 1.4. Квиз
+    type: quiz
+  - description: ''
+    file: 1_5_cas.html
+    guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
+    src: 1_5_cas.rst
+    title: 1.5. Вежбање
     type: reading
   archived-activities: []
   description: 1_lekcija
@@ -105,21 +111,27 @@ lessons:
     type: reading
   - description: ''
     file: 2_2_cas.html
-    guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
+    guid: bdd3dd96-f0ba-4539-9937-ad61d020fa8c
     src: 2_2_cas.rst
-    title: 2.2. Гранање
+    title: 2.2. Вежбање
     type: reading
   - description: ''
     file: 2_3_cas.html
-    guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
+    guid: 5c243bd4-7cd0-4102-8972-c297ee09f99e
     src: 2_3_cas.rst
-    title: 2.3. Квиз
-    type: quiz
+    title: 2.3. Гранање
+    type: reading
   - description: ''
     file: 2_4_cas.html
-    guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
+    guid: 4коmm35b-3e01-4d69-ba48-549dc26dfa2a
     src: 2_4_cas.rst
-    title: 2.4. Вежбање
+    title: 2.4. Квиз
+    type: quiz
+  - description: ''
+    file: 2_5_cas.html
+    guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
+    src: 2_5_cas.rst
+    title: 2.5. Вежбање
     type: reading
   archived-activities: []
   description: 2_lekcija
@@ -194,7 +206,7 @@ lessons:
     file: 5_3_cas.html
     guid: 375aec29-54e5-4bd8-86e5-76d6791c881c
     src: 5_3_cas.rst
-    title: 5.3. Процедуре
+    title: 5.3. Функције
     type: reading
   - description: ''
     file: 5_4_cas.html
@@ -218,8 +230,8 @@ lessons:
   description: 5_lekcija
   folder: 5_lekcija
   guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
-  normalized_title: 5. Корњача графика - гранање, процедуре, торкелисте
-  title: 5. Корњача графика - гранање, процедуре, торке/листе
+  normalized_title: 5. Корњача графика - гранање, функције, торкелисте
+  title: 5. Корњача графика - гранање, функције, торке/листе
 - activities:
   - description: ''
     file: 6_1_cas.html
@@ -244,7 +256,7 @@ lessons:
     file: 7_2_cas.html
     guid: b8b21901-7e30-452b-a004-f855275bf3df
     src: 7_2_cas.rst
-    title: 7.2. Променљиве - имена међурезултата
+    title: 7.2. Променљиве - места за смештање података
     type: reading
   - description: ''
     file: 7_3_cas.html
@@ -368,7 +380,7 @@ lessons:
     file: 11_3_cas.html
     guid: 9799de49-73c8-4b79-9b62-ad81bd792128
     src: 11_3_cas.rst
-    title: 11.3. Конструкција elif
+    title: 11.3. Конструкција if-elif-else
     type: reading
   - description: ''
     file: 11_4_cas.html
@@ -393,19 +405,19 @@ lessons:
     file: 12_1_cas.html
     guid: 1b469fa03-6e83-4f19-bf1b-97bff2cd9f84
     src: 12_1_cas.rst
-    title: 12.1. Понављање
+    title: 12.1. Понављање - петља for
     type: reading
   - description: ''
     file: 12_2_cas.html
     guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
     src: 12_2_cas.rst
-    title: 12.2. Условна петља
+    title: 12.2. Условна петља - while
     type: reading
   - description: ''
     file: 12_3_cas.html
     guid: ab9f7f5e-b554-45bf-ad4e-9c5f70761a88
     src: 12_3_cas.rst
-    title: 12.3. Угнежђене петље
+    title: 12.3. Угењежђене петље
     type: reading
   - description: ''
     file: 12_4_cas.html
@@ -423,8 +435,8 @@ lessons:
   description: 12_lekcija
   folder: 12_lekcija
   guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
-  normalized_title: 12. Понављање
-  title: 12. Понављање
+  normalized_title: 12. Петље
+  title: 12. Петље
 - activities:
   - description: ''
     file: 13_1_cas.html
@@ -436,32 +448,38 @@ lessons:
   description: 13_lekcija
   folder: 13_lekcija
   guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228
-  normalized_title: 13. Контрола тока - задаци за вежбање
-  title: 13. Контрола тока - задаци за вежбање
+  normalized_title: 13. Контрола тока - вежбање
+  title: 13. Контрола тока - вежбање
 - activities:
   - description: ''
     file: 14_1_cas.html
     guid: fbc6dd0b-f551-4a60-914d-673ee8c0ecf3
     src: 14_1_cas.rst
-    title: 14.1. Торке, листе и ниске
+    title: 14.1. Торке и листе
     type: reading
   - description: ''
     file: 14_2_cas.html
-    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
+    guid: dcf94e04-ec2f-40b4-94bb-51ba5879c167
     src: 14_2_cas.rst
-    title: 14.2. Скупови и речници
+    title: 14.2. Ниске
     type: reading
   - description: ''
     file: 14_3_cas.html
-    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
+    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
     src: 14_3_cas.rst
-    title: 14.3. Квиз
-    type: quiz
+    title: 14.3. Скупови и речници
+    type: reading
   - description: ''
     file: 14_4_cas.html
-    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
     src: 14_4_cas.rst
-    title: 14.4. Вежбање
+    title: 14.4. Квиз
+    type: quiz
+  - description: ''
+    file: 14_5_cas.html
+    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    src: 14_5_cas.rst
+    title: 14.5. Вежбање
     type: reading
   archived-activities: []
   description: 14_lekcija
@@ -505,12 +523,12 @@ lessons:
     file: 16_1_cas.html
     guid: bbb08795-16b5-4cd1-be94-932d7225a44c
     src: 16_1_cas.rst
-    title: 16.1. Откривање и исправљање грешака и коришћење дебагера
+    title: 16.1. Дебаговање на рачунару у програму IDLE
     type: reading
   archived-activities: []
   description: 16_lekcija
   folder: 16_lekcija
   guid: 3d4c4bdf-dd5f-4dc0-953f-4d59ca05cc90
-  normalized_title: 16. Откривање и исправљање грешака
-  title: 16. Откривање и исправљање грешака
+  normalized_title: 16. Откривање и исправљање грешака и коришћење дебагера
+  title: 16. Откривање и исправљање грешака и коришћење дебагера
 title: Програмирање у Пајтону за шести разред

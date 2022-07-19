@@ -24,13 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -119,46 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -266,9 +230,10 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../1_lekcija/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>1.1. Линијски програми</div></a>
-                <a href=../1_lekcija/1_2_cas.html><div class="studioLecture" id=activity-1_2_cas><i class="fas fa-file-alt activity-icon"></i>1.2. Бројачка петља for</div></a>
-                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="far fa-question-circle activity-icon"></i>1.3. Квиз</div></a>
-                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="fas fa-file-alt activity-icon"></i>1.4. Вежбање</div></a>
+                <a href=../1_lekcija/1_2_cas.html><div class="studioLecture" id=activity-1_2_cas><i class="fas fa-file-alt activity-icon"></i>1.2 Вежбање</div></a>
+                <a href=../1_lekcija/1_3_cas.html><div class="studioLecture" id=activity-1_3_cas><i class="fas fa-file-alt activity-icon"></i>1.3. Бројачка петља for</div></a>
+                <a href=../1_lekcija/1_4_cas.html><div class="studioLecture" id=activity-1_4_cas><i class="far fa-question-circle activity-icon"></i>1.4. Квиз</div></a>
+                <a href=../1_lekcija/1_5_cas.html><div class="studioLecture" id=activity-1_5_cas><i class="fas fa-file-alt activity-icon"></i>1.5. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -279,9 +244,10 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../2_lekcija/2_1_cas.html><div class="studioLecture" id=activity-2_1_cas><i class="fas fa-file-alt activity-icon"></i>2.1. Условне петље</div></a>
-                <a href=../2_lekcija/2_2_cas.html><div class="studioLecture" id=activity-2_2_cas><i class="fas fa-file-alt activity-icon"></i>2.2. Гранање</div></a>
-                <a href=../2_lekcija/2_3_cas.html><div class="studioLecture" id=activity-2_3_cas><i class="far fa-question-circle activity-icon"></i>2.3. Квиз</div></a>
-                <a href=../2_lekcija/2_4_cas.html><div class="studioLecture" id=activity-2_4_cas><i class="fas fa-file-alt activity-icon"></i>2.4. Вежбање</div></a>
+                <a href=../2_lekcija/2_2_cas.html><div class="studioLecture" id=activity-2_2_cas><i class="fas fa-file-alt activity-icon"></i>2.2. Вежбање</div></a>
+                <a href=../2_lekcija/2_3_cas.html><div class="studioLecture" id=activity-2_3_cas><i class="fas fa-file-alt activity-icon"></i>2.3. Гранање</div></a>
+                <a href=../2_lekcija/2_4_cas.html><div class="studioLecture" id=activity-2_4_cas><i class="far fa-question-circle activity-icon"></i>2.4. Квиз</div></a>
+                <a href=../2_lekcija/2_5_cas.html><div class="studioLecture" id=activity-2_5_cas><i class="fas fa-file-alt activity-icon"></i>2.5. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -311,13 +277,13 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_lekcija>
-                    <h5>5. Корњача графика - гранање, процедуре, торке/листе</h5>
+                    <h5>5. Корњача графика - гранање, функције, торке/листе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../5_lekcija/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>5.1. Гранање</div></a>
                 <a href=../5_lekcija/5_2_cas.html><div class="studioLecture" id=activity-5_2_cas><i class="fas fa-file-alt activity-icon"></i>5.2. Угнежђене петље</div></a>
-                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Процедуре</div></a>
+                <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Функције</div></a>
                 <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке/листе</div></a>
                 <a href=../5_lekcija/5_5_cas.html><div class="studioLecture" id=activity-5_5_cas><i class="far fa-question-circle activity-icon"></i>5.5. Квиз</div></a>
                 <a href=../5_lekcija/5_6_cas.html><div class="studioLecture" id=activity-5_6_cas><i class="fas fa-file-alt activity-icon"></i>5.6. Вежбање</div></a>
@@ -341,7 +307,7 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../7_lekcija/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>7.1. Основне аритметичке операције и примена</div></a>
-                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - имена међурезултата</div></a>
+                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - места за смештање података</div></a>
                 <a href=../7_lekcija/7_3_cas.html><div class="studioLecture" id=activity-7_3_cas><i class="fas fa-file-alt activity-icon"></i>7.3. Тестирање и дебаговање програма</div></a>
                 <a href=../7_lekcija/7_4_cas.html><div class="studioLecture" id=activity-7_4_cas><i class="far fa-question-circle activity-icon"></i>7.4. Квиз</div></a>
                 <a href=../7_lekcija/7_5_cas.html><div class="studioLecture" id=activity-7_5_cas><i class="fas fa-file-alt activity-icon"></i>7.5. Вежбање</div></a>
@@ -393,7 +359,7 @@
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../11_lekcija/11_1_cas.html><div class="studioLecture" id=activity-11_1_cas><i class="fas fa-file-alt activity-icon"></i>11.1. Гранање</div></a>
                 <a href=../11_lekcija/11_2_cas.html><div class="studioLecture" id=activity-11_2_cas><i class="fas fa-file-alt activity-icon"></i>11.2. Комбинација више логичких услова</div></a>
-                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција elif</div></a>
+                <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција if-elif-else</div></a>
                 <a href=../11_lekcija/11_4_cas.html><div class="studioLecture" id=activity-11_4_cas><i class="far fa-question-circle activity-icon"></i>11.4. Квиз</div></a>
                 <a href=../11_lekcija/11_5_cas.html><div class="studioLecture" id=activity-11_5_cas><i class="fas fa-file-alt activity-icon"></i>11.5. Вежбање</div></a>
                 </div>
@@ -401,13 +367,13 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-12_lekcija>
-                    <h5>12. Понављање</h5>
+                    <h5>12. Петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање</div></a>
-                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља</div></a>
-                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угнежђене петље</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање - петља for</div></a>
+                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља - while</div></a>
+                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угењежђене петље</div></a>
                 <a href=../12_lekcija/12_4_cas.html><div class="studioLecture" id=activity-12_4_cas><i class="far fa-question-circle activity-icon"></i>12.4. Квиз</div></a>
                 <a href=../12_lekcija/12_5_cas.html><div class="studioLecture" id=activity-12_5_cas><i class="fas fa-file-alt activity-icon"></i>12.5. Вежбање</div></a>
                 </div>
@@ -415,7 +381,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-13_lekcija>
-                    <h5>13. Контрола тока - задаци за вежбање</h5>
+                    <h5>13. Контрола тока - вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -429,10 +395,11 @@
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке, листе и ниске</div></a>
-                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Скупови и речници</div></a>
-                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="far fa-question-circle activity-icon"></i>14.3. Квиз</div></a>
-                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Вежбање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке и листе</div></a>
+                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Ниске</div></a>
+                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Скупови и речници</div></a>
+                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="far fa-question-circle activity-icon"></i>14.4. Квиз</div></a>
+                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="fas fa-file-alt activity-icon"></i>14.5. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -451,11 +418,11 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-16_lekcija>
-                    <h5>16. Откривање и исправљање грешака</h5>
+                    <h5>16. Откривање и исправљање грешака и коришћење дебагера</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Откривање и исправљање грешака и коришћење дебагера</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../16_lekcija/16_1_cas.html><div class="studioLecture" id=activity-16_1_cas><i class="fas fa-file-alt activity-icon"></i>16.1. Дебаговање на рачунару у програму IDLE</div></a>
                 </div>
             </div>
                 </div>
@@ -474,7 +441,27 @@
     
   <div class="section" id="id1">
 <h1>2.1. Условне петље<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Поред наредби које робот може да извршава, које смо користили у
+<div class="section" id="while">
+<h2>Понављање - условна петља <cite>while</cite><a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
+<p>Погледај следећи пример у видеу. Лавиринт је зачаран, лоптица је увек на крају
+тунела али се не зна његова тачна дужина. Сваки пут када вратимо робота на почетак,
+имамо другу дужину тунела у лавиринту. Робот и у таквом лавиринту треба увек да
+стигне до лоптице и узме је. Да ли овде помаже петља <code class="docutils literal notranslate"><span class="pre">for</span></code>? Погледајмо видео!</p>
+
+    <div  id="ItdBjmCgQFM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/ItdBjmCgQFM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-ItdBjmCgQFM" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-ItdBjmCgQFM">
+        </div>
+    </div>
+    
+    
+    <p>Поред наредби које робот може да извршава, које смо користили у
 досадашњим програмима, робот Карел може да поставља следећа питања.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">moze_napred()</span></code> - проверава да робот може да се помери напред (да
@@ -490,23 +477,8 @@
 </ul>
 <p>То ћемо искористити да бисмо Карела навели да реши неке мало
 компликованије задатке.</p>
-<div class="section" id="while">
-<h2>Понављање - условна петља <cite>while</cite><a class="headerlink" href="#while" title="Permalink to this headline">¶</a></h2>
-
-    <div  id="ItdBjmCgQFM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
-        <div style="background-image: url('https://img.youtube.com/vi/ItdBjmCgQFM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
-        </div>
-      
-
-        </div>
-    <div id="modal-ItdBjmCgQFM" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
-        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-ItdBjmCgQFM">
-        </div>
-    </div>
-    
-    
-    <div class="section" id="id2">
+<p>Хајде сада уз помоћ новог алата, петље <code class="docutils literal notranslate"><span class="pre">while</span></code>, да решимо пример из видеа!</p>
+<div class="section" id="id2">
 <h3>Иди напред док можеш<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 
     <div class="course-box course-box-special">
@@ -682,7 +654,7 @@ while, па се и условна петља назива петља <code clas
        >
 napred()
 while ima_loptica_na_polju():
-   uzmi()
+    uzmi()
 </textarea>
 </div>
 
