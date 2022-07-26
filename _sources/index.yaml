@@ -1,6 +1,6 @@
 courseId: kurs-sesti
 lang: sr-Cyrl
-title: Програмирање у Пајтону
+title: Програмирање уз језик Python
 description:
   longDescription: |
     Овај курс је намењен ученицима шестог разреда основне школе и може се користити за предмет Информатика и рачунарство 
@@ -9,7 +9,7 @@ description:
     предмет, а целине су осмишљене тако да свака одговара једном школском часу. Материјал намењен за један школски 
     час састоји се од лекције, видео-илустрације, као и питалица, којима се ученицима скреће пажња на најважније 
     делове лекције. У оквиру лекција су и кратки тестови, који су ту да провере да ли су најважнији појмови усвојени. 
-    Курс у нет.кабинету је конципиран тако да прво долази део са објашњењем теме која се обрађује током часа, следи 
+    Курс је конципиран тако да прво долази део са објашњењем теме која се обрађује током часа, следи 
     квиз у коме свако од вас може да провери у којој мери је савладао садржај лекције, и на крају, ту је Вежбање. 
     Поглавље са вежбама вероватно нећете стићи да урадите током наставе. То су задаци за самосталан рад, који ће вам 
     помоћи да увежбате област коју сте обрадили на часу и утврдите пређено градиво. Поред рада у школи, курс се може 
@@ -21,12 +21,12 @@ description:
     <br />Овај курс Фондација Петља објавила je под лиценцом <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.sr_LATN">Creative Commons Autorstvo 4.0 Međunarodna Licenca (CC BY 4.0)</a>.
     </p> 
     
-  shortDescription: Програмирање у Пајтону
+  shortDescription: Програмирање уз језик Python
   willLearn: # list
     - основне концепте текстуалног програмирања
 
   requirements:
-    - инсталиран Пајтон
+    - инсталиран Python
   toc:
     - Робот Карел
     - Корњача графика
@@ -45,7 +45,7 @@ description:
 
 
 lessons:
-  - title: 1. Робот Карел - линијски програми и бројачка петља
+  - title: 1. Робот Карел - Линијски програми и бројачка петља
     folder: 1_lekcija
     guid: 27df52e9-0590-4aab-8102-fc846da2f2c9
     description: 1_lekcija
@@ -76,7 +76,7 @@ lessons:
         description: #opciono
         guid: 498da35b-3e01-4d69-ba48-549dc26dfa2a
         
-  - title: 2. Робот Карел - условна петља и гранање
+  - title: 2. Робот Карел - Условна петља и гранање
     folder: 2_lekcija
     guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
     description: 2_lekcija
@@ -107,7 +107,7 @@ lessons:
         description: #opciono
         guid: b65a9b8b-c021-4571-9254-5af6da2dcf6c
         
-  - title: 3. Робот Карел - задаци за вежбање
+  - title: 3. Робот Карел - Задаци за вежбање
     folder: 3_lekcija
     guid: dac0c143-9242-4fed-b9b6-473891f2a3de
     description: 3_lekcija
@@ -118,7 +118,7 @@ lessons:
         description: #opciono
         guid: 555d0479-5d91-44e4-a1f9-764c4142455f
         
-  - title: 4. Корњача графика - линијски програми и петље
+  - title: 4. Корњача графика - Линијски програми и петље
     folder: 4_lekcija
     guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
     description: 4_lekcija
@@ -149,7 +149,7 @@ lessons:
         description: #opciono
         guid: b3f341de-5720-4a2c-a1b0-ba71ad3d4384
         
-  - title: 5. Корњача графика - гранање, функције, торке/листе
+  - title: 5. Корњача графика - Гранање, функције, торке/листе
     folder: 5_lekcija
     guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
     description: 5_lekcija
@@ -185,7 +185,7 @@ lessons:
         description: #opciono
         guid: 0c1f844c-3c4f-4b31-ab1e-b53992e07d8f
 
-  - title: 6. Корњача графика - задаци за вежбање
+  - title: 6. Корњача графика - Задаци за вежбање
     folder: 6_lekcija
     guid: 65566e0c-8422-4e22-bf13-d71fe5523c1d
     description: 6_lekcija
@@ -197,7 +197,7 @@ lessons:
         guid: 058ed212-0c4d-4ba6-b762-ea6e4505b0fc
 
         
-  - title: 7. Израчунавања - изрази, оператори, променљиве
+  - title: 7. Израчунавања - Изрази, оператори, променљиве
     folder: 7_lekcija
     guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
     description: 7_lekcija
@@ -234,7 +234,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka-python/list_papira
         guid: 53abb6d0-1319-4f6b-b185-7476cc2feae4
         
-  - title: 8. Израчунавања - цели и реални бројеви, дељење
+  - title: 8. Израчунавања - Цели и реални бројеви, дељење
     folder: 8_lekcija
     guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
     description: 8_lekcija
@@ -271,7 +271,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka-python/cena_hleba
         guid: 6a4b6a21-3783-4168-85d9-0000132a2406
 
-  - title: 9. Израчунавања - коришћење и дефинисање функција
+  - title: 9. Израчунавања - Коришћење и дефинисање функција
     folder: 9_lekcija
     guid: e0438475-0523-49c4-ad13-47272ec38464
     description: 9_lekcija
@@ -297,7 +297,7 @@ lessons:
         description: #opciono
         guid: be01f1d1-aa5d-4155-a0bf-1dee30b089b5        
         
-  - title: 10. Израчунавања - задаци за вежбање
+  - title: 10. Израчунавања - Задаци за вежбање
     folder: 10_lekcija
     guid: b9447e4b-0afc-4518-b374-e001ec1b788f
     description: 10_lekcija
@@ -380,7 +380,7 @@ lessons:
           - https://petlja.org/biblioteka/r/Zbirka-python/kvadrat_od_zvezdica
         guid: e646af85-f38c-4177-81cd-ac429107e38d
 
-  - title: 13. Контрола тока - вежбање
+  - title: 13. Контрола тока - Задаци за вежбање
     folder: 13_lekcija
     guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228  
     description: 13_lekcija
