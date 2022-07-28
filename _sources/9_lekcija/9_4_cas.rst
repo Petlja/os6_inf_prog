@@ -31,10 +31,10 @@
       
    # -*- acsection: general-init -*-
    # -*- acsection: var-init -*-
-   s1 = int(input())
-   m1 = int(input())
-   s2 = int(input())
-   m2 = int(input())
+   s1 = int(input())                 #  Unesite sat Jeleninog dolaska
+   m1 = int(input())                 #  Unesite minut Jeleninog dolaska              
+   s2 = int(input())                 #  Unesite sat Ivaninog dolaska
+   m2 = int(input())                 #  Unesite minut Ivaninog dolaska
    # -*- acsection: main -*-
    vreme1 = 0  # pretvori u ovom redu s1 sati i m1 minuta u minute
    vreme2 = 0  # pretvori u ovom redu s2 sati i m2 minuta u minute
@@ -58,10 +58,10 @@
 
    .. activecode:: чекање_на_станици_решење2
 		
-      s1 = int(input())
-      m1 = int(input())
-      s2 = int(input())
-      m2 = int(input())
+      s1 = int(input())                 #  Unesite sat Jeleninog dolaska
+      m1 = int(input())                 #  Unesite minut Jeleninog dolaska              
+      s2 = int(input())                 #  Unesite sat Ivaninog dolaska
+      m2 = int(input())                 #  Unesite minut Ivaninog dolaska
       vreme1 = s1*60 + m1
       vreme2 = s2*60 + m2
       vreme = abs(vreme1 - vreme2)
