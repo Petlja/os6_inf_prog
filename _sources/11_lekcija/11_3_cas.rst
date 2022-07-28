@@ -47,16 +47,17 @@
 У општем случају, општи облик ове конструкције је следећи:
 
 .. activecode:: elif
+    :passivecode: true
 
-   if uslov_1:
-       naredbe
-   elif uslov_2:
-       naredbe
-   ...
-   elif uslov_k:
-       naredbe
-   else:
-       naredbe
+    if uslov_1:
+        naredbe
+    elif uslov_2:
+        naredbe
+    ...
+    elif uslov_k:
+        naredbe
+    else:
+        naredbe
 
 Прва група наредби се извршава ако је први услов испуњен, друга ако
 први није испуњен а други јесте, трећа ако прва два услова нису
