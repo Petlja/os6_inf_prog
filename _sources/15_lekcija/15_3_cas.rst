@@ -1,109 +1,89 @@
-15.3. Квиз
-##########
+15.3. Речници и петље
+#####################
 
-Питање 1.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. mchoice:: sp1
-    :answer_a: 1
-    :feedback_a: Тачно
-    :answer_b: 2
-    :feedback_b: Нетачно    
-    :answer_c: 3
-    :feedback_c: Нетачно    
-    :correct: a
+Пролазак кроз речник
+--------------------
 
-    На који начин се исписују елементи листе ``lista = [1, 22, 43, 5]``? Изабери тачан одговор.
+Још једна структура података кроз чије елементе је могуће проћи
+коришћењем петље облика ``for ... in ... :`` јесте - речник.
 
-    (1)
+Површине земаља
+'''''''''''''''
 
-    .. code-block:: python
+.. questionnote::
 
-     for broj in lista:
-     	print(broj)
+   Ако је дат речник који садржи називе неколико земаља и њихове
+   површине, напиши програм који формира списак земаља тако што за
+   сваку земљу у посебном реду напише њен назив и површину (земље могу
+   бити исписане у произвољном редоследу).
 
-    (2)
+.. activecode:: површине_земаља
 
-    .. code-block:: python
+   povrsine = {"Srbija": 88361, 
+               "Hrvatska": 56594, 
+               "Crna Gora": 13812,
+               "Bosna i Hercegovina": 51197,
+               "Slovenija": 20273,
+               "Makedonija": 25713}
 
-     for broj in lista:
-     	print(lista[broj])
+Исписаћемо једну по једну земљу и њену површину.
 
-    (3)
+.. activecode:: површине_земаља_1
+   :include: површине_земаља		
 
-    .. code-block:: python
+   for zemlja in povrsine:
+       print("Naziv: ", zemlja, "Površina: ", povrsine[zemlja])
 
-     for broj in range(lista):
-     	print(lista[broj])
+У претходном програму променљива ``zemlja`` редом узима вредности
+назива земаља (кључева у датом речнику).
 
-Питање 2.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Још један користан начин да се прође кроз елементе речника је да се
+употреби метода ``items()`` кроз чији се резултат може проћи на исти
+начин као што се пролази кроз све елементе листе парова.
+У том случају у дефиницији ``for`` петље мора навести уређени пар (кључ, вредност) тамо где смо 
+наводили име речника којим се крећемо, док име речника наводимо након кључне речи ``in`` и на њега надовезујемо 
+метод ``items``.
 
-.. mchoice:: spp2
-    :answer_a: 1
-    :feedback_a: Нетачно
-    :answer_b: 2
-    :feedback_b: Нетачно    
-    :answer_c: 3
-    :feedback_c: Тачно    
-    :correct: c
 
-    На који начин се исписује сваки други елемент листе ``lista``? Изабери тачан одговор.
+.. activecode:: површине_земаља_2
+   :include: површине_земаља		
+		
+   for (zemlja, povrsina) in povrsine.items():
+       print("Naziv: ", "Površina: ") # dopuni ovaj red
 
-    (1)
 
-    .. code-block:: python
+Формирање речника на основу учитаних података
+---------------------------------------------
 
-     for i in range(1, len(lista), 1):
-     	print(lista[i])
+Елемент у речник можемо додати доделом облика ``recnik[kljuc] = vrednost``. Речници 
+се веома често користе да елементима придруже
+њихов број појављивања. Прикажимо један задатак овог типа.
 
-    (2)
+Освојени турнири
+''''''''''''''''
 
-    .. code-block:: python
+Напиши програм који учитава број великих тениских турнира који су
+играни током неке године и имена победника сваког од тих турнира, а
+затим исписује број турнира које је освојио свако од тих тенисера.
 
-     for elem in lista:
-     	print(elem)
+Основна идеја решења је да формирамо речник у ком се имена тенисера
+пресликавају у број турнира које су освојили. Учитавамо једно по једно
+име победника турнира и увећавамо његов број освојених турнира у
+речнику. Ово радимо тако што прво проверавамо да ли дато име већ постоји
+као кључ у речнику -- ако постоји, увећавамо му број појављивања за 1,
+а ако не постоји, убацујемо га у речник и придружујемо му вредност 1.
 
-    (3)
+.. activecode:: освојени_турнири
 
-    .. code-block:: python
+   broj_turnira = int(input("Unesi broj turnira:"))
+   broj_pobeda = {}
+   for i in range(broj_turnira):
+       pobednik = input("Unesi pobednika turnira:")
+       if pobednik in broj_pobeda:
+           broj_pobeda[pobednik] = broj_pobeda[pobednik] + 1
+       else:
+           broj_pobeda[pobednik] = 1
 
-     for i in range(0, len(lista), 2):
-     	print(lista[i])
-	
-Питање 3.
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. mchoice:: spp3
-    :answer_a: 1
-    :feedback_a: Нетачно
-    :answer_b: 2
-    :feedback_b: Тачно    
-    :answer_c: 3
-    :feedback_c: Нетачно    
-    :correct: b
-
-    На који начин се може проћи кроз све елементе речника `predmeti`
-    који пресликава називе предмета у оцене из тих предмета. Изабери
-    тачан одговор.
-    
-    (1)
-
-    .. code-block:: python
-
-     for (predmet, ocena) in predmeti:
-     	print(predmet, ocena)
-
-    (2)
-
-    .. code-block:: python
-
-     for (predmet, ocena) in predmeti.items():
-     	print(predmet, ocena)
-
-    (3)
-
-    .. code-block:: python
-
-     for predmet in predmeti.items():
-     	print(predmeti[predmet])
+   for teniser in broj_pobeda:
+       print(teniser, ":", broj_pobeda[teniser])

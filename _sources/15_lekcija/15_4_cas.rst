@@ -1,94 +1,109 @@
-15.4. Вежбање
-#############
+15.4. Квиз
+##########
 
-Ако током часа нисте завршили неки задатак, уради га за домаћи, а
-након тога уради и наредне задатке.
+Питање 1.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Куповина за све паре
-''''''''''''''''''''
+.. mchoice:: sp1
+    :answer_a: 1
+    :feedback_a: Тачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: a
 
-.. questionnote::
+    На који начин се исписују елементи листе ``lista = [1, 22, 43, 5]``? Изабери тачан одговор.
 
-   Наталија има 1000 динара. Она жели да за сав новац купи чоколаду, која кошта 120
-   динара, чипс, који кошта 89 динара, или кока-колу, која кошта 135
-   динара. Ако буде куповала само чоколаду, или само чипс, или само кока-колу, напиши програм
-   који одређује колико производа може да купи и колико јој динара
-   остаје.
+    (1)
 
-.. activecode:: куповина_за_све_паре
+    .. code-block:: python
 
-   proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
-   for ??? in proizvodi:
-       ???
-       print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
+     for broj in lista:
+     	print(broj)
 
-.. reveal:: куповина_за_све_паре_reveal
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
-       
-   .. activecode:: куповина_за_све_паре_решење
+    (2)
 
-      proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
-      for (proizvod, cena) in proizvodi:
-          komada = 1000 // cena
-          ostalo = 1000 % cena
-          print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
+    .. code-block:: python
 
-Свака трећа реч
-'''''''''''''''
+     for broj in lista:
+     	print(lista[broj])
 
-.. questionnote::
+    (3)
 
-    Дата је торка која садржи ниске. Издвојити у листу оне ниске чији су
-    индекси дељиви са 3, а затим их исписати.
+    .. code-block:: python
 
-.. activecode:: свака_трећа_реч
+     for broj in range(lista):
+     	print(lista[broj])
 
-   reci = ('Преко', 'ограде', 'од', 'трња', 'поглед', 'иде', 'до', 'планина', 'и', 'звезда', 'на', 'небу')
-   svaka_treca = []
-   # dopuni program
+Питање 2.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. reveal:: свака_трећа_реч_reveal
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
-   
-   .. activecode:: свака_трећа_реч_решење
+.. mchoice:: spp2
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Нетачно    
+    :answer_c: 3
+    :feedback_c: Тачно    
+    :correct: c
 
-      reci = ('Преко', 'ограде', 'од', 'трња', 'поглед', 'иде', 'до', 'планина', 'и', 'звезда', 'на', 'небу')
-      svaka_treca = []
-      for i in range(0, len(reci), 3):
-         svaka_treca.append(reci[i])
-      for rec in svaka_treca:
-          print(rec)
+    На који начин се исписује сваки други елемент листе ``lista``? Изабери тачан одговор.
 
-Просечна оцена из сваког предмета
-'''''''''''''''''''''''''''''''''
+    (1)
 
-Напиши програм који на основу списак појединачних оцена ученика
-формира просечну оцену из свих предмета (уз сваку оцену се учитава и
-предмет из ког је та оцена добијена).
+    .. code-block:: python
 
-.. reveal:: просечна_оцена_из_сваког_предмета_reveal
-   :showtitle: Прикажи решење
-   :hidetitle: Сакриј решење
+     for i in range(1, len(lista), 1):
+     	print(lista[i])
 
-   Основна идеја је да формирамо речник у ком ћемо назив сваког
-   предмета пресликати у листу оцена из тог предмета. Након учитавања
-   података и формирања речника, проћи ћемо кроз сваки предмет у том
-   речнику и израчунати просечну оцену за сваки предмет.
-               
-   .. activecode:: просечна_оцена_из_сваког_предмета_решење
+    (2)
 
-      sve_ocene = {}
-      n = int(input("Унеси укупан број оцена:"))
-      for i in range(n):
-          (ocena, predmet) = input().split()
-          ocena = int(ocena)
-          if predmet in sve_ocene:
-              sve_ocene[predmet].append(ocena)
-          else:
-              sve_ocene[predmet] = [ocena]
+    .. code-block:: python
 
-      for (predmet, ocene) in sve_ocene.items():
-          prosek = sum(ocene) / len(ocene)
-          print(predmet, prosek)
+     for elem in lista:
+     	print(elem)
+
+    (3)
+
+    .. code-block:: python
+
+     for i in range(0, len(lista), 2):
+     	print(lista[i])
+	
+Питање 3.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. mchoice:: spp3
+    :answer_a: 1
+    :feedback_a: Нетачно
+    :answer_b: 2
+    :feedback_b: Тачно    
+    :answer_c: 3
+    :feedback_c: Нетачно    
+    :correct: b
+
+    На који начин се може проћи кроз све елементе речника `predmeti`
+    који пресликава називе предмета у оцене из тих предмета. Изабери
+    тачан одговор.
+    
+    (1)
+
+    .. code-block:: python
+
+     for (predmet, ocena) in predmeti:
+     	print(predmet, ocena)
+
+    (2)
+
+    .. code-block:: python
+
+     for (predmet, ocena) in predmeti.items():
+     	print(predmet, ocena)
+
+    (3)
+
+    .. code-block:: python
+
+     for predmet in predmeti.items():
+     	print(predmeti[predmet])

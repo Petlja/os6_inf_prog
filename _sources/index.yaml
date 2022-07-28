@@ -432,19 +432,26 @@ lessons:
         file: 15_1_cas.rst
         description: #opciono
         guid: 6d9ba56e-7ada-4e3a-84f5-8ef96ddc2f08
+
       - type: reading
-        title: 15.2. Речници и петље
+        title: 15.2. Учитавање и обрада листе
         file: 15_2_cas.rst
+        description: #opciono
+        guid: cd1c44c0-5fad-4013-bdf9-35305944c3c6
+
+      - type: reading
+        title: 15.3. Речници и петље
+        file: 15_3_cas.rst
         description: #opciono
         guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
       - type: quiz
-        title: 15.3. Квиз
-        file: 15_3_cas.rst
+        title: 15.4. Квиз
+        file: 15_4_cas.rst
         description: #opciono
         guid: 234c7173-6473-4544-920d-6a56d73d1372
       - type: reading
-        title: 15.4. Вежбање
-        file: 15_4_cas.rst
+        title: 15.5. Вежбање
+        file: 15_5_cas.rst
         description: #opciono
         guid: 730987e6-ec3c-40b1-9741-64fe6cd0944c
 
