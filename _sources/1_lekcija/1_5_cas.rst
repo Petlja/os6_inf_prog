@@ -213,8 +213,9 @@
 	   var code = ["from karel import *",
 	               "for i in range(5):",
 		       "    napred()",
-		       "    for j in range(3):",
-		       "        uzmi()"]
+		       "    uzmi()",
+             "    uzmi()",
+             "    uzmi()"]
 	   return {world: world, robot: robot, code: code};
       },
 
