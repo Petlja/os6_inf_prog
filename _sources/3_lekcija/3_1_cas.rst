@@ -92,12 +92,14 @@
    }
    
 .. reveal:: Karel_for_Take_5_3_8_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
    
+   Једно могуће решење (не и једино) је следеће.   
+
    .. activecode:: Karel_for_Take_5_3_8_solution
       :passivecode: true
-      
+
       from karel import *
       napred()
       for i in range(5):
@@ -108,6 +110,18 @@
       napred()
       for i in range(8):
           uzmi()
+
+   Друго (боље) решење применом **угњежђене петље** (са којом ћеш се више упознати касније) изгледало би овако:
+
+   .. activecode:: Karel_for_Take_5_3_8_solution_1
+      :passivecode: true
+
+      from karel import *
+      for i in range(3):
+          napred()
+          while ima_loptica_na_polju():
+              uzmi()
+
           
 
 Победничко постоље
@@ -311,7 +325,7 @@
    }
 
 .. reveal:: Karel_while_if_bring_all_balls_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_if_bring_all_balls_solution
@@ -332,7 +346,7 @@
           
 
 
-Угнежђене петље
+Угњежђене петље
 ---------------
 
 Премести све лоптице у рупе (3x3)
@@ -513,7 +527,7 @@
    }
    
 .. reveal:: Karel_while_many_squares_two_bals_per_square_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_many_squares_two_bals_per_square_solution
@@ -576,7 +590,7 @@
    }              
 
 .. reveal:: Karel_while_many_squares_many_balls_per_square_reveal
-   :showtitle: Решење
+   :showtitle: Прикажи решење
    :hidetitle: Сакриј решење
 
    .. activecode:: Karel_while_many_squares_many_balls_per_square_solution
