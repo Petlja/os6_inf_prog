@@ -69,8 +69,8 @@
 
 .. activecode:: број_путника
 
-   od_karte = 277236
-   do_karte = 276898
+   od_karte = 276898
+   do_karte = 277236
    broj_karata = 0     # popravi ovaj red
    print(broj_karata)   
 
