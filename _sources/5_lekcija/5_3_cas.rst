@@ -148,6 +148,7 @@
    Решење са петљом у петљи.
 	       
    .. activecode:: четири_квадрата_1
+      :nocodelens:
 
       import turtle
       n = 100
@@ -160,6 +161,7 @@
    Решење са помоћном функцијом за цртање квадрата.
 	 
    .. activecode:: четири_квадрата_2
+      :nocodelens:
 
       import turtle
 
