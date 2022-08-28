@@ -29,6 +29,7 @@
 боје, што указује на грешке.
 
 .. activecode:: читање
+   :nocodelens:
    :runortest: prvi_dan, ukupno
    :enablecopy:
 
