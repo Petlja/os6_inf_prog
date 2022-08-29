@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>8. Израчунавања - Цели и реални бројеви, дељење</title>
+    <title>15.5. Вежбање</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
     <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
@@ -448,17 +448,167 @@
     <div id="main-content">
     
   <div class="section" id="id1">
-<h1>8. Израчунавања - Цели и реални бројеви, дељење<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="8_1_cas.html">8.1. Цели и реални бројеви</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_2_cas.html">8.2. Реално и целобројно дељење</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_3_cas.html">8.3 Позициони запис бројева</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_4_cas.html">8.4. Квиз</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8_5_cas.html">8.5. Вежбање</a></li>
-<li class="toctree-l1"><a class="reference internal" href="8.6. Цели и реални бројеви, дељење - додатни задци.html">8.6. Цели и реални бројеви, дељење - додатни задци</a></li>
-</ul>
+<h1>15.5. Вежбање<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Ако током часа нисте завршили неки задатак, уради га за домаћи, а
+након тога уради и наредне задатке.</p>
+<div class="section" id="id2">
+<h2>Куповина за све паре<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Наталија има 1000 динара. Она жели да за сав новац купи чоколаду, која кошта 120
+динара, чипс, који кошта 89 динара, или кока-колу, која кошта 135
+динара. Ако буде куповала само чоколаду, или само чипс, или само кока-колу, напиши програм
+који одређује колико производа може да купи и колико јој динара
+остаје.</p>
+
+    </div></div>
+
+<div data-childcomponent="куповина_за_све_паре" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=куповина_за_све_паре data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
+for ??? in proizvodi:
+    ???
+    print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
+</textarea>
 </div>
+
+    <div data-component="reveal" id="куповина_за_све_паре_reveal"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="куповина_за_све_паре_решење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=куповина_за_све_паре_решење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+proizvodi = (("чоколада", 120), ("чипс", 89), ("кока-кола", 135))
+for (proizvod, cena) in proizvodi:
+    komada = 1000 // cena
+    ostalo = 1000 % cena
+    print(proizvod, "-", "комада:", komada, "остаје:", ostalo, "динара")
+</textarea>
+</div>
+
+    </div>
+    </div>
+<div class="section" id="id5">
+<h2>Свака трећа реч<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Дата је торка која садржи ниске. Издвојити у листу оне ниске чији су
+индекси дељиви са 3, а затим их исписати.</p>
+
+    </div></div>
+
+<div data-childcomponent="свака_трећа_реч" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=свака_трећа_реч data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+reci = ('Преко', 'ограде', 'од', 'трња', 'поглед', 'иде', 'до', 'планина', 'и', 'звезда', 'на', 'небу')
+svaka_treca = []
+# dopuni program
+</textarea>
+</div>
+
+    <div data-component="reveal" id="свака_трећа_реч_reveal"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    
+<div data-childcomponent="свака_трећа_реч_решење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=свака_трећа_реч_решење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+reci = ('Преко', 'ограде', 'од', 'трња', 'поглед', 'иде', 'до', 'планина', 'и', 'звезда', 'на', 'небу')
+svaka_treca = []
+for i in range(0, len(reci), 3):
+   svaka_treca.append(reci[i])
+for rec in svaka_treca:
+    print(rec)
+</textarea>
+</div>
+
+    </div>
+    </div>
+<div class="section" id="id8">
+<h2>Просечна оцена из сваког предмета<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
+        <div class="course-content">
+<p>Напиши програм који на основу списка појединачних оцена ученика
+формира просечну оцену из свих предмета (уз сваку оцену се учитава и
+предмет из ког је та оцена добијена).</p>
+
+    </div></div>
+
+<div data-childcomponent="просечна_оцена_из_сваког_предмета" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=просечна_оцена_из_сваког_предмета data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+               data-hidehistory=true
+       >
+sve_ocene = {}
+n = int(input("Унеси укупан број оцена:"))
+for i in range(n):
+    (ocena, predmet) = input().split()
+    ocena = int(ocena)
+    if predmet in sve_ocene:
+        sve_ocene[predmet].append(ocena)
+    else:
+        sve_ocene[predmet] = [ocena]
+
+# dopuni program
+</textarea>
+</div>
+
+    <div data-component="reveal" id="просечна_оцена_из_сваког_предмета_reveal"   data-showtitle="Прикажи решење" data-hidetitle="Сакриј решење">
+    <p>Основна идеја је да формирамо речник у ком ћемо назив сваког
+предмета пресликати у листу оцена из тог предмета. Након учитавања
+података и формирања речника, проћи ћемо кроз сваки предмет у том
+речнику и израчунати просечну оцену за сваки предмет.</p>
+
+<div data-childcomponent="просечна_оцена_из_сваког_предмета_решење" class="course-box course-box-problem course-content">
+
+<textarea data-component="activecode" id=просечна_оцена_из_сваког_предмета_решење data-lang="python" 
+      data-timelimit=25000  data-codelens="true"  
+    data-audio=''   
+             data-passivecode="true"  data-hidehistory=true
+       >
+sve_ocene = {}
+n = int(input("Унеси укупан број оцена:"))
+for i in range(n):
+    (ocena, predmet) = input().split()
+    ocena = int(ocena)
+    if predmet in sve_ocene:
+        sve_ocene[predmet].append(ocena)
+    else:
+        sve_ocene[predmet] = [ocena]
+
+for (predmet, ocene) in sve_ocene.items():
+    prosek = sum(ocene) / len(ocene)
+    print(predmet, prosek)
+</textarea>
+</div>
+
+    </div>
+    </div>
 </div>
 
 
@@ -466,7 +616,7 @@
     
     <div>
 <div class="lecture-prev-next-toggle">
-  <a  href="../7_lekcija/7.6. Израчунавања - додатни задаци.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  <a  href="15_4_cas.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
   
   <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
 </div>

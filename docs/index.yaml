@@ -9,32 +9,37 @@ description:
     text: Збирка кратких питања из програмирања за први разред
   longDescription: '<div class="document">
 
-    <p>Овај курс је намењен ученицима 6. разреда основне школе за предмет Информатика
-    и рачунарство у току другог полугодишта.
+    <p>Овај курс је намењен ученицима шестог разреда основне школе и може се користити
+    за предмет Информатика и рачунарство
 
-    У оквиру овог курса детаљно je обрађенa наставнa темa Рачунарство кроз демонстрацију
-    текстуалног програмирања применом програмског језика Пајтон.
+    у току другог полугодишта. У оквиру овог курса детаљно je обрађенa наставнa темa
+    „Рачунарство кроз демонстрацију
 
-    Курс у потпуности прати програм наставе и учења за овај предмет. Курс је подељен
-    по часовима. Материјал намењен за
+    текстуалног програмирања применом програмског језика Python“. Курс у потпуности
+    прати програм наставе за овај
 
-    један школски час се састоји од лекције, видео илустрације, као и дела са питалицама
-    којима се ученицима скреће
+    предмет, а целине су осмишљене тако да свака одговара једном школском часу. Материјал
+    намењен за један школски
 
-    пажња на најбитније делове из садржаја лекције. Курс садржи и мале тестове, који
-    имају за циљ проверу усвојених појмова.
+    час састоји се од лекције, видео-илустрације, као и питалица, којима се ученицима
+    скреће пажња на најважније
 
-    Курс у нет.кабинет - у је конципиран тако да прво долази лекција у оквиру које
-    се налазе објашњења онога што се обрађује током часа, након тога долази квиз
+    делове лекције. У оквиру лекција су и кратки тестови, који су ту да провере да
+    ли су најважнији појмови усвојени.
 
-    у коме свако од вас може да провери колико је вањано савладао садржај лекције
-    и на крају, ту је Вежбање. Вежбање вероватно нећете стићи да обрадите током часа,
-    већ су то
+    Курс је конципиран тако да прво долази део са објашњењем теме која се обрађује
+    током часа, следи
 
-    задаци за самосталан рад и увежбавање онога што сте до тог тренутка обрадили.
-    Такође, улога вежбања је да и да утврдите пређено градиво.с</p>
+    квиз у коме свако од вас може да провери у којој мери је савладао садржај лекције,
+    и на крају, ту је Вежбање.
 
-    <p>Поред рада у школи, курс се може пролазити и самостално.</p>
+    Поглавље са вежбама вероватно нећете стићи да урадите током наставе. То су задаци
+    за самосталан рад, који ће вам
+
+    помоћи да увежбате област коју сте обрадили на часу и утврдите пређено градиво.
+    Поред рада у школи, курс се може
+
+    пролазити и самостално.</p>
 
     <p>&lt;p&gt;
 
@@ -53,8 +58,8 @@ description:
 
     '
   requirements:
-  - инсталиран Пајтон
-  shortDescription: Програмирање у Пајтону
+  - инсталиран Python
+  shortDescription: Програмирање уз језик Python
   toc:
   - Робот Карел
   - Корњача графика
@@ -100,8 +105,8 @@ lessons:
   description: 1_lekcija
   folder: 1_lekcija
   guid: 27df52e9-0590-4aab-8102-fc846da2f2c9
-  normalized_title: 1. Робот Карел - линијски програми и бројачка петља
-  title: 1. Робот Карел - линијски програми и бројачка петља
+  normalized_title: 1. Робот Карел - Линијски програми и бројачка петља
+  title: 1. Робот Карел - Линијски програми и бројачка петља
 - activities:
   - description: ''
     file: 2_1_cas.html
@@ -137,8 +142,8 @@ lessons:
   description: 2_lekcija
   folder: 2_lekcija
   guid: 6e89a5fa-3e8b-4dad-8298-b5fbe5b542ce
-  normalized_title: 2. Робот Карел - условна петља и гранање
-  title: 2. Робот Карел - условна петља и гранање
+  normalized_title: 2. Робот Карел - Условна петља и гранање
+  title: 2. Робот Карел - Условна петља и гранање
 - activities:
   - description: ''
     file: 3_1_cas.html
@@ -150,8 +155,8 @@ lessons:
   description: 3_lekcija
   folder: 3_lekcija
   guid: dac0c143-9242-4fed-b9b6-473891f2a3de
-  normalized_title: 3. Робот Карел - задаци за вежбање
-  title: 3. Робот Карел - задаци за вежбање
+  normalized_title: 3. Робот Карел - Задаци за вежбање
+  title: 3. Робот Карел - Задаци за вежбање
 - activities:
   - description: ''
     file: 4_1_cas.html
@@ -187,8 +192,8 @@ lessons:
   description: 4_lekcija
   folder: 4_lekcija
   guid: f505e88e-0e1c-42a3-98c6-70b6548b34a4
-  normalized_title: 4. Корњача графика - линијски програми и петље
-  title: 4. Корњача графика - линијски програми и петље
+  normalized_title: 4. Корњача графика - Линијски програми и петље
+  title: 4. Корњача графика - Линијски програми и петље
 - activities:
   - description: ''
     file: 5_1_cas.html
@@ -212,7 +217,7 @@ lessons:
     file: 5_4_cas.html
     guid: fb3df324-2d19-4b0b-b3b1-cb10644b01d2
     src: 5_4_cas.rst
-    title: 5.4. Торке/листе
+    title: 5.4. Торке и листе
     type: reading
   - description: ''
     file: 5_5_cas.html
@@ -230,8 +235,9 @@ lessons:
   description: 5_lekcija
   folder: 5_lekcija
   guid: ec7d107e-cc4f-4fe7-8e69-9324dbc4962c
-  normalized_title: 5. Корњача графика - гранање, функције, торкелисте
-  title: 5. Корњача графика - гранање, функције, торке/листе
+  normalized_title: 5. Корњача графика - Гранање, угнежђене петље, функције, торке
+    и листе
+  title: 5. Корњача графика - Гранање, угнежђене петље, функције, торке и листе
 - activities:
   - description: ''
     file: 6_1_cas.html
@@ -243,8 +249,8 @@ lessons:
   description: 6_lekcija
   folder: 6_lekcija
   guid: 65566e0c-8422-4e22-bf13-d71fe5523c1d
-  normalized_title: 6. Корњача графика - задаци за вежбање
-  title: 6. Корњача графика - задаци за вежбање
+  normalized_title: 6. Корњача графика - Задаци за вежбање
+  title: 6. Корњача графика - Задаци за вежбање
 - activities:
   - description: ''
     file: 7_1_cas.html
@@ -256,7 +262,7 @@ lessons:
     file: 7_2_cas.html
     guid: b8b21901-7e30-452b-a004-f855275bf3df
     src: 7_2_cas.rst
-    title: 7.2. Променљиве - места за смештање података
+    title: 7.2. Променљиве - имена придружена подацима
     type: reading
   - description: ''
     file: 7_3_cas.html
@@ -276,12 +282,20 @@ lessons:
     src: 7_5_cas.rst
     title: 7.5. Вежбање
     type: reading
+  - description: ''
+    file: 7.6. Израчунавања - додатни задаци.html
+    guid: 53abb6d0-1319-4f6b-b185-7476cc2feae4
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/trening
+    - https://petlja.org/biblioteka/r/Zbirka-python/list_papira
+    title: 7.6. Израчунавања - додатни задаци
+    type: coding-quiz
   archived-activities: []
   description: 7_lekcija
   folder: 7_lekcija
   guid: e03e4460-e2cf-4b77-889a-345cfbafbe62
-  normalized_title: 7. Израчунавања - изрази, оператори, променљиве
-  title: 7. Израчунавања - изрази, оператори, променљиве
+  normalized_title: 7. Израчунавања - Изрази, оператори, променљиве
+  title: 7. Израчунавања - Изрази, оператори, променљиве
 - activities:
   - description: ''
     file: 8_1_cas.html
@@ -313,12 +327,20 @@ lessons:
     src: 8_5_cas.rst
     title: 8.5. Вежбање
     type: reading
+  - description: ''
+    file: 8.6. Цели и реални бројеви, дељење - додатни задци.html
+    guid: 6a4b6a21-3783-4168-85d9-0000132a2406
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/razlomak_u_mesovit_broj
+    - https://petlja.org/biblioteka/r/Zbirka-python/cena_hleba
+    title: 8.6. Цели и реални бројеви, дељење - додатни задци
+    type: coding-quiz
   archived-activities: []
   description: 8_lekcija
   folder: 8_lekcija
   guid: 0b8a3fbe-2967-4752-bb6d-8962b9142b31
-  normalized_title: 8. Израчунавања - цели и реални бројеви, дељење
-  title: 8. Израчунавања - цели и реални бројеви, дељење
+  normalized_title: 8. Израчунавања - Цели и реални бројеви, дељење
+  title: 8. Израчунавања - Цели и реални бројеви, дељење
 - activities:
   - description: ''
     file: 9_1_cas.html
@@ -348,8 +370,8 @@ lessons:
   description: 9_lekcija
   folder: 9_lekcija
   guid: e0438475-0523-49c4-ad13-47272ec38464
-  normalized_title: 9. Израчунавања - коришћење и дефинисање функција
-  title: 9. Израчунавања - коришћење и дефинисање функција
+  normalized_title: 9. Израчунавања - Коришћење и дефинисање функција
+  title: 9. Израчунавања - Коришћење и дефинисање функција
 - activities:
   - description: ''
     file: 10_1_cas.html
@@ -361,8 +383,8 @@ lessons:
   description: 10_lekcija
   folder: 10_lekcija
   guid: b9447e4b-0afc-4518-b374-e001ec1b788f
-  normalized_title: 10. Израчунавања - задаци за вежбање
-  title: 10. Израчунавања - задаци за вежбање
+  normalized_title: 10. Израчунавања - Задаци за вежбање
+  title: 10. Израчунавања - Задаци за вежбање
 - activities:
   - description: ''
     file: 11_1_cas.html
@@ -394,6 +416,13 @@ lessons:
     src: 11_5_cas.rst
     title: 11.5. Вежбање
     type: reading
+  - description: ''
+    file: 11.6. Гранање - додатни задтак.html
+    guid: 11db7f4e-1a4f-415e-8a0a-6a1d26f0b2da
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/jabuke
+    title: 11.6. Гранање - додатни задтак
+    type: coding-quiz
   archived-activities: []
   description: 11_lekcija
   folder: 11_lekcija
@@ -411,13 +440,13 @@ lessons:
     file: 12_2_cas.html
     guid: 3e87e723-f3f7-453b-b700-b5a8a9fa40c4
     src: 12_2_cas.rst
-    title: 12.2. Условна петља - while
+    title: 12.2. Понављање - условна петља while
     type: reading
   - description: ''
     file: 12_3_cas.html
     guid: ab9f7f5e-b554-45bf-ad4e-9c5f70761a88
     src: 12_3_cas.rst
-    title: 12.3. Угењежђене петље
+    title: 12.3. Угњежђене петље
     type: reading
   - description: ''
     file: 12_4_cas.html
@@ -431,12 +460,19 @@ lessons:
     src: 12_5_cas.rst
     title: 12.5. Вежбање
     type: reading
+  - description: ''
+    file: 12.6. Петље - додатни задтак.html
+    guid: e646af85-f38c-4177-81cd-ac429107e38d
+    src:
+    - https://petlja.org/biblioteka/r/Zbirka-python/kvadrat_od_zvezdica
+    title: 12.6. Петље - додатни задтак
+    type: coding-quiz
   archived-activities: []
   description: 12_lekcija
   folder: 12_lekcija
   guid: ffe2dbc10-e7b9-4422-8783-d6accfcdecb3
-  normalized_title: 12. Петље
-  title: 12. Петље
+  normalized_title: 12. Понављање - петље
+  title: 12. Понављање - петље
 - activities:
   - description: ''
     file: 13_1_cas.html
@@ -448,8 +484,8 @@ lessons:
   description: 13_lekcija
   folder: 13_lekcija
   guid: 840e20e6-f10d-4af5-96ec-85d78d6b5228
-  normalized_title: 13. Контрола тока - вежбање
-  title: 13. Контрола тока - вежбање
+  normalized_title: 13. Контрола тока - Задаци за вежбање
+  title: 13. Контрола тока - Задаци за вежбање
 - activities:
   - description: ''
     file: 14_1_cas.html
@@ -459,27 +495,33 @@ lessons:
     type: reading
   - description: ''
     file: 14_2_cas.html
-    guid: dcf94e04-ec2f-40b4-94bb-51ba5879c167
+    guid: b994e584-67ae-44ef-9285-9f13b2f0a306
     src: 14_2_cas.rst
-    title: 14.2. Ниске
+    title: 14.2. Функције за рад са торкама и листама
     type: reading
   - description: ''
     file: 14_3_cas.html
-    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
+    guid: dcf94e04-ec2f-40b4-94bb-51ba5879c167
     src: 14_3_cas.rst
-    title: 14.3. Скупови и речници
+    title: 14.3. Ниске
     type: reading
   - description: ''
     file: 14_4_cas.html
-    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
+    guid: 25108d1a-7467-496e-be18-0d1a2f8fe558
     src: 14_4_cas.rst
-    title: 14.4. Квиз
-    type: quiz
+    title: 14.4. Скупови и речници
+    type: reading
   - description: ''
     file: 14_5_cas.html
-    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    guid: accb3b6a-6a4a-4525-9eb1-0a07ab073ebb
     src: 14_5_cas.rst
-    title: 14.5. Вежбање
+    title: 14.5. Квиз
+    type: quiz
+  - description: ''
+    file: 14_6_cas.html
+    guid: e1807cea-7406-49e1-b061-020d521fc5b5
+    src: 14_6_cas.rst
+    title: 14.6. Вежбање
     type: reading
   archived-activities: []
   description: 14_lekcija
@@ -492,32 +534,38 @@ lessons:
     file: 15_1_cas.html
     guid: 6d9ba56e-7ada-4e3a-84f5-8ef96ddc2f08
     src: 15_1_cas.rst
-    title: 15.1. Торке, листе, ниске и петље
+    title: 15.1. Примена петље у торци, листи и ниски
     type: reading
   - description: ''
     file: 15_2_cas.html
-    guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
+    guid: cd1c44c0-5fad-4013-bdf9-35305944c3c6
     src: 15_2_cas.rst
-    title: 15.2. Речници и петље
+    title: 15.2. Учитавање и обрада листе
     type: reading
   - description: ''
     file: 15_3_cas.html
-    guid: 234c7173-6473-4544-920d-6a56d73d1372
+    guid: e65bbb28-1a4c-4157-9aa6-4f4926b69ff0
     src: 15_3_cas.rst
-    title: 15.3. Квиз
-    type: quiz
+    title: 15.3. Примена петље у речнику
+    type: reading
   - description: ''
     file: 15_4_cas.html
-    guid: 730987e6-ec3c-40b1-9741-64fe6cd0944c
+    guid: 234c7173-6473-4544-920d-6a56d73d1372
     src: 15_4_cas.rst
-    title: 15.4. Вежбање
+    title: 15.4. Квиз
+    type: quiz
+  - description: ''
+    file: 15_5_cas.html
+    guid: 730987e6-ec3c-40b1-9741-64fe6cd0944c
+    src: 15_5_cas.rst
+    title: 15.5. Вежбање
     type: reading
   archived-activities: []
   description: 15_lekcija
   folder: 15_lekcija
   guid: 0a8c8243-ee8e-4d9b-97a9-9eef7d9754e2
-  normalized_title: 15. Структуре података и петље
-  title: 15. Структуре података и петље
+  normalized_title: 15. Примена петље у структурама података
+  title: 15. Примена петље у структурама података
 - activities:
   - description: ''
     file: 16_1_cas.html
@@ -531,4 +579,4 @@ lessons:
   guid: 3d4c4bdf-dd5f-4dc0-953f-4d59ca05cc90
   normalized_title: 16. Откривање и исправљање грешака и коришћење дебагера
   title: 16. Откривање и исправљање грешака и коришћење дебагера
-title: Програмирање у Пајтону за шести разред
+title: Програмирање уз језик Python

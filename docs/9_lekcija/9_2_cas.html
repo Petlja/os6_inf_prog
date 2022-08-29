@@ -6,6 +6,7 @@
     <title>9.2. Дефинисање функција</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -208,7 +210,7 @@
 </div>
 
 
-<div class="content-header-label" id = "content-header-label" href="../">Програмирање у Пајтону</div>
+<div class="content-header-label" id = "content-header-label" href="../">Програмирање уз језик Python</div>
 
 </div>
 
@@ -225,7 +227,7 @@
            <div>
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_lekcija>
-                    <h5>1. Робот Карел - линијски програми и бројачка петља</h5>
+                    <h5>1. Робот Карел - Линијски програми и бројачка петља</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -239,7 +241,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_lekcija>
-                    <h5>2. Робот Карел - условна петља и гранање</h5>
+                    <h5>2. Робот Карел - Условна петља и гранање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -253,7 +255,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_lekcija>
-                    <h5>3. Робот Карел - задаци за вежбање</h5>
+                    <h5>3. Робот Карел - Задаци за вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -263,7 +265,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_lekcija>
-                    <h5>4. Корњача графика - линијски програми и петље</h5>
+                    <h5>4. Корњача графика - Линијски програми и петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -277,14 +279,14 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_lekcija>
-                    <h5>5. Корњача графика - гранање, функције, торке/листе</h5>
+                    <h5>5. Корњача графика - Гранање, угнежђене петље, функције, торке и листе</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../5_lekcija/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>5.1. Гранање</div></a>
                 <a href=../5_lekcija/5_2_cas.html><div class="studioLecture" id=activity-5_2_cas><i class="fas fa-file-alt activity-icon"></i>5.2. Угнежђене петље</div></a>
                 <a href=../5_lekcija/5_3_cas.html><div class="studioLecture" id=activity-5_3_cas><i class="fas fa-file-alt activity-icon"></i>5.3. Функције</div></a>
-                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке/листе</div></a>
+                <a href=../5_lekcija/5_4_cas.html><div class="studioLecture" id=activity-5_4_cas><i class="fas fa-file-alt activity-icon"></i>5.4. Торке и листе</div></a>
                 <a href=../5_lekcija/5_5_cas.html><div class="studioLecture" id=activity-5_5_cas><i class="far fa-question-circle activity-icon"></i>5.5. Квиз</div></a>
                 <a href=../5_lekcija/5_6_cas.html><div class="studioLecture" id=activity-5_6_cas><i class="fas fa-file-alt activity-icon"></i>5.6. Вежбање</div></a>
                 </div>
@@ -292,7 +294,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_lekcija>
-                    <h5>6. Корњача графика - задаци за вежбање</h5>
+                    <h5>6. Корњача графика - Задаци за вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -302,21 +304,22 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_lekcija>
-                    <h5>7. Израчунавања - изрази, оператори, променљиве</h5>
+                    <h5>7. Израчунавања - Изрази, оператори, променљиве</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../7_lekcija/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>7.1. Основне аритметичке операције и примена</div></a>
-                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - места за смештање података</div></a>
+                <a href=../7_lekcija/7_2_cas.html><div class="studioLecture" id=activity-7_2_cas><i class="fas fa-file-alt activity-icon"></i>7.2. Променљиве - имена придружена подацима</div></a>
                 <a href=../7_lekcija/7_3_cas.html><div class="studioLecture" id=activity-7_3_cas><i class="fas fa-file-alt activity-icon"></i>7.3. Тестирање и дебаговање програма</div></a>
                 <a href=../7_lekcija/7_4_cas.html><div class="studioLecture" id=activity-7_4_cas><i class="far fa-question-circle activity-icon"></i>7.4. Квиз</div></a>
                 <a href=../7_lekcija/7_5_cas.html><div class="studioLecture" id=activity-7_5_cas><i class="fas fa-file-alt activity-icon"></i>7.5. Вежбање</div></a>
+                <a href=../7_lekcija/7.6.%20Израчунавања%20-%20додатни%20задаци.html><div class="studioLecture" id=activity-7.6.%20Израчунавања%20-%20додатни%20задаци><i class="far fa-question-circle activity-icon"></i>7.6. Израчунавања - додатни задаци</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_lekcija>
-                    <h5>8. Израчунавања - цели и реални бројеви, дељење</h5>
+                    <h5>8. Израчунавања - Цели и реални бројеви, дељење</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -325,12 +328,13 @@
                 <a href=../8_lekcija/8_3_cas.html><div class="studioLecture" id=activity-8_3_cas><i class="fas fa-file-alt activity-icon"></i>8.3. Позициони запис бројева</div></a>
                 <a href=../8_lekcija/8_4_cas.html><div class="studioLecture" id=activity-8_4_cas><i class="far fa-question-circle activity-icon"></i>8.4. Квиз</div></a>
                 <a href=../8_lekcija/8_5_cas.html><div class="studioLecture" id=activity-8_5_cas><i class="fas fa-file-alt activity-icon"></i>8.5. Вежбање</div></a>
+                <a href=../8_lekcija/8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задци.html><div class="studioLecture" id=activity-8.6.%20Цели%20и%20реални%20бројеви,%20дељење%20-%20додатни%20задци><i class="far fa-question-circle activity-icon"></i>8.6. Цели и реални бројеви, дељење - додатни задци</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-9_lekcija>
-                    <h5>9. Израчунавања - коришћење и дефинисање функција</h5>
+                    <h5>9. Израчунавања - Коришћење и дефинисање функција</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -343,7 +347,7 @@
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_lekcija>
-                    <h5>10. Израчунавања - задаци за вежбање</h5>
+                    <h5>10. Израчунавања - Задаци за вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -362,26 +366,28 @@
                 <a href=../11_lekcija/11_3_cas.html><div class="studioLecture" id=activity-11_3_cas><i class="fas fa-file-alt activity-icon"></i>11.3. Конструкција if-elif-else</div></a>
                 <a href=../11_lekcija/11_4_cas.html><div class="studioLecture" id=activity-11_4_cas><i class="far fa-question-circle activity-icon"></i>11.4. Квиз</div></a>
                 <a href=../11_lekcija/11_5_cas.html><div class="studioLecture" id=activity-11_5_cas><i class="fas fa-file-alt activity-icon"></i>11.5. Вежбање</div></a>
+                <a href=../11_lekcija/11.6.%20Гранање%20-%20додатни%20задтак.html><div class="studioLecture" id=activity-11.6.%20Гранање%20-%20додатни%20задтак><i class="far fa-question-circle activity-icon"></i>11.6. Гранање - додатни задтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-12_lekcija>
-                    <h5>12. Петље</h5>
+                    <h5>12. Понављање - петље</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../12_lekcija/12_1_cas.html><div class="studioLecture" id=activity-12_1_cas><i class="fas fa-file-alt activity-icon"></i>12.1. Понављање - петља for</div></a>
-                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Условна петља - while</div></a>
-                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угењежђене петље</div></a>
+                <a href=../12_lekcija/12_2_cas.html><div class="studioLecture" id=activity-12_2_cas><i class="fas fa-file-alt activity-icon"></i>12.2. Понављање - условна петља while</div></a>
+                <a href=../12_lekcija/12_3_cas.html><div class="studioLecture" id=activity-12_3_cas><i class="fas fa-file-alt activity-icon"></i>12.3. Угњежђене петље</div></a>
                 <a href=../12_lekcija/12_4_cas.html><div class="studioLecture" id=activity-12_4_cas><i class="far fa-question-circle activity-icon"></i>12.4. Квиз</div></a>
                 <a href=../12_lekcija/12_5_cas.html><div class="studioLecture" id=activity-12_5_cas><i class="fas fa-file-alt activity-icon"></i>12.5. Вежбање</div></a>
+                <a href=../12_lekcija/12.6.%20Петље%20-%20додатни%20задтак.html><div class="studioLecture" id=activity-12.6.%20Петље%20-%20додатни%20задтак><i class="far fa-question-circle activity-icon"></i>12.6. Петље - додатни задтак</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-13_lekcija>
-                    <h5>13. Контрола тока - вежбање</h5>
+                    <h5>13. Контрола тока - Задаци за вежбање</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
@@ -396,23 +402,25 @@
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
                 <div class="courseContentsSubSection d-none"><a href=../14_lekcija/14_1_cas.html><div class="studioLecture" id=activity-14_1_cas><i class="fas fa-file-alt activity-icon"></i>14.1. Торке и листе</div></a>
-                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Ниске</div></a>
-                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Скупови и речници</div></a>
-                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="far fa-question-circle activity-icon"></i>14.4. Квиз</div></a>
-                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="fas fa-file-alt activity-icon"></i>14.5. Вежбање</div></a>
+                <a href=../14_lekcija/14_2_cas.html><div class="studioLecture" id=activity-14_2_cas><i class="fas fa-file-alt activity-icon"></i>14.2. Функције за рад са торкама и листама</div></a>
+                <a href=../14_lekcija/14_3_cas.html><div class="studioLecture" id=activity-14_3_cas><i class="fas fa-file-alt activity-icon"></i>14.3. Ниске</div></a>
+                <a href=../14_lekcija/14_4_cas.html><div class="studioLecture" id=activity-14_4_cas><i class="fas fa-file-alt activity-icon"></i>14.4. Скупови и речници</div></a>
+                <a href=../14_lekcija/14_5_cas.html><div class="studioLecture" id=activity-14_5_cas><i class="far fa-question-circle activity-icon"></i>14.5. Квиз</div></a>
+                <a href=../14_lekcija/14_6_cas.html><div class="studioLecture" id=activity-14_6_cas><i class="fas fa-file-alt activity-icon"></i>14.6. Вежбање</div></a>
                 </div>
             </div>
                 
                 <div class="courseContentsSection">
                 <div class="lecture-div courseContentsSectionHeadline" id=lecture-15_lekcija>
-                    <h5>15. Структуре података и петље</h5>
+                    <h5>15. Примена петље у структурама података</h5>
                     <i class="fas fa-angle-down caret-position "> </i>
                     <i class="fas fa-angle-up caret-position d-none"></i>
                 </div>
-                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Торке, листе, ниске и петље</div></a>
-                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Речници и петље</div></a>
-                <a href=../15_lekcija/15_3_cas.html><div class="studioLecture" id=activity-15_3_cas><i class="far fa-question-circle activity-icon"></i>15.3. Квиз</div></a>
-                <a href=../15_lekcija/15_4_cas.html><div class="studioLecture" id=activity-15_4_cas><i class="fas fa-file-alt activity-icon"></i>15.4. Вежбање</div></a>
+                <div class="courseContentsSubSection d-none"><a href=../15_lekcija/15_1_cas.html><div class="studioLecture" id=activity-15_1_cas><i class="fas fa-file-alt activity-icon"></i>15.1. Примена петље у торци, листи и ниски</div></a>
+                <a href=../15_lekcija/15_2_cas.html><div class="studioLecture" id=activity-15_2_cas><i class="fas fa-file-alt activity-icon"></i>15.2. Учитавање и обрада листе</div></a>
+                <a href=../15_lekcija/15_3_cas.html><div class="studioLecture" id=activity-15_3_cas><i class="fas fa-file-alt activity-icon"></i>15.3. Примена петље у речнику</div></a>
+                <a href=../15_lekcija/15_4_cas.html><div class="studioLecture" id=activity-15_4_cas><i class="far fa-question-circle activity-icon"></i>15.4. Квиз</div></a>
+                <a href=../15_lekcija/15_5_cas.html><div class="studioLecture" id=activity-15_5_cas><i class="fas fa-file-alt activity-icon"></i>15.5. Вежбање</div></a>
                 </div>
             </div>
                 
@@ -442,45 +450,47 @@
   <div class="section" id="id1">
 <h1>9.2. Дефинисање функција<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Видели смо колико је корисно када на располагању имамо дате функције
-попут <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code> или <code class="docutils literal notranslate"><span class="pre">abs</span></code>. Сви програмски језици, па и Python
+попут <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code> или <code class="docutils literal notranslate"><span class="pre">abs</span></code>. Сви програмски језици, па и <em>Python</em>
 допуштају корисницима да дефинишу своје функције.</p>
-<p>У програмима са корњача-графиком смо се срели са дефинисањем
+<p>У програмима са корњача графиком смо се срели са дефинисањем
 <strong>функција</strong>, што нам је омогућило да проширимо језик који корњача
 разуме и да лакше пишемо програме. Једном када се дефинише функција,
 практично нема разлике између њеног коришћења и коришћења неке од
-уграђених наредби, тако да су нам функције заправо дале начин да
-дефинишемо нове, сложеније наредбе корњачи. <strong>Функције</strong> могу да на основу
-улазних вредности израчунају неки резултат и врате га нашем програму али
+уграђених наредби, тако да су нам функције заправо омогућиле да
+дефинишемо нове, сложеније наредбе корњачи. <strong>Функције</strong> могу да, на основу
+улазних вредности, израчунају неки резултат и врате га нашем програму, али
 могу и да промене стање програма и тада не враћају никакав резултат.
 На пример, <cite>abs</cite> је функција која на основу дате вредности броја
 одређује његову апсолутну вредност, док је <cite>kvadrat(a)</cite> функција која
-не враћа никакву вредност већ наређује корњачи да нацрта квадрат на
-екрану. <cite>input</cite>, коју смо користили за учитавање са тастатуре је
-функција која враћа унету вредност, док је <cite>print</cite> функција која не
-враћа никакву вредност, већ мења стање програма тј. оно што је
+не враћа никакву вредност, већ наређује корњачи да нацрта квадрат на
+екрану. Функција <cite>input</cite>, коју смо користили за учитавање са тастатуре,
+функција је која враћа унету вредност, док је <cite>print</cite> функција која не
+враћа никакву вредност, већ мења стање програма, тј. оно што је
 исписано на екрану.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
-<dt>Функције су вишеструко корисне приликом програмирања, издвојићемо следеће:</dt><dd><ul class="simple">
-<li><p>Функције доприносе да наш програм буде краћи и читљивији јер се програмирају на једном
-месту а после се само позивају</p></li>
-<li><p>Ређе се праве програмске грешке (багови) а лакше се отклањају (дебагују)</p></li>
-<li><p>Када је потребна измена у функцији ради се само на једном месту, у наредбама функције</p></li>
-<li><p>Функције омогућавају поделу посла у програмерском тиму где свако добије део посла,
-обично је то да испрограмира неке функције а после се цео програм склапа у целину (чине програм модуларним)</p></li>
+<dt>Функције су вишеструко корисне приликом програмирања, а издвојићемо следеће:</dt><dd><ul class="simple">
+<li><p>Функције доприносе томе да наш програм буде краћи и читљивији јер се програмирају на једном
+месту, а после се само позивају.</p></li>
+<li><p>Ређе се праве програмске грешке (багови), и лакше се отклањају (дебагују).</p></li>
+<li><p>Када је потребна измена у функцији, ради се само на једном месту, у наредбама функције.</p></li>
+<li><p>Функције омогућавају поделу задатака у програмерском тиму, где свако добије одређени део посла,
+најчешће да испрограмира неке функције, а после се цео програм склапа у целину (функције чине програм модуларним).</p></li>
 </ul>
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 <p>Погледај наредни видео:</p>
 
     <div  id="YBS52XLMosM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/YBS52XLMosM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -510,32 +520,30 @@ print(obim_pravougaonika(3, 5))
 print(obim_pravougaonika(4.2, 5.7))
 </textarea>
 </div>
-<p>Дефиниција функције почиње речју <code class="docutils literal notranslate"><span class="pre">def</span></code> након тога се наводи назив
+<p>Дефиниција функције почиње речју <code class="docutils literal notranslate"><span class="pre">def</span></code>, након тога се наводи назив
 функције, затим у заградама наведени улазни параметри функције и
 симбол двотачка (<code class="docutils literal notranslate"><span class="pre">:</span></code>).  Након те прве линије наводи се тело
 функције, које мора бити мало увучено.  Код најједноставнијих функција
 (као што су ове две наведене у примерима) тело функције представља
 само наредба <code class="docutils literal notranslate"><span class="pre">return</span></code> након које се налази израз који представља
 везу између улазних параметара и резултата функције. Код
-компликованијих функција у телу се налазе дужа израчунавања, али се и
-даље у телу функције (најчешћње на самом крају) налази наредба
-<code class="docutils literal notranslate"><span class="pre">return</span></code> иза које се наводи вредност функције (то може бити и име
+компликованијих функција у телу се налазе дужа израчунавања, али је наредба
+<code class="docutils literal notranslate"><span class="pre">return</span></code> и даље ту (најчешће на самом крају), a иза ње се наводи вредност функције (то може бити и име
 променљиве у којој је израчуната резултујућа вредност). Функције се
-позивају тако што се наведе њихов назив и у загради вредности
-аргумената.</p>
+позивају тако што се наведе њихов назив и у загради вредности аргумената (параметара).</p>
+<p>У претходном примеру, позив функција је гласио obim_pravougaonika(4.2, 5.7), а
+бројеви 4.2 и 5.7 су у том примеру аргументи (параметри) функције</p>
 <div class="section" id="id4">
 <h3>Обим квадрата<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Дефиниши функцију која на основу дужине странице израчунава
 површину квадрата.</p>
 
-    </p></div></div>
+    </div></div>
 
 <div data-childcomponent="површина" class="course-box course-box-problem course-content">
 
@@ -544,8 +552,8 @@ print(obim_pravougaonika(4.2, 5.7))
     data-audio=''   
                data-hidehistory=true
        >
-def povrsina_kvadrata    # dopuni ovaj i naredni red
-    return
+def povrsina_kvadrata ???   # dopuni ovaj i naredni red
+    return ???
 
 a = int(input("Unesi dužinu stranice kvadrata: "))
 print(povrsina_kvadrata(a))
@@ -555,8 +563,12 @@ print(povrsina_kvadrata(a))
 <div class="section" id="id6">
 <h3>Површина сложених облика<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Размотримо проблем израчунавања површине наредних сложених облика.</p>
-<a class="reference internal image-reference" href="../_images/slozeni_oblik.png"><img alt="../_images/slozeni_oblik.png" class="align-center" src="../_images/slozeni_oblik.png" style="width: 300px;" /></a>
-<a class="reference internal image-reference" href="../_images/slozeni_oblik_polukrugovi.png"><img alt="../_images/slozeni_oblik_polukrugovi.png" class="align-center" src="../_images/slozeni_oblik_polukrugovi.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/slozeni_oblik.png"><img alt="../_images/slozeni_oblik.png" class="screenshot-shadow" src="../_images/slozeni_oblik.png" style="width: 300px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/slozeni_oblik_polukrugovi.png"><img alt="../_images/slozeni_oblik_polukrugovi.png" class="screenshot-shadow" src="../_images/slozeni_oblik_polukrugovi.png" style="width: 300px;" /></a>
+</div>
 <p>Први облик се може разложити на два правоугаоника, један правоугли
 троугао и један полукруг, док се површина другог облика може добити
 тако што се од површине највећег полукруга одузме површина најмањег, а
@@ -564,14 +576,14 @@ print(povrsina_kvadrata(a))
 <p>Ако једном дефинишемо функције за израчунавање површине сваког од тих
 елементарних облика, веома једноставно у главном програму можемо
 израчунавати површине разних сложених облика, не размишљајући више о
-формулама потребним за израчучнавање површине појединачних облика
+формулама потребним за израчунавање површине појединачних облика
 (површина правоугаоника страница <span class="math notranslate nohighlight">\(a\)</span> и <span class="math notranslate nohighlight">\(b\)</span> израчунава се
 по формули <span class="math notranslate nohighlight">\(P=a\cdot b\)</span>, површина правоуглог троугла чије су
 странице које образују прав угао <span class="math notranslate nohighlight">\(a\)</span> и <span class="math notranslate nohighlight">\(b\)</span> једнака је
 <span class="math notranslate nohighlight">\(\frac{a\cdot b}{2}\)</span>, јер је тај троугао половина одговарајућег
 правоугаоника, а површина круга полупречника <span class="math notranslate nohighlight">\(r\)</span> може се
-израчунати по формули <span class="math notranslate nohighlight">\(P = r^2\pi\)</span>, где је <span class="math notranslate nohighlight">\(pi =
-3,1415926...\)</span>, а у језику Python се може добити помоћу <cite>math.pi</cite>).</p>
+израчунати по формули <span class="math notranslate nohighlight">\(P = r^2\pi\)</span>, где је  <span class="math notranslate nohighlight">\(\pi = 3,1415926...\)</span>,
+а у језику <em>Python</em> се може добити помоћу <cite>math.pi</cite>).</p>
 
 <div data-childcomponent="сложени_облици" class="course-box course-box-problem course-content">
 
@@ -580,6 +592,8 @@ print(povrsina_kvadrata(a))
     data-audio=''   
                data-hidehistory=true
        >
+import math
+
 # površina pravougaonika datih stranica
 def P_pravougaonika(a, b):
     return a * b
@@ -633,19 +647,17 @@ print(161, "cm", "=", m, "m", "i", cm, "cm")
 <div class="section" id="id10">
 <h3>Секунде у сате, минуте и секунде<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 
-    <div class="course-box course-box-special">
+    <div class="note-wrapper questionnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/question-mark.png" class="note-image questionnote-image" /> 
         <div class="course-content">
-            <h4 class="carbox-title">
-                <img class="corner-image float-right" src="../_static/img/question-mark.png" />
-            </h4>
-            <p>
 <p>Напиши функцију која на основу броја секунди протеклих од претходне
 поноћи израчуна тренутно време у сатима, минутима и секундама,
 водећи рачуна да број сати буде између 0 и 23.</p>
 
-    </p></div></div>
+    </div></div>
 <p>У наредној дефиницији функције направљено је неколико грешака. Исправи
-је тако да наредни програм да исправне резултате.</p>
+је тако да наредни програм да тачне резултате.</p>
 
 <div data-childcomponent="функција_конверзије_времена" class="course-box course-box-problem course-content">
 
@@ -666,7 +678,7 @@ print(sat, ":", min, ":", sek)
 print(sat, ":", min, ":", sek)
 </textarea>
 </div>
-<p>Када програм покренеш треба да испише <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">:</span> <span class="pre">16</span> <span class="pre">:</span> <span class="pre">40</span></code> и <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">:</span> <span class="pre">0</span> <span class="pre">:</span> <span class="pre">0</span></code>.</p>
+<p>Када програм покренеш, треба да испише <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">:</span> <span class="pre">16</span> <span class="pre">:</span> <span class="pre">40</span></code> и <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">:</span> <span class="pre">0</span> <span class="pre">:</span> <span class="pre">0</span></code>.</p>
 </div>
 </div>
 <div class="section" id="id12">
@@ -677,16 +689,16 @@ print(sat, ":", min, ":", sek)
 главни програм много је јасније да се у неком делу израчунава обим
 правоугаоника ако у програму види израз <code class="docutils literal notranslate"><span class="pre">obim_pravougaonika(2,</span> <span class="pre">5)</span></code>
 него ако види израз <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">2</span> <span class="pre">+</span> <span class="pre">2</span> <span class="pre">*</span> <span class="pre">5)</span></code>). Када дефинишемо погодне
-функције, главни програм је било много лакше написати.</p></li>
+функције, главни програм је много лакше написати.</p></li>
 <li><p>Функције помажу да се програм скрати тако што се избегава понављање
 истог програмског кода (ако је тај програмски код дугачак и
-компликован, издвајање у функцију може значајно поједноставити и
+компликован, издвајање у функцију може знатно поједноставити и
 скратити програм). Ако се покаже да је тај део кода често потребно
 мењати (што је често случај у програмирању) то што се код јавља само
 једном (у склопу тела функције) чини одржавање много једноставнијим
-(не морамо измене да правимо на пуно места, већ само на једном).</p></li>
+(не морамо измене да правимо на много места, већ само на једном).</p></li>
 <li><p>Функције помажу и да се неки проблеми реше, тако што омогућавају
-разлагање комплексних проблема на једноставније потпроблеме.</p></li>
+разлагање комплексних проблема на једноставније, потпроблеме.</p></li>
 </ul>
 </div>
 </div>
