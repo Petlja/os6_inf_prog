@@ -92,13 +92,15 @@
 
 Размотримо проблем израчунавања површине наредних сложених облика.
 
-.. image:: ../../_images/slozeni_oblik.png
+.. figure:: ../../_images/slozeni_oblik.png
    :width: 300px   
    :align: center
-
-.. image:: ../../_images/slozeni_oblik_polukrugovi.png
+   :class: screenshot-shadow
+   
+.. figure:: ../../_images/slozeni_oblik_polukrugovi.png
    :width: 300px   
    :align: center
+   :class: screenshot-shadow
 
 Први облик се може разложити на два правоугаоника, један правоугли
 троугао и један полукруг, док се површина другог облика може добити

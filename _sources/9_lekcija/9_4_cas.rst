@@ -82,7 +82,7 @@
    пређе.
 
 .. image:: ../../_images/manhattan_distance.png
-   :width: 500px   
+   :width: 780px   
    :align: center
 
 Том има више начина да стигне са једног на друго место (може да иде
@@ -112,8 +112,7 @@
    ulica2 = 58
    avenija2 = 3
    # -*- acsection: main -*-
-   rastojanje = abs(avenija1 - avenija2) * 0 + \
-                0 * razmak_ulica
+   rastojanje = abs(avenija1 - avenija2) * razmak_ulica #ispravi ovu liniju
    # -*- acsection: after-main -*-
    print(rastojanje)
    ====
@@ -124,12 +123,6 @@
           for (ulica1, avenija1, ulica2, avenija2, razmak_ulica, razmak_avenija, rastojanje) in [(3, 5, 8, 4, 80, 275, 675), (1, 7, 2, 4, 80, 275, 905), (9, 4, 11, 2, 80, 275, 710), (4, 8, 1, 5, 80, 275, 1065)]:
              self.assertEqual((acMainSection(ulica1 = ulica1, avenija1 = avenija1, ulica2 = ulica2, avenija2 = avenija2, razmak_ulica = razmak_ulica, razmak_avenija = razmak_avenija)["rastojanje"]),  rastojanje , "Растојање између тачака (%s, %s) и (%s, %s) је %s." % (ulica1, avenija1, ulica2, avenija2, rastojanje))
    myTests().main()
-   
-
-Видео си да је формула у претходном примеру била веома дугачка и
-проценили смо да је прегледније да је одштампамо кроз више редова. Да
-бисмо нагласили да се нека наредба наставља и у следећој линији, на
-крај линије стављамо симбол ``\``.
 
 .. reveal:: менхетн_решење1
    :showtitle: Прикажи решење
@@ -143,8 +136,7 @@
       avenija2 = 3
       razmak_ulica = 80		
       razmak_avenija = 275
-      rastojanje = abs(avenija1 - avenija2) * razmak_avenija + \
-                   abs(ulica1 - ulica2) * razmak_ulica
+      rastojanje = abs(avenija1 - avenija2) * razmak_avenija + abs(ulica1 - ulica2) * razmak_ulica
       print(rastojanje)
 
 Просек три броја
