@@ -152,8 +152,8 @@
             },
 
       isSuccess: function(robot, world) {
-           for (var i = 1; i <= world.dim; i++)
-	      for (var j = 1; j <= world.dim; j++)
+           for (var i = 1; i <= world.getAvenues(); i++)
+	      for (var j = 1; j <= world.getStreets(); j++)
 	         if (world.getBalls(i, j) != 0)
 	         return false;
 	   return true;
