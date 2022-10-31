@@ -215,7 +215,8 @@
 На пример, цртеж можемо нацртати и на следећи начин:
 
 .. activecode:: корњача_скраћени_запис
-
+   :nocodelens:
+   
    import turtle as t
    t.color("red")
    t.fd(100)
