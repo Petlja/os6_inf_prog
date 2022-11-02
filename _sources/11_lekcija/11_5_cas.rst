@@ -337,7 +337,7 @@
 
    polje = (3, 5)
 
-   ====
+   # -*- acsection: after-main -*-
    def ispisi_dostupna_polja(polje, naziv_figure, figura_provera):
        for x in range(1, 8+1):
 	  for y in range(1, 8+1):
@@ -376,7 +376,7 @@
 
       polje = (3, 5)
    
-      ====
+      # -*- acsection: after-main -*-
       def ispisi_dostupna_polja(polje, naziv_figure, figura_provera):
         for x in range(1, 8+1):
     	  for y in range(1, 8+1):
