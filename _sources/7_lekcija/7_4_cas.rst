@@ -9,7 +9,7 @@
     :feedback_a: Нетачно    
     :answer_b: 45
     :feedback_b: Тачно
-    :answer_c: *Python* окружење ће исписати поруку о грешци.
+    :answer_c: Python окружење ће исписати поруку о грешци.
     :feedback_c: Нетачно    
     :correct: b
 
