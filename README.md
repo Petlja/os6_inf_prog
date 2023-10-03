@@ -2,9 +2,9 @@
 
 Ovaj repozitorijum posvećen je kursu za Programiranje u Pajtonu za šesti razred. 
 
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/368/0](https://petlja.org/kurs/368/)
+Kurs je na Petljinom portalu dotupan ovde: [https://petlja.org/kurs/368/0](https://petlja.org/kurs/368/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/os6_inf_prog/releases
+Kurs možete integrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/os6_inf_prog/releases
 
 ## Konverzija u *HTML*
 
