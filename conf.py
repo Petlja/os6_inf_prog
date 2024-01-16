@@ -207,6 +207,7 @@ html_short_title ='Petlja - Информатика и рачунарство з�
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 
+petljadoc.runestone_ext.add_module('blockpylib')
 html_static_path = ['_static']  + runestone_static_dirs() + petljadoc.runestone_ext.static_dirs()
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
