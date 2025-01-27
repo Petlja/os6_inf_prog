@@ -164,6 +164,8 @@ Tab, који се на тастатурама налази лево од тас
 Петљама ћемо се много детаљније бавити у поглављу `**Понављање**
 <Ponavljanje.html>`_.
 
+.. Link iznad proveriti, msm da ne vodi na dobro mesto, trebalo bi na 12.1
+
 Иди седам поља напред
 '''''''''''''''''''''
 

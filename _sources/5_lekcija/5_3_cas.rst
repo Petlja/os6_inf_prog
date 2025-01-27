@@ -167,11 +167,11 @@
 
       def kvadrat(n):
           for i in range(4):
-	  turtle.forward(n)
-	  turtle.left(90)
+	        turtle.forward(n)
+	        turtle.left(90)
 
       n = 100
       for i in range(4):
           kvadrat(n)
-	  turtle.left(90)
+          turtle.left(90)
 
