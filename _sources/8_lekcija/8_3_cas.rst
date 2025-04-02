@@ -17,7 +17,7 @@
    и остатак) да бисмо пронашли једну по једну цифру нашег броја, а затим ћемо их једноставно сабрати.
 
 .. activecode:: цифре_броја
-   :runortest: broj, kontrolni_broj
+   :runortest: broj, zbir
    :enablecopy:
 		
    # -*- acsection: general-init -*-
@@ -37,7 +37,7 @@
    class myTests(TestCaseGui):
        def testOne(self):
           for broj, kontrolni_broj in [(71425, 19), (33214, 13), (62040, 12)]:
-             self.assertEqual(acMainSection(broj = broj)["kontrolni_broj"],kontrolni_broj,"За број %s контролни број је %s." % (broj, kontrolni_broj))
+             self.assertEqual(acMainSection(broj = broj)["zbir"],kontrolni_broj,"За број %s контролни број је %s." % (broj, kontrolni_broj))
    myTests().main()
 
 У овом примеру радимо следеће:
