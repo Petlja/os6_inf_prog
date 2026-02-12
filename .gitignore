@@ -10,4 +10,7 @@ update.py
 *~
 override.json
 export
+.venv
+uv.lock
+docs
 

@@ -1,9 +1,0 @@
-========
-14. Квиз
-========
-
-.. toctree:: 
-    :maxdepth: 1
-
-    14_1_test.rst
-    14_2_test.rst

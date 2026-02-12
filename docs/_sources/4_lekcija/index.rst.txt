@@ -1,9 +1,0 @@
-=======
-4. Квиз
-=======
-
-.. toctree:: 
-    :maxdepth: 1
-
-    4_1_test.rst
-    4_2_test.rst
